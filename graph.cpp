@@ -6,7 +6,9 @@
 #include <iostream>
 #include <string>
 
-constexpr int BITS_PER_UNSIGNED_INT (CHAR_BIT * sizeof(unsigned int));
+constexpr int BITS_PER_UNSIGNED_INT(CHAR_BIT *
+
+sizeof(unsigned int));
 
 static void fail(std::string msg) {
     std::cerr << msg << std::endl;
@@ -16,26 +18,27 @@ static void fail(std::string msg) {
 Graph::Graph(unsigned int n) {
     this->n = n;
     label = std::vector<unsigned int>(n, 0u);
-    adjmat = std::vector<std::vector<unsigned int>>(n, std::vector<unsigned int>(n, false));
-    leaves = std::vector<std::vector<std::pair<std::pair<unsigned int, unsigned int>, std::vector<int>>>> (n);
+    adjmat = std::vector < std::vector < unsigned int >> (n, std::vector<unsigned int>(n, false));
+    leaves = std::vector < std::vector < std::pair < std::pair < unsigned int, unsigned int >, std::vector <
+                                                                                               int >> >> (n);
 }
 
-Graph induced_subgraph(struct Graph& g, std::vector<int> vv) {
+Graph induced_subgraph(struct Graph &g, std::vector<int> vv) {
     Graph subg(vv.size());
-    for (int i=0; i<subg.n; i++)
-        for (int j=0; j<subg.n; j++)
+    for (int i = 0; i < subg.n; i++)
+        for (int j = 0; j < subg.n; j++)
             subg.adjmat[i][j] = g.adjmat[vv[i]][vv[j]];//vv向量标志着顺序
 
-    for (int i=0; i<subg.n; i++)
+    for (int i = 0; i < subg.n; i++)
         subg.label[i] = g.label[vv[i]];
     return subg;
 }
 
-void add_edge(Graph& g, int v, int w, bool directed=false, unsigned int val=1) {
+void add_edge(Graph &g, int v, int w, bool directed = false, unsigned int val = 1) {
     if (v != w) {
         if (directed) {
             g.adjmat[v][w] |= val;
-            g.adjmat[w][v] |= (val<<16);
+            g.adjmat[w][v] |= (val << 16);
         } else {
             g.adjmat[v][w] = val;
             g.adjmat[w][v] = val;
@@ -43,19 +46,19 @@ void add_edge(Graph& g, int v, int w, bool directed=false, unsigned int val=1) {
     } else {
         // To indicate that a vertex has a loop, we set the most
         // significant bit of its label to 1
-        g.label[v] |= (1u << (BITS_PER_UNSIGNED_INT-1));
+        g.label[v] |= (1u << (BITS_PER_UNSIGNED_INT - 1));
     }
 }
 
-struct Graph readDimacsGraph(char* filename, bool directed, bool vertex_labelled) {
+struct Graph readDimacsGraph(char *filename, bool directed, bool vertex_labelled) {
     struct Graph g(0);
 
-    FILE* f;
+    FILE *f;
 
-    if ((f=fopen(filename, "r"))==NULL)
+    if ((f = fopen(filename, "r")) == NULL)
         fail("Cannot open file");
 
-    char* line = NULL;
+    char *line = NULL;
     size_t nchar = 0;
 
     int nvertices = 0;
@@ -68,37 +71,37 @@ struct Graph readDimacsGraph(char* filename, bool directed, bool vertex_labelled
         if (nchar > 0) {
             switch (line[0]) {
                 case 'p':
-                    if (sscanf(line, "p edge %d %d", &nvertices, &medges)!=2)
+                    if (sscanf(line, "p edge %d %d", &nvertices, &medges) != 2)
                         fail("Error reading a line beginning with p.\n");
                     g = Graph(nvertices);
                     break;
                 case 'e':
-                    if (sscanf(line, "e %d %d", &v, &w)!=2)
+                    if (sscanf(line, "e %d %d", &v, &w) != 2)
                         fail("Error reading a line beginning with e.\n");
-                    add_edge(g, v-1, w-1, directed);
+                    add_edge(g, v - 1, w - 1, directed);
                     edges_read++;
                     break;
                 case 'n':
-                    if (sscanf(line, "n %d %d", &v, &label)!=2)
+                    if (sscanf(line, "n %d %d", &v, &label) != 2)
                         fail("Error reading a line beginning with n.\n");
                     if (vertex_labelled)
-                        g.label[v-1] |= label;
+                        g.label[v - 1] |= label;
                     break;
             }
         }
     }
 
-    if (medges>0 && edges_read != medges) fail("Unexpected number of edges.");
+    if (medges > 0 && edges_read != medges) fail("Unexpected number of edges.");
 
     fclose(f);
     return g;
 }
 
-struct Graph readLadGraph(char* filename, bool directed) {
+struct Graph readLadGraph(char *filename, bool directed) {
     struct Graph g(0);
-    FILE* f;
+    FILE *f;
 
-    if ((f=fopen(filename, "r"))==NULL)
+    if ((f = fopen(filename, "r")) == NULL)
         fail("Cannot open file");
 
     int nvertices = 0;
@@ -108,11 +111,11 @@ struct Graph readLadGraph(char* filename, bool directed) {
         fail("Number of vertices not read correctly.\n");
     g = Graph(nvertices);
 
-    for (int i=0; i<nvertices; i++) {
+    for (int i = 0; i < nvertices; i++) {
         int edge_count;
         if (fscanf(f, "%d", &edge_count) != 1)//dian de du
             fail("Number of edges not read correctly.\n");
-        for (int j=0; j<edge_count; j++) {
+        for (int j = 0; j < edge_count; j++) {
             if (fscanf(f, "%d", &w) != 1)
                 fail("An edge was not read correctly.\n");
             add_edge(g, i, w, directed);
@@ -127,16 +130,15 @@ int read_word(FILE *fp) {
     unsigned char a[2];
     if (fread(a, 1, 2, fp) != 2)
         fail("Error reading file.\n");
-    return (int)a[0] | (((int)a[1]) << 8);
+    return (int) a[0] | (((int) a[1]) << 8);
 }
 
-struct Graph readBinaryGraph(char* filename, bool directed, bool edge_labelled,
-                             bool vertex_labelled)
-{
+struct Graph readBinaryGraph(char *filename, bool directed, bool edge_labelled,
+                             bool vertex_labelled) {
     struct Graph g(0);
-    FILE* f;
+    FILE *f;
 
-    if ((f=fopen(filename, "rb"))==NULL)
+    if ((f = fopen(filename, "rb")) == NULL)
         fail("Cannot open file");
 
     int nvertices = read_word(f);
@@ -154,17 +156,17 @@ struct Graph readBinaryGraph(char* filename, bool directed, bool edge_labelled,
         k2++;
     }
 
-    for (int i=0; i<nvertices; i++) {
-        int label = (read_word(f) >> (16-k1));
+    for (int i = 0; i < nvertices; i++) {
+        int label = (read_word(f) >> (16 - k1));
         if (vertex_labelled)
             g.label[i] |= label;
     }
 
-    for (int i=0; i<nvertices; i++) {
+    for (int i = 0; i < nvertices; i++) {
         int len = read_word(f);
-        for (int j=0; j<len; j++) {
+        for (int j = 0; j < len; j++) {
             int target = read_word(f);
-            int label = (read_word(f) >> (16-k1)) + 1;
+            int label = (read_word(f) >> (16 - k1)) + 1;
             add_edge(g, i, target, directed, edge_labelled ? label : 1);
         }
     }
@@ -172,11 +174,11 @@ struct Graph readBinaryGraph(char* filename, bool directed, bool edge_labelled,
     return g;
 }
 
-struct Graph readGraph(char* filename, char format, bool directed, bool edge_labelled, bool vertex_labelled) {
+struct Graph readGraph(char *filename, char format, bool directed, bool edge_labelled, bool vertex_labelled) {
     struct Graph g(0);
-    if (format=='D') g = readDimacsGraph(filename, directed, vertex_labelled);
-    else if (format=='L') g = readLadGraph(filename, directed);
-    else if (format=='B') g = readBinaryGraph(filename, directed, edge_labelled, vertex_labelled);
+    if (format == 'D') g = readDimacsGraph(filename, directed, vertex_labelled);
+    else if (format == 'L') g = readLadGraph(filename, directed);
+    else if (format == 'B') g = readBinaryGraph(filename, directed, edge_labelled, vertex_labelled);
     else fail("Unknown graph format\n");
     return g;
 }
