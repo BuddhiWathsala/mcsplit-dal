@@ -984,29 +984,27 @@ int main(int argc, char **argv) {
         timeout_thread.join();
     }
 #endif
-//    if (!check_sol(g0, g1, solution))
-//        fail("*** Error: Invalid solution\n");
-//
-//    cout << "Solution size " << solution.size() << std::endl;
-//    for (int i=0; i<g0.n; i++)
-//        for (unsigned int j=0; j<solution.size(); j++)
-//            if (solution[j].v == i)
-//                cout << "(" << solution[j].v << " -> " << solution[j].w << ") ";
-//    cout << std::endl;
-//
-//    cout<<"Nodes:                      " << nodes << endl;
-//    cout<<"Cut branches:               "<<cutbranches<<endl;
-//    cout<<"Conflicts:                    " <<conflicts<< endl;
-//    printf("CPU time (ms):              %15ld\n", time_elapsed * 1000 / CLOCKS_PER_SEC);
-//    printf("FindBest time (ms):              %15ld\n", time_find * 1000 / CLOCKS_PER_SEC);
-//#ifdef Best
-//    cout<<"Best nodes:                 "<<bestnodes<<endl;
-//    cout<<"Best count:                 "<<bestcount<<endl;
-//#endif
-//    if (aborted)
-//        cout << "TIMEOUT" << endl;
-    cout << solution.size() << ", " << check_sol(g0, g1, solution) << ", " << duration.count() << ", "
-         << time_elapsed.count() << ", " << nodes << ", " << calls_for_optimal << ", " << cut_branches << ", " <<
-         aborted << endl;
+    if (!check_sol(g0, g1, solution))
+        fail("*** Error: Invalid solution\n");
+
+    cout << "Solution size " << solution.size() << std::endl;
+    for (int i=0; i<g0.n; i++)
+        for (unsigned int j=0; j<solution.size(); j++)
+            if (solution[j].v == i)
+                cout << "(" << solution[j].v << " -> " << solution[j].w << ") ";
+    cout << std::endl;
+
+    cout<<"Nodes:                      " << nodes << endl;
+    cout<<"Cut branches:               "<<cutbranches<<endl;
+    cout<<"Conflicts:                    " <<conflicts<< endl;
+    printf("CPU time (ms):              %15ld\n", time_elapsed * 1000 / CLOCKS_PER_SEC);
+    printf("FindBest time (ms):              %15ld\n", time_find * 1000 / CLOCKS_PER_SEC);
+#ifdef Best
+    cout<<"Best nodes:                 "<<bestnodes<<endl;
+    cout<<"Best count:                 "<<bestcount<<endl;
+#endif
+    if (aborted)
+        cout << "TIMEOUT" << endl;
+
 }
 
