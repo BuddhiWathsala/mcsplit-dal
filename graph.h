@@ -5,6 +5,13 @@
 #include <map>
 #include <algorithm>
 
+struct VtxPair {
+    int v;
+    int w;
+
+    VtxPair(int v, int w) : v(v), w(w) {}
+};
+
 struct Graph {
     int n;
     std::vector <std::vector<unsigned int>> adjmat;//双数组 记载边
