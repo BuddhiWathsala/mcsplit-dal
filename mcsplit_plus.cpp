@@ -213,7 +213,7 @@ struct Bidomain {
             is_adjacent(is_adjacent) {};
 };
 
-void show(const vector <VtxPair> &current, const vector <Bidomain> &domains,
+void show(const vector<VtxPair> &current, const vector<Bidomain> &domains,
           const vector<int> &left, const vector<int> &right) {
     cout << "Nodes: " << nodes << std::endl;
     cout << "Length of current assignment: " << current.size() << std::endl;
@@ -236,7 +236,7 @@ void show(const vector <VtxPair> &current, const vector <Bidomain> &domains,
     cout << "\n" << std::endl;
 }
 
-bool check_sol(const Graph &g0, const Graph &g1, const vector <VtxPair> &solution) {
+bool check_sol(const Graph &g0, const Graph &g1, const vector<VtxPair> &solution) {
     return true;
     vector<bool> used_left(g0.n, false);
     vector<bool> used_right(g1.n, false);
@@ -257,7 +257,7 @@ bool check_sol(const Graph &g0, const Graph &g1, const vector <VtxPair> &solutio
     return true;
 }
 
-int calc_bound(const vector <Bidomain> &domains) {
+int calc_bound(const vector<Bidomain> &domains) {
     int bound = 0;
     for (const Bidomain &bd: domains) {
         bound += std::min(bd.left_len, bd.right_len);
@@ -265,7 +265,7 @@ int calc_bound(const vector <Bidomain> &domains) {
     return bound;
 }
 
-int selectV_index(const vector<int> &arr, const vector <gtype> &lgrade, int start_idx, int len) {
+int selectV_index(const vector<int> &arr, const vector<gtype> &lgrade, int start_idx, int len) {
     int idx = -1;
     gtype max_g = -1;
     int vtx, best_vtx = INT_MAX;
@@ -285,7 +285,7 @@ int selectV_index(const vector<int> &arr, const vector <gtype> &lgrade, int star
     return idx;
 }
 
-int select_bidomain(const vector <Bidomain> &domains, const vector<int> &left, const vector <gtype> &lgrade,
+int select_bidomain(const vector<Bidomain> &domains, const vector<int> &left, const vector<gtype> &lgrade,
                     int current_matching_size) {
     // Select the bidomain with the smallest max(leftsize, rightsize), breaking
     // ties on the smallest vertex index in the left set
@@ -339,11 +339,11 @@ int remove_matched_vertex(vector<int> &arr, int start, int len, const vector<int
     return p;
 }
 
-vector <Bidomain> rewardfeed_RL(const vector <Bidomain> &d, int bd_idx, vector <VtxPair> &current, vector<int> &left,
-                                vector<int> &right, vector <gtype> &lgrade, vector <gtype> &rgrade, const Graph &g0,
-                                const Graph &g1, int v, int w,
-                                bool multiway) {//每个domain均分成2个new_domain分别是与当前对应点相连或者不相连
-    vector <Bidomain> new_d;
+vector<Bidomain> rewardfeed_RL(const vector<Bidomain> &d, int bd_idx, vector<VtxPair> &current, vector<int> &left,
+                               vector<int> &right, vector<gtype> &lgrade, vector<gtype> &rgrade, const Graph &g0,
+                               const Graph &g1, int v, int w,
+                               bool multiway) {//每个domain均分成2个new_domain分别是与当前对应点相连或者不相连
+    vector<Bidomain> new_d;
     new_d.reserve(d.size());
     current.push_back(VtxPair(v, w));
     //unsigned int old_bound = current.size() + calc_bound(d)+1;//这里的domain是已经去掉选了的点，但是该点还没纳入current所以+1
@@ -436,11 +436,11 @@ vector <Bidomain> rewardfeed_RL(const vector <Bidomain> &d, int bd_idx, vector <
 
 
 // multiway is for directed and/or labelled graphs
-vector <Bidomain> rewardfeed(const vector <Bidomain> &d, int bd_idx, vector <VtxPair> &current, vector<int> &g0_matched,
-                             vector<int> &g1_matched,
-                             vector<int> &left, vector<int> &right, vector <gtype> &lgrade, vector <gtype> &rgrade,
-                             const Graph &g0, const Graph &g1, int v, int w,
-                             bool multiway) {//每个domain均分成2个new_domain分别是与当前对应点相连或者不相连
+vector<Bidomain> rewardfeed(const vector<Bidomain> &d, int bd_idx, vector<VtxPair> &current, vector<int> &g0_matched,
+                            vector<int> &g1_matched,
+                            vector<int> &left, vector<int> &right, vector<gtype> &lgrade, vector<gtype> &rgrade,
+                            const Graph &g0, const Graph &g1, int v, int w,
+                            bool multiway) {//每个domain均分成2个new_domain分别是与当前对应点相连或者不相连
 //    assert(g0_matched[v] == 0);
 //    assert(g1_matched[w] == 0);
     current.push_back(VtxPair(v, w));
@@ -471,7 +471,7 @@ vector <Bidomain> rewardfeed(const vector <Bidomain> &d, int bd_idx, vector <Vtx
     }
 
 
-    vector <Bidomain> new_d;
+    vector<Bidomain> new_d;
     new_d.reserve(d.size());
     //unsigned int old_bound = current.size() + calc_bound(d)+1;//这里的domain是已经去掉选了的点，但是该点还没纳入current所以+1
     //unsigned int new_bound(0);
@@ -570,7 +570,7 @@ vector <Bidomain> rewardfeed(const vector <Bidomain> &d, int bd_idx, vector <Vtx
     return new_d;
 }
 
-int selectW_index(const vector<int> &arr, const vector <gtype> &rgrade, int start_idx, int len,
+int selectW_index(const vector<int> &arr, const vector<gtype> &rgrade, int start_idx, int len,
                   const vector<int> &wselected) {
     int idx = -1;
     gtype max_g = -1;
@@ -598,21 +598,22 @@ void remove_vtx_from_array(vector<int> &arr, int start_idx, int &len, int remove
     std::swap(arr[start_idx + remove_idx], arr[start_idx + len]);
 }
 
-void remove_bidomain(vector <Bidomain> &domains, int idx) {
+void remove_bidomain(vector<Bidomain> &domains, int idx) {
     domains[idx] = domains[domains.size() - 1];
     domains.pop_back();
 }
 
-void solve(const Graph &g0, const Graph &g1, vector <gtype> &V, vector <gtype> &lgrade,
-           vector <gtype> &rgrade, vector <vector<gtype>> &Q, vector <VtxPair> &incumbent,
-           vector <VtxPair> &current, vector<int> &g0_matched, vector<int> &g1_matched,
-           vector <Bidomain> &domains, vector<int> &left, vector<int> &right, unsigned int matching_size_goal) {
-    if (arguments.timeout && double(clock() - start) / CLOCKS_PER_SEC > arguments.timeout) {
-        cout << "time out" << endl;
-        exit(0);
+void solve(const Graph &g0, const Graph &g1, vector<gtype> &V, vector<gtype> &lgrade,
+           vector<gtype> &rgrade, vector<vector<gtype>> &Q, vector<VtxPair> &incumbent,
+           vector<VtxPair> &current, vector<int> &g0_matched, vector<int> &g1_matched,
+           vector<Bidomain> &domains, vector<int> &left, vector<int> &right, unsigned int matching_size_goal) {
+//    if (arguments.timeout && double(clock() - start) / CLOCKS_PER_SEC > arguments.timeout) {
+//        cout << "time out" << endl;
+//        exit(0);
+//    }
+    if (abort_due_to_timeout) {
+        return;
     }
-    //  if (abort_due_to_timeout)
-    //     return;
     nodes++;
     //if (arguments.verbose) show(current, domains, left, right);
 
@@ -621,7 +622,7 @@ void solve(const Graph &g0, const Graph &g1, vector <gtype> &V, vector <gtype> &
         incumbent = current;
         calls_for_optimal = nodes;
         duration = std::chrono::steady_clock::now() - START;
-        if (!arguments.quiet) cout << "Incumbent size: " << incumbent.size() << endl;
+//        if (!arguments.quiet) cout << "Incumbent size: " << incumbent.size() << endl;
     }
 
     unsigned int bound = current.size() + calc_bound(domains);//计算相连和不相连同构数的最大可能加上当前已经同构的点数
@@ -717,7 +718,7 @@ void solve(const Graph &g0, const Graph &g1, vector <gtype> &V, vector <gtype> &
      cout<<endl;
 #endif
         unsigned int cur_len = current.size();
-        vector <Bidomain> new_domains;
+        vector<Bidomain> new_domains;
         switch (M) {
             case 1: {
                 new_domains = rewardfeed_RL(domains, bd_idx, current, left, right, lgrade, rgrade, g0, g1, v, w,
@@ -751,7 +752,7 @@ void solve(const Graph &g0, const Graph &g1, vector <gtype> &V, vector <gtype> &
           matching_size_goal);
 }
 
-vector <VtxPair> mcs(const Graph &g0, const Graph &g1) {
+vector<VtxPair> mcs(const Graph &g0, const Graph &g1) {
     vector<int> left;  // the buffer of vertex indices for the left partitions
     vector<int> right;  // the buffer of vertex indices for the right partitions
 
@@ -760,13 +761,13 @@ vector <VtxPair> mcs(const Graph &g0, const Graph &g1) {
     //*******
     Maxnum = 2 * std::min(g0.n, g1.n);
     //******
-    vector <gtype> lgrade(g0.n, 0);
-    vector <gtype> V(g0.n, 0);
-    vector <gtype> rgrade(g1.n, 0);
-    vector <vector<gtype>> Q(g0.n, vector<gtype>(g1.n, 0));
+    vector<gtype> lgrade(g0.n, 0);
+    vector<gtype> V(g0.n, 0);
+    vector<gtype> rgrade(g1.n, 0);
+    vector<vector<gtype>> Q(g0.n, vector<gtype>(g1.n, 0));
 
 
-    auto domains = vector < Bidomain > {};
+    auto domains = vector<Bidomain>{};
 
     std::set<unsigned int> left_labels;
     std::set<unsigned int> right_labels;
@@ -796,7 +797,7 @@ vector <VtxPair> mcs(const Graph &g0, const Graph &g1) {
         domains.push_back({start_l, start_r, left_len, right_len, false});
     }
 
-    vector <VtxPair> incumbent;
+    vector<VtxPair> incumbent;
 
     if (arguments.big_first) {
         for (int k = 0; k < g0.n; k++) {
@@ -804,7 +805,7 @@ vector <VtxPair> mcs(const Graph &g0, const Graph &g1) {
             auto left_copy = left;
             auto right_copy = right;
             auto domains_copy = domains;
-            vector <VtxPair> current;
+            vector<VtxPair> current;
             solve(g0, g1, V, lgrade, rgrade, Q, incumbent, current, g0_matched, g1_matched, domains_copy, left_copy,
                   right_copy, goal);
             if (incumbent.size() == goal || abort_due_to_timeout) break;
@@ -812,7 +813,7 @@ vector <VtxPair> mcs(const Graph &g0, const Graph &g1) {
         }
 
     } else {
-        vector <VtxPair> current;
+        vector<VtxPair> current;
         solve(g0, g1, V, lgrade, rgrade, Q, incumbent, current, g0_matched, g1_matched, domains, left, right, 1);
     }
 
@@ -874,32 +875,30 @@ int main(int argc, char **argv) {
     struct Graph g1 = readGraph(arguments.filename2, format, arguments.directed,
                                 arguments.edge_labelled, arguments.vertex_labelled);
 
-    //  std::thread timeout_thread;
-    //  std::mutex timeout_mutex;
+    std::thread timeout_thread;
+    std::mutex timeout_mutex;
     std::condition_variable timeout_cv;
     abort_due_to_timeout.store(false);
     bool aborted = false;
     START = std::chrono::steady_clock::now();
-#if 0
     if (0 != arguments.timeout) {
         timeout_thread = std::thread([&] {
-                auto abort_time = std::chrono::steady_clock::now() + std::chrono::seconds(arguments.timeout);
-                {
-                    /* Sleep until either we've reached the time limit,
-                     * or we've finished all the work. */
-                    std::unique_lock<std::mutex> guard(timeout_mutex);
-                    while (! abort_due_to_timeout.load()) {
-                        if (std::cv_status::timeout == timeout_cv.wait_until(guard, abort_time)) {
-                            /* We've woken up, and it's due to a timeout. */
-                            aborted = true;
-                            break;
-                        }
+            auto abort_time = std::chrono::steady_clock::now() + std::chrono::seconds(arguments.timeout);
+            {
+                /* Sleep until either we've reached the time limit,
+                 * or we've finished all the work. */
+                std::unique_lock<std::mutex> guard(timeout_mutex);
+                while (!abort_due_to_timeout.load()) {
+                    if (std::cv_status::timeout == timeout_cv.wait_until(guard, abort_time)) {
+                        /* We've woken up, and it's due to a timeout. */
+                        aborted = true;
+                        break;
                     }
                 }
-                abort_due_to_timeout.store(true);
-                });
+            }
+            abort_due_to_timeout.store(true);
+        });
     }
-#endif
     //  auto start = std::chrono::steady_clock::now();
     start = clock();
 
@@ -961,7 +960,7 @@ int main(int argc, char **argv) {
 
     pack_leaves(g0_sorted);
     pack_leaves(g1_sorted);
-    vector <VtxPair> solution = mcs(g0_sorted, g1_sorted);
+    vector<VtxPair> solution = mcs(g0_sorted, g1_sorted);
 
     // Convert to indices from original, unsorted graphs
     for (auto &vtx_pair: solution) {
@@ -975,7 +974,7 @@ int main(int argc, char **argv) {
 //    clock_t time_find = bestfind - start;
     /* Clean up the timeout thread */
     std::chrono::duration<double> time_elapsed = std::chrono::steady_clock::now() - START;
-#if 0
+
     if (timeout_thread.joinable()) {
         {
             std::unique_lock<std::mutex> guard(timeout_mutex);
@@ -984,7 +983,6 @@ int main(int argc, char **argv) {
         }
         timeout_thread.join();
     }
-#endif
 //    if (!check_sol(g0, g1, solution))
 //        fail("*** Error: Invalid solution\n");
 //
