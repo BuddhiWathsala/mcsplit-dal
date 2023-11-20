@@ -1,0 +1,7 @@
+data/images-PR15/patterns/pattern1, data/images-PR15/targets/target
+data/images-PR15/patterns/pattern14, data/images-PR15/targets/target
+data/images-PR15/patterns/pattern15, data/images-PR15/targets/target
+data/images-PR15/patterns/pattern24, data/images-PR15/targets/target
+data/images-PR15/patterns/pattern6, data/images-PR15/targets/target
+data/images-PR15/patterns/pattern7, data/images-PR15/targets/target
+data/images-PR15/patterns/pattern9, data/images-PR15/targets/target

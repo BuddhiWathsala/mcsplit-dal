@@ -1,0 +1,101 @@
+Pattern, Target, Solution size, Nodes, Cut branches, Conflicts, Elapsed time, Best time
+./data/scalefree/F.13/pattern, ./data/scalefree/F.13/target, 270, 921, 651, 377, 18, 13
+./data/scalefree/F.09/pattern, ./data/scalefree/F.09/target, 270, 1182, 912, 640, 20, 13
+./data/scalefree/F.19/pattern, ./data/scalefree/F.19/target, 270, 902, 632, 360, 16, 12
+./data/scalefree/F.01/pattern, ./data/scalefree/F.01/target, 270, 848, 578, 307, 16, 12
+./data/scalefree/F.06/pattern, ./data/scalefree/F.06/target, 270, 881, 611, 340, 16, 12
+./data/scalefree/F.08/pattern, ./data/scalefree/F.08/target, 270, 878, 608, 334, 16, 12
+./data/scalefree/F.16/pattern, ./data/scalefree/F.16/target, 270, 907, 637, 366, 17, 12
+./data/scalefree/F.05/pattern, ./data/scalefree/F.05/target, 270, 895, 625, 350, 16, 12
+./data/scalefree/E.10/pattern, ./data/scalefree/E.10/target, 270, 846, 576, 304, 16, 12
+./data/scalefree/F.03/pattern, ./data/scalefree/F.03/target, 270, 852, 582, 311, 17, 13
+./data/scalefree/F.12/pattern, ./data/scalefree/F.12/target, 270, 916, 646, 375, 17, 13
+./data/scalefree/F.15/pattern, ./data/scalefree/F.15/target, 270, 868, 598, 327, 17, 13
+./data/scalefree/F.02/pattern, ./data/scalefree/F.02/target, 270, 848, 578, 306, 16, 12
+./data/scalefree/E.03/pattern, ./data/scalefree/E.03/target, time out
+./data/scalefree/E.06/pattern, ./data/scalefree/E.06/target, time out
+./data/scalefree/B.06/pattern, ./data/scalefree/B.06/target, time out
+./data/scalefree/B.19/pattern, ./data/scalefree/B.19/target, time out
+./data/scalefree/C.05/pattern, ./data/scalefree/C.05/target, time out
+./data/scalefree/C.10/pattern, ./data/scalefree/C.10/target, time out
+./data/scalefree/A.11/pattern, ./data/scalefree/A.11/target, time out
+./data/scalefree/B.17/pattern, ./data/scalefree/B.17/target, time out
+./data/scalefree/B.14/pattern, ./data/scalefree/B.14/target, time out
+./data/scalefree/C.07/pattern, ./data/scalefree/C.07/target, time out
+./data/scalefree/B.09/pattern, ./data/scalefree/B.09/target, time out
+./data/scalefree/C.04/pattern, ./data/scalefree/C.04/target, time out
+./data/scalefree/A.20/pattern, ./data/scalefree/A.20/target, time out
+./data/scalefree/C.11/pattern, ./data/scalefree/C.11/target, time out
+./data/scalefree/C.12/pattern, ./data/scalefree/C.12/target, time out
+./data/scalefree/E.13/pattern, ./data/scalefree/E.13/target, time out
+./data/scalefree/B.02/pattern, ./data/scalefree/B.02/target, time out
+./data/scalefree/A.13/pattern, ./data/scalefree/A.13/target, time out
+./data/scalefree/E.05/pattern, ./data/scalefree/E.05/target, time out
+./data/scalefree/B.20/pattern, ./data/scalefree/B.20/target, time out
+./data/scalefree/E.15/pattern, ./data/scalefree/E.15/target, time out
+./data/scalefree/A.03/pattern, ./data/scalefree/A.03/target, time out
+./data/scalefree/C.02/pattern, ./data/scalefree/C.02/target, time out
+./data/scalefree/E.14/pattern, ./data/scalefree/E.14/target, time out
+./data/scalefree/B.01/pattern, ./data/scalefree/B.01/target, time out
+./data/scalefree/B.10/pattern, ./data/scalefree/B.10/target, time out
+./data/scalefree/A.14/pattern, ./data/scalefree/A.14/target, time out
+./data/scalefree/F.11/pattern, ./data/scalefree/F.11/target, time out
+./data/scalefree/A.04/pattern, ./data/scalefree/A.04/target, time out
+./data/scalefree/A.10/pattern, ./data/scalefree/A.10/target, time out
+./data/scalefree/A.12/pattern, ./data/scalefree/A.12/target, time out
+./data/scalefree/B.16/pattern, ./data/scalefree/B.16/target, time out
+./data/scalefree/A.06/pattern, ./data/scalefree/A.06/target, time out
+./data/scalefree/A.17/pattern, ./data/scalefree/A.17/target, time out
+./data/scalefree/A.02/pattern, ./data/scalefree/A.02/target, time out
+./data/scalefree/C.01/pattern, ./data/scalefree/C.01/target, time out
+./data/scalefree/E.16/pattern, ./data/scalefree/E.16/target, time out
+./data/scalefree/E.04/pattern, ./data/scalefree/E.04/target, time out
+./data/scalefree/A.01/pattern, ./data/scalefree/A.01/target, time out
+./data/scalefree/C.20/pattern, ./data/scalefree/C.20/target, time out
+./data/scalefree/B.12/pattern, ./data/scalefree/B.12/target, time out
+./data/scalefree/E.09/pattern, ./data/scalefree/E.09/target, time out
+./data/scalefree/E.08/pattern, ./data/scalefree/E.08/target, time out
+./data/scalefree/B.13/pattern, ./data/scalefree/B.13/target, time out
+./data/scalefree/C.09/pattern, ./data/scalefree/C.09/target, time out
+./data/scalefree/C.13/pattern, ./data/scalefree/C.13/target, time out
+./data/scalefree/F.18/pattern, ./data/scalefree/F.18/target, time out
+./data/scalefree/B.04/pattern, ./data/scalefree/B.04/target, time out
+./data/scalefree/F.10/pattern, ./data/scalefree/F.10/target, time out
+./data/scalefree/C.17/pattern, ./data/scalefree/C.17/target, time out
+./data/scalefree/C.15/pattern, ./data/scalefree/C.15/target, time out
+./data/scalefree/E.02/pattern, ./data/scalefree/E.02/target, time out
+./data/scalefree/C.03/pattern, ./data/scalefree/C.03/target, time out
+./data/scalefree/F.14/pattern, ./data/scalefree/F.14/target, time out
+./data/scalefree/C.19/pattern, ./data/scalefree/C.19/target, time out
+./data/scalefree/E.20/pattern, ./data/scalefree/E.20/target, time out
+./data/scalefree/C.16/pattern, ./data/scalefree/C.16/target, time out
+./data/scalefree/F.17/pattern, ./data/scalefree/F.17/target, time out
+./data/scalefree/A.16/pattern, ./data/scalefree/A.16/target, time out
+./data/scalefree/C.08/pattern, ./data/scalefree/C.08/target, time out
+./data/scalefree/C.18/pattern, ./data/scalefree/C.18/target, time out
+./data/scalefree/E.01/pattern, ./data/scalefree/E.01/target, time out
+./data/scalefree/F.04/pattern, ./data/scalefree/F.04/target, time out
+./data/scalefree/A.07/pattern, ./data/scalefree/A.07/target, time out
+./data/scalefree/A.18/pattern, ./data/scalefree/A.18/target, time out
+./data/scalefree/C.06/pattern, ./data/scalefree/C.06/target, time out
+./data/scalefree/E.17/pattern, ./data/scalefree/E.17/target, time out
+./data/scalefree/F.20/pattern, ./data/scalefree/F.20/target, time out
+./data/scalefree/B.07/pattern, ./data/scalefree/B.07/target, time out
+./data/scalefree/A.05/pattern, ./data/scalefree/A.05/target, time out
+./data/scalefree/F.07/pattern, ./data/scalefree/F.07/target, time out
+./data/scalefree/E.12/pattern, ./data/scalefree/E.12/target, time out
+./data/scalefree/B.03/pattern, ./data/scalefree/B.03/target, time out
+./data/scalefree/A.09/pattern, ./data/scalefree/A.09/target, time out
+./data/scalefree/A.15/pattern, ./data/scalefree/A.15/target, time out
+./data/scalefree/E.11/pattern, ./data/scalefree/E.11/target, time out
+./data/scalefree/E.19/pattern, ./data/scalefree/E.19/target, time out
+./data/scalefree/B.11/pattern, ./data/scalefree/B.11/target, time out
+./data/scalefree/A.08/pattern, ./data/scalefree/A.08/target, time out
+./data/scalefree/E.18/pattern, ./data/scalefree/E.18/target, time out
+./data/scalefree/E.07/pattern, ./data/scalefree/E.07/target, time out
+./data/scalefree/B.08/pattern, ./data/scalefree/B.08/target, time out
+./data/scalefree/A.19/pattern, ./data/scalefree/A.19/target, time out
+./data/scalefree/B.15/pattern, ./data/scalefree/B.15/target, time out
+./data/scalefree/B.18/pattern, ./data/scalefree/B.18/target, time out
+./data/scalefree/B.05/pattern, ./data/scalefree/B.05/target, time out
+./data/scalefree/C.14/pattern, ./data/scalefree/C.14/target, time out

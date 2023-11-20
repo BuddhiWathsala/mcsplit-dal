@@ -1,0 +1,25 @@
+Pattern, Target, Solution size, Nodes, Cut branches, Conflicts, Elapsed time, Best time
+data/images-PR15/patterns/pattern1, data/images-PR15/targets/target, time out
+data/images-PR15/patterns/pattern10, data/images-PR15/targets/target, 9, 4873, 4857, 558, 594, 414
+data/images-PR15/patterns/pattern11, data/images-PR15/targets/target, 5, 4851, 4843, 554, 579, 404
+data/images-PR15/patterns/pattern12, data/images-PR15/targets/target, 7, 6587, 5986, 1250, 619, 441
+data/images-PR15/patterns/pattern13, data/images-PR15/targets/target, 63, 310917, 244147, 88685, 8004, 7791
+data/images-PR15/patterns/pattern14, data/images-PR15/targets/target, time out
+data/images-PR15/patterns/pattern15, data/images-PR15/targets/target, time out
+data/images-PR15/patterns/pattern16, data/images-PR15/targets/target, 4, 4845, 4840, 4, 573, 399
+data/images-PR15/patterns/pattern17, data/images-PR15/targets/target, 6, 5204, 5075, 696, 577, 403
+data/images-PR15/patterns/pattern18, data/images-PR15/targets/target, 15, 34543, 25217, 9511, 1019, 871
+data/images-PR15/patterns/pattern19, data/images-PR15/targets/target, 7, 4894, 4870, 565, 580, 406
+data/images-PR15/patterns/pattern2, data/images-PR15/targets/target, 15, 45439, 29695, 11454, 1001, 883
+data/images-PR15/patterns/pattern20, data/images-PR15/targets/target, 8, 5091, 4992, 623, 575, 400
+data/images-PR15/patterns/pattern21, data/images-PR15/targets/target, 16, 20523, 14678, 10357, 748, 573
+data/images-PR15/patterns/pattern22, data/images-PR15/targets/target, 11, 4957, 4910, 582, 575, 399
+data/images-PR15/patterns/pattern23, data/images-PR15/targets/target, 5, 16271, 12725, 5841, 646, 506
+data/images-PR15/patterns/pattern24, data/images-PR15/targets/target, time out
+data/images-PR15/patterns/pattern3, data/images-PR15/targets/target, 10, 7373, 6436, 5445, 602, 428
+data/images-PR15/patterns/pattern4, data/images-PR15/targets/target, 8, 4977, 4922, 36, 574, 398
+data/images-PR15/patterns/pattern5, data/images-PR15/targets/target, 18, 140940, 89523, 45778, 2137, 1950
+data/images-PR15/patterns/pattern6, data/images-PR15/targets/target, time out
+data/images-PR15/patterns/pattern7, data/images-PR15/targets/target, time out
+data/images-PR15/patterns/pattern8, data/images-PR15/targets/target, 6, 4882, 4862, 564, 574, 399
+data/images-PR15/patterns/pattern9, data/images-PR15/targets/target, time out

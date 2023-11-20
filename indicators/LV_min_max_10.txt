@@ -1,0 +1,2353 @@
+Pattern, Target, Solution size, Nodes, Cut branches, Conflicts, Elapsed time, Best time
+data/LV/patterns/g10, data/LV/targets/g10, 41, 129, 89, 49, 0, 0
+data/LV/patterns/g10, data/LV/targets/g13, time out
+data/LV/patterns/g10, data/LV/targets/g16, time out
+data/LV/patterns/g10, data/LV/targets/g14, time out
+data/LV/patterns/g10, data/LV/targets/g12, time out
+data/LV/patterns/g10, data/LV/targets/g11, time out
+data/LV/patterns/g10, data/LV/targets/g19, time out
+data/LV/patterns/g10, data/LV/targets/g18, time out
+data/LV/patterns/g10, data/LV/targets/g17, time out
+data/LV/patterns/g10, data/LV/targets/g20, time out
+data/LV/patterns/g10, data/LV/targets/g15, time out
+data/LV/patterns/g10, data/LV/targets/g3, 8, 40186, 24663, 18415, 27, 23
+data/LV/patterns/g10, data/LV/targets/g21, 6, 1341072, 1116323, 1099427, 1067, 1
+data/LV/patterns/g10, data/LV/targets/g25, time out
+data/LV/patterns/g10, data/LV/targets/g24, time out
+data/LV/patterns/g10, data/LV/targets/g23, time out
+data/LV/patterns/g10, data/LV/targets/g28, time out
+data/LV/patterns/g10, data/LV/targets/g29, time out
+data/LV/patterns/g10, data/LV/targets/g26, time out
+data/LV/patterns/g10, data/LV/targets/g27, time out
+data/LV/patterns/g10, data/LV/targets/g22, time out
+data/LV/patterns/g10, data/LV/targets/g32, 3, 1333541, 1320105, 1320104, 3300, 0
+data/LV/patterns/g10, data/LV/targets/g39, time out
+data/LV/patterns/g10, data/LV/targets/g31, time out
+data/LV/patterns/g10, data/LV/targets/g33, time out
+data/LV/patterns/g10, data/LV/targets/g38, time out
+data/LV/patterns/g10, data/LV/targets/g35, time out
+data/LV/patterns/g10, data/LV/targets/g30, time out
+data/LV/patterns/g10, data/LV/targets/g36, time out
+data/LV/patterns/g10, data/LV/targets/g37, time out
+data/LV/patterns/g10, data/LV/targets/g34, time out
+data/LV/patterns/g10, data/LV/targets/g4, 3, 4391, 3945, 3934, 2, 0
+data/LV/patterns/g10, data/LV/targets/g47, time out
+data/LV/patterns/g10, data/LV/targets/g45, time out
+data/LV/patterns/g10, data/LV/targets/g40, time out
+data/LV/patterns/g10, data/LV/targets/g43, time out
+data/LV/patterns/g10, data/LV/targets/g46, time out
+data/LV/patterns/g10, data/LV/targets/g44, time out
+data/LV/patterns/g10, data/LV/targets/g48, time out
+data/LV/patterns/g10, data/LV/targets/g42, time out
+data/LV/patterns/g10, data/LV/targets/g41, time out
+data/LV/patterns/g10, data/LV/targets/g5, 10, 6398, 4948, 4361, 3, 2
+data/LV/patterns/g10, data/LV/targets/g7, 10, 23708, 21490, 21374, 17, 1
+data/LV/patterns/g10, data/LV/targets/g6, 17, 63412, 43548, 30768, 48, 2
+data/LV/patterns/g10, data/LV/targets/g8, time out
+data/LV/patterns/g11, data/LV/targets/g10, time out
+data/LV/patterns/g10, data/LV/targets/g50, time out
+data/LV/patterns/g10, data/LV/targets/g9, time out
+data/LV/patterns/g10, data/LV/targets/g49, time out
+data/LV/patterns/g11, data/LV/targets/g11, 42, 141, 100, 58, 0, 0
+data/LV/patterns/g11, data/LV/targets/g15, time out
+data/LV/patterns/g11, data/LV/targets/g20, time out
+data/LV/patterns/g11, data/LV/targets/g13, time out
+data/LV/patterns/g11, data/LV/targets/g18, time out
+data/LV/patterns/g11, data/LV/targets/g14, time out
+data/LV/patterns/g11, data/LV/targets/g17, time out
+data/LV/patterns/g11, data/LV/targets/g16, time out
+data/LV/patterns/g11, data/LV/targets/g19, time out
+data/LV/patterns/g11, data/LV/targets/g12, time out
+data/LV/patterns/g11, data/LV/targets/g3, 7, 403083, 234979, 173945, 331, 0
+data/LV/patterns/g11, data/LV/targets/g21, time out
+data/LV/patterns/g11, data/LV/targets/g25, time out
+data/LV/patterns/g11, data/LV/targets/g22, time out
+data/LV/patterns/g11, data/LV/targets/g28, time out
+data/LV/patterns/g11, data/LV/targets/g26, time out
+data/LV/patterns/g11, data/LV/targets/g29, time out
+data/LV/patterns/g11, data/LV/targets/g23, time out
+data/LV/patterns/g11, data/LV/targets/g24, time out
+data/LV/patterns/g11, data/LV/targets/g27, time out
+data/LV/patterns/g11, data/LV/targets/g32, 2, 794041, 786101, 786100, 3435, 0
+data/LV/patterns/g11, data/LV/targets/g31, time out
+data/LV/patterns/g11, data/LV/targets/g36, time out
+data/LV/patterns/g11, data/LV/targets/g30, time out
+data/LV/patterns/g11, data/LV/targets/g35, time out
+data/LV/patterns/g11, data/LV/targets/g37, time out
+data/LV/patterns/g11, data/LV/targets/g33, time out
+data/LV/patterns/g11, data/LV/targets/g38, time out
+data/LV/patterns/g11, data/LV/targets/g39, time out
+data/LV/patterns/g11, data/LV/targets/g34, time out
+data/LV/patterns/g11, data/LV/targets/g4, 2, 8341, 7511, 7500, 4, 0
+data/LV/patterns/g11, data/LV/targets/g40, time out
+data/LV/patterns/g11, data/LV/targets/g42, time out
+data/LV/patterns/g11, data/LV/targets/g41, time out
+data/LV/patterns/g11, data/LV/targets/g43, time out
+data/LV/patterns/g11, data/LV/targets/g46, time out
+data/LV/patterns/g11, data/LV/targets/g44, time out
+data/LV/patterns/g11, data/LV/targets/g47, time out
+data/LV/patterns/g11, data/LV/targets/g48, time out
+data/LV/patterns/g11, data/LV/targets/g45, time out
+data/LV/patterns/g11, data/LV/targets/g5, 10, 33528, 26152, 24191, 16, 14
+data/LV/patterns/g11, data/LV/targets/g7, 11, 80578, 72490, 72143, 59, 0
+data/LV/patterns/g11, data/LV/targets/g8, time out
+data/LV/patterns/g11, data/LV/targets/g49, time out
+data/LV/patterns/g11, data/LV/targets/g6, time out
+data/LV/patterns/g11, data/LV/targets/g9, time out
+data/LV/patterns/g12, data/LV/targets/g10, time out
+data/LV/patterns/g11, data/LV/targets/g50, time out
+data/LV/patterns/g12, data/LV/targets/g12, 48, 189, 142, 81, 0, 0
+data/LV/patterns/g12, data/LV/targets/g11, time out
+data/LV/patterns/g12, data/LV/targets/g16, time out
+data/LV/patterns/g12, data/LV/targets/g19, time out
+data/LV/patterns/g12, data/LV/targets/g17, time out
+data/LV/patterns/g12, data/LV/targets/g13, time out
+data/LV/patterns/g12, data/LV/targets/g15, time out
+data/LV/patterns/g12, data/LV/targets/g14, time out
+data/LV/patterns/g12, data/LV/targets/g18, time out
+data/LV/patterns/g12, data/LV/targets/g20, time out
+data/LV/patterns/g12, data/LV/targets/g3, 7, 857951, 505337, 397406, 1328, 0
+data/LV/patterns/g12, data/LV/targets/g23, time out
+data/LV/patterns/g12, data/LV/targets/g22, time out
+data/LV/patterns/g12, data/LV/targets/g27, time out
+data/LV/patterns/g12, data/LV/targets/g24, time out
+data/LV/patterns/g12, data/LV/targets/g28, time out
+data/LV/patterns/g12, data/LV/targets/g29, time out
+data/LV/patterns/g12, data/LV/targets/g26, time out
+data/LV/patterns/g12, data/LV/targets/g25, time out
+data/LV/patterns/g12, data/LV/targets/g21, time out
+data/LV/patterns/g12, data/LV/targets/g32, 2, 1784647, 1766801, 1766800, 4442, 0
+data/LV/patterns/g12, data/LV/targets/g31, time out
+data/LV/patterns/g12, data/LV/targets/g36, time out
+data/LV/patterns/g12, data/LV/targets/g34, time out
+data/LV/patterns/g12, data/LV/targets/g35, time out
+data/LV/patterns/g12, data/LV/targets/g30, time out
+data/LV/patterns/g12, data/LV/targets/g33, time out
+data/LV/patterns/g12, data/LV/targets/g37, time out
+data/LV/patterns/g12, data/LV/targets/g39, time out
+data/LV/patterns/g12, data/LV/targets/g38, time out
+data/LV/patterns/g12, data/LV/targets/g4, 2, 18407, 16571, 16460, 11, 0
+data/LV/patterns/g12, data/LV/targets/g41, time out
+data/LV/patterns/g12, data/LV/targets/g43, time out
+data/LV/patterns/g12, data/LV/targets/g47, time out
+data/LV/patterns/g12, data/LV/targets/g48, time out
+data/LV/patterns/g12, data/LV/targets/g45, time out
+data/LV/patterns/g12, data/LV/targets/g44, time out
+data/LV/patterns/g12, data/LV/targets/g42, time out
+data/LV/patterns/g12, data/LV/targets/g46, time out
+data/LV/patterns/g12, data/LV/targets/g40, time out
+data/LV/patterns/g12, data/LV/targets/g7, 18, 1360290, 1195458, 1100093, 1316, 2
+data/LV/patterns/g12, data/LV/targets/g5, 9, 1969684, 1485042, 1439033, 1319, 1241
+data/LV/patterns/g12, data/LV/targets/g49, time out
+data/LV/patterns/g12, data/LV/targets/g50, time out
+data/LV/patterns/g12, data/LV/targets/g8, time out
+data/LV/patterns/g13, data/LV/targets/g10, time out
+data/LV/patterns/g12, data/LV/targets/g6, time out
+data/LV/patterns/g12, data/LV/targets/g9, time out
+data/LV/patterns/g13, data/LV/targets/g13, 49, 216, 169, 74, 0, 0
+data/LV/patterns/g13, data/LV/targets/g15, time out
+data/LV/patterns/g13, data/LV/targets/g12, time out
+data/LV/patterns/g13, data/LV/targets/g20, time out
+data/LV/patterns/g13, data/LV/targets/g18, time out
+data/LV/patterns/g13, data/LV/targets/g11, time out
+data/LV/patterns/g13, data/LV/targets/g19, time out
+data/LV/patterns/g13, data/LV/targets/g16, time out
+data/LV/patterns/g13, data/LV/targets/g14, time out
+data/LV/patterns/g13, data/LV/targets/g17, time out
+data/LV/patterns/g13, data/LV/targets/g3, 8, 37707, 24904, 21497, 42, 33
+data/LV/patterns/g13, data/LV/targets/g24, 40, 763676, 736654, 713452, 1298, 856
+data/LV/patterns/g13, data/LV/targets/g21, 10, 3219667, 2600777, 2473630, 4748, 5
+data/LV/patterns/g13, data/LV/targets/g22, time out
+data/LV/patterns/g13, data/LV/targets/g29, time out
+data/LV/patterns/g13, data/LV/targets/g25, time out
+data/LV/patterns/g13, data/LV/targets/g23, time out
+data/LV/patterns/g13, data/LV/targets/g28, time out
+data/LV/patterns/g13, data/LV/targets/g26, time out
+data/LV/patterns/g13, data/LV/targets/g27, time out
+data/LV/patterns/g13, data/LV/targets/g31, time out
+data/LV/patterns/g13, data/LV/targets/g30, time out
+data/LV/patterns/g13, data/LV/targets/g36, time out
+data/LV/patterns/g13, data/LV/targets/g38, time out
+data/LV/patterns/g13, data/LV/targets/g37, time out
+data/LV/patterns/g13, data/LV/targets/g32, time out
+data/LV/patterns/g13, data/LV/targets/g35, time out
+data/LV/patterns/g13, data/LV/targets/g33, time out
+data/LV/patterns/g13, data/LV/targets/g39, time out
+data/LV/patterns/g13, data/LV/targets/g34, time out
+data/LV/patterns/g13, data/LV/targets/g4, 9, 7198, 6437, 6089, 7, 0
+data/LV/patterns/g13, data/LV/targets/g40, time out
+data/LV/patterns/g13, data/LV/targets/g45, time out
+data/LV/patterns/g13, data/LV/targets/g43, time out
+data/LV/patterns/g13, data/LV/targets/g44, time out
+data/LV/patterns/g13, data/LV/targets/g42, time out
+data/LV/patterns/g13, data/LV/targets/g48, time out
+data/LV/patterns/g13, data/LV/targets/g47, time out
+data/LV/patterns/g13, data/LV/targets/g41, time out
+data/LV/patterns/g13, data/LV/targets/g46, time out
+data/LV/patterns/g13, data/LV/targets/g5, 9, 36154, 19885, 14989, 22, 0
+data/LV/patterns/g13, data/LV/targets/g7, 10, 336267, 300764, 285726, 247, 9
+data/LV/patterns/g13, data/LV/targets/g6, 17, 10098279, 8465006, 7604366, 8111, 7834
+data/LV/patterns/g13, data/LV/targets/g8, time out
+data/LV/patterns/g13, data/LV/targets/g49, time out
+data/LV/patterns/g13, data/LV/targets/g9, time out
+data/LV/patterns/g13, data/LV/targets/g50, time out
+data/LV/patterns/g14, data/LV/targets/g10, time out
+data/LV/patterns/g14, data/LV/targets/g14, 50, 197, 154, 86, 0, 0
+data/LV/patterns/g14, data/LV/targets/g12, time out
+data/LV/patterns/g14, data/LV/targets/g20, time out
+data/LV/patterns/g14, data/LV/targets/g16, time out
+data/LV/patterns/g14, data/LV/targets/g18, time out
+data/LV/patterns/g14, data/LV/targets/g11, time out
+data/LV/patterns/g14, data/LV/targets/g13, time out
+data/LV/patterns/g14, data/LV/targets/g17, time out
+data/LV/patterns/g14, data/LV/targets/g15, time out
+data/LV/patterns/g14, data/LV/targets/g19, time out
+data/LV/patterns/g14, data/LV/targets/g3, 7, 122282, 77434, 59995, 152, 0
+data/LV/patterns/g14, data/LV/targets/g21, 10, 788220, 682141, 671738, 1211, 228
+data/LV/patterns/g14, data/LV/targets/g25, time out
+data/LV/patterns/g14, data/LV/targets/g22, time out
+data/LV/patterns/g14, data/LV/targets/g23, time out
+data/LV/patterns/g14, data/LV/targets/g29, time out
+data/LV/patterns/g14, data/LV/targets/g26, time out
+data/LV/patterns/g14, data/LV/targets/g24, time out
+data/LV/patterns/g14, data/LV/targets/g27, time out
+data/LV/patterns/g14, data/LV/targets/g28, time out
+data/LV/patterns/g14, data/LV/targets/g32, 8, 321845, 318612, 317748, 1464, 847
+data/LV/patterns/g14, data/LV/targets/g35, time out
+data/LV/patterns/g14, data/LV/targets/g33, time out
+data/LV/patterns/g14, data/LV/targets/g34, time out
+data/LV/patterns/g14, data/LV/targets/g31, time out
+data/LV/patterns/g14, data/LV/targets/g37, time out
+data/LV/patterns/g14, data/LV/targets/g38, time out
+data/LV/patterns/g14, data/LV/targets/g36, time out
+data/LV/patterns/g14, data/LV/targets/g39, time out
+data/LV/patterns/g14, data/LV/targets/g30, time out
+data/LV/patterns/g14, data/LV/targets/g4, 8, 3374, 3024, 2934, 3, 1
+data/LV/patterns/g14, data/LV/targets/g40, time out
+data/LV/patterns/g14, data/LV/targets/g42, time out
+data/LV/patterns/g14, data/LV/targets/g44, time out
+data/LV/patterns/g14, data/LV/targets/g47, time out
+data/LV/patterns/g14, data/LV/targets/g48, time out
+data/LV/patterns/g14, data/LV/targets/g43, time out
+data/LV/patterns/g14, data/LV/targets/g41, time out
+data/LV/patterns/g14, data/LV/targets/g46, time out
+data/LV/patterns/g14, data/LV/targets/g45, time out
+data/LV/patterns/g14, data/LV/targets/g5, 9, 26463, 15388, 10014, 16, 4
+data/LV/patterns/g14, data/LV/targets/g7, 10, 265293, 236585, 225313, 188, 28
+data/LV/patterns/g14, data/LV/targets/g6, time out
+data/LV/patterns/g14, data/LV/targets/g50, time out
+data/LV/patterns/g14, data/LV/targets/g9, time out
+data/LV/patterns/g15, data/LV/targets/g10, time out
+data/LV/patterns/g14, data/LV/targets/g8, time out
+data/LV/patterns/g14, data/LV/targets/g49, time out
+data/LV/patterns/g15, data/LV/targets/g15, 50, 205, 158, 72, 0, 0
+data/LV/patterns/g15, data/LV/targets/g14, time out
+data/LV/patterns/g15, data/LV/targets/g16, time out
+data/LV/patterns/g15, data/LV/targets/g20, time out
+data/LV/patterns/g15, data/LV/targets/g17, time out
+data/LV/patterns/g15, data/LV/targets/g18, time out
+data/LV/patterns/g15, data/LV/targets/g12, time out
+data/LV/patterns/g15, data/LV/targets/g19, time out
+data/LV/patterns/g15, data/LV/targets/g11, time out
+data/LV/patterns/g15, data/LV/targets/g13, time out
+data/LV/patterns/g15, data/LV/targets/g3, 8, 40754, 26542, 21107, 46, 38
+data/LV/patterns/g15, data/LV/targets/g21, 11, 1481642, 1212193, 1145474, 2351, 0
+data/LV/patterns/g15, data/LV/targets/g24, time out
+data/LV/patterns/g15, data/LV/targets/g23, time out
+data/LV/patterns/g15, data/LV/targets/g28, time out
+data/LV/patterns/g15, data/LV/targets/g27, time out
+data/LV/patterns/g15, data/LV/targets/g22, time out
+data/LV/patterns/g15, data/LV/targets/g25, time out
+data/LV/patterns/g15, data/LV/targets/g29, time out
+data/LV/patterns/g15, data/LV/targets/g26, time out
+data/LV/patterns/g15, data/LV/targets/g32, 10, 2333137, 2309598, 2307669, 9435, 35
+data/LV/patterns/g15, data/LV/targets/g31, time out
+data/LV/patterns/g15, data/LV/targets/g37, time out
+data/LV/patterns/g15, data/LV/targets/g38, time out
+data/LV/patterns/g15, data/LV/targets/g30, time out
+data/LV/patterns/g15, data/LV/targets/g36, time out
+data/LV/patterns/g15, data/LV/targets/g35, time out
+data/LV/patterns/g15, data/LV/targets/g33, time out
+data/LV/patterns/g15, data/LV/targets/g39, time out
+data/LV/patterns/g15, data/LV/targets/g34, time out
+data/LV/patterns/g15, data/LV/targets/g4, 10, 216, 187, 120, 0, 0
+data/LV/patterns/g15, data/LV/targets/g44, time out
+data/LV/patterns/g15, data/LV/targets/g40, time out
+data/LV/patterns/g15, data/LV/targets/g46, time out
+data/LV/patterns/g15, data/LV/targets/g47, time out
+data/LV/patterns/g15, data/LV/targets/g42, time out
+data/LV/patterns/g15, data/LV/targets/g48, time out
+data/LV/patterns/g15, data/LV/targets/g45, time out
+data/LV/patterns/g15, data/LV/targets/g43, time out
+data/LV/patterns/g15, data/LV/targets/g41, time out
+data/LV/patterns/g15, data/LV/targets/g5, 9, 52452, 28733, 21001, 33, 0
+data/LV/patterns/g15, data/LV/targets/g7, 10, 535599, 478673, 464309, 409, 46
+data/LV/patterns/g15, data/LV/targets/g6, 17, 609140, 427416, 356467, 541, 112
+data/LV/patterns/g15, data/LV/targets/g9, time out
+data/LV/patterns/g15, data/LV/targets/g50, time out
+data/LV/patterns/g15, data/LV/targets/g8, time out
+data/LV/patterns/g16, data/LV/targets/g10, time out
+data/LV/patterns/g15, data/LV/targets/g49, time out
+data/LV/patterns/g16, data/LV/targets/g16, 53, 169, 117, 63, 0, 0
+data/LV/patterns/g16, data/LV/targets/g12, time out
+data/LV/patterns/g16, data/LV/targets/g15, time out
+data/LV/patterns/g16, data/LV/targets/g20, time out
+data/LV/patterns/g16, data/LV/targets/g18, time out
+data/LV/patterns/g16, data/LV/targets/g13, time out
+data/LV/patterns/g16, data/LV/targets/g11, time out
+data/LV/patterns/g16, data/LV/targets/g14, time out
+data/LV/patterns/g16, data/LV/targets/g19, time out
+data/LV/patterns/g16, data/LV/targets/g17, time out
+data/LV/patterns/g16, data/LV/targets/g3, 8, 150469, 93163, 66862, 232, 0
+data/LV/patterns/g16, data/LV/targets/g21, 9, 2888766, 2360491, 2318350, 3686, 2060
+data/LV/patterns/g16, data/LV/targets/g26, time out
+data/LV/patterns/g16, data/LV/targets/g29, time out
+data/LV/patterns/g16, data/LV/targets/g23, time out
+data/LV/patterns/g16, data/LV/targets/g25, time out
+data/LV/patterns/g16, data/LV/targets/g28, time out
+data/LV/patterns/g16, data/LV/targets/g22, time out
+data/LV/patterns/g16, data/LV/targets/g24, time out
+data/LV/patterns/g16, data/LV/targets/g27, time out
+data/LV/patterns/g16, data/LV/targets/g32, 6, 414039, 409891, 408623, 1826, 644
+data/LV/patterns/g16, data/LV/targets/g34, time out
+data/LV/patterns/g16, data/LV/targets/g30, time out
+data/LV/patterns/g16, data/LV/targets/g35, time out
+data/LV/patterns/g16, data/LV/targets/g37, time out
+data/LV/patterns/g16, data/LV/targets/g38, time out
+data/LV/patterns/g16, data/LV/targets/g36, time out
+data/LV/patterns/g16, data/LV/targets/g39, time out
+data/LV/patterns/g16, data/LV/targets/g31, time out
+data/LV/patterns/g16, data/LV/targets/g33, time out
+data/LV/patterns/g16, data/LV/targets/g4, 6, 4377, 3937, 3827, 4, 1
+data/LV/patterns/g16, data/LV/targets/g41, time out
+data/LV/patterns/g16, data/LV/targets/g48, time out
+data/LV/patterns/g16, data/LV/targets/g46, time out
+data/LV/patterns/g16, data/LV/targets/g40, time out
+data/LV/patterns/g16, data/LV/targets/g44, time out
+data/LV/patterns/g16, data/LV/targets/g43, time out
+data/LV/patterns/g16, data/LV/targets/g47, time out
+data/LV/patterns/g16, data/LV/targets/g42, time out
+data/LV/patterns/g16, data/LV/targets/g45, time out
+data/LV/patterns/g16, data/LV/targets/g5, 10, 8769, 5639, 3651, 6, 0
+data/LV/patterns/g16, data/LV/targets/g6, 18, 36398, 23962, 16763, 30, 18
+data/LV/patterns/g16, data/LV/targets/g7, 10, 154144, 138805, 138565, 119, 13
+data/LV/patterns/g16, data/LV/targets/g8, 30, 7938628, 5193200, 3799598, 7343, 7343
+data/LV/patterns/g16, data/LV/targets/g9, time out
+data/LV/patterns/g16, data/LV/targets/g50, time out
+data/LV/patterns/g16, data/LV/targets/g49, time out
+data/LV/patterns/g17, data/LV/targets/g10, time out
+data/LV/patterns/g17, data/LV/targets/g17, 64, 198, 134, 33, 0, 0
+data/LV/patterns/g17, data/LV/targets/g12, time out
+data/LV/patterns/g17, data/LV/targets/g15, time out
+data/LV/patterns/g17, data/LV/targets/g13, time out
+data/LV/patterns/g17, data/LV/targets/g20, time out
+data/LV/patterns/g17, data/LV/targets/g19, time out
+data/LV/patterns/g17, data/LV/targets/g14, time out
+data/LV/patterns/g17, data/LV/targets/g18, time out
+data/LV/patterns/g17, data/LV/targets/g11, time out
+data/LV/patterns/g17, data/LV/targets/g16, time out
+data/LV/patterns/g17, data/LV/targets/g3, 7, 63669, 38632, 24721, 88, 0
+data/LV/patterns/g17, data/LV/targets/g21, 4, 7130407, 5533718, 5294583, 6238, 0
+data/LV/patterns/g17, data/LV/targets/g27, time out
+data/LV/patterns/g17, data/LV/targets/g28, time out
+data/LV/patterns/g17, data/LV/targets/g26, time out
+data/LV/patterns/g17, data/LV/targets/g29, time out
+data/LV/patterns/g17, data/LV/targets/g23, time out
+data/LV/patterns/g17, data/LV/targets/g24, time out
+data/LV/patterns/g17, data/LV/targets/g25, time out
+data/LV/patterns/g17, data/LV/targets/g22, time out
+data/LV/patterns/g17, data/LV/targets/g32, 2, 556263, 550701, 550700, 2395, 0
+data/LV/patterns/g17, data/LV/targets/g30, time out
+data/LV/patterns/g17, data/LV/targets/g34, time out
+data/LV/patterns/g17, data/LV/targets/g37, time out
+data/LV/patterns/g17, data/LV/targets/g38, time out
+data/LV/patterns/g17, data/LV/targets/g33, time out
+data/LV/patterns/g17, data/LV/targets/g39, time out
+data/LV/patterns/g17, data/LV/targets/g36, time out
+data/LV/patterns/g17, data/LV/targets/g35, time out
+data/LV/patterns/g17, data/LV/targets/g31, time out
+data/LV/patterns/g17, data/LV/targets/g4, 2, 6183, 5571, 5570, 5, 0
+data/LV/patterns/g17, data/LV/targets/g41, time out
+data/LV/patterns/g17, data/LV/targets/g40, time out
+data/LV/patterns/g17, data/LV/targets/g43, time out
+data/LV/patterns/g17, data/LV/targets/g42, time out
+data/LV/patterns/g17, data/LV/targets/g44, time out
+data/LV/patterns/g17, data/LV/targets/g48, time out
+data/LV/patterns/g17, data/LV/targets/g46, time out
+data/LV/patterns/g17, data/LV/targets/g45, time out
+data/LV/patterns/g17, data/LV/targets/g47, time out
+data/LV/patterns/g17, data/LV/targets/g5, 10, 1408, 1135, 933, 1, 0
+data/LV/patterns/g17, data/LV/targets/g7, 10, 24676, 22451, 22305, 19, 1
+data/LV/patterns/g17, data/LV/targets/g50, time out
+data/LV/patterns/g17, data/LV/targets/g8, time out
+data/LV/patterns/g17, data/LV/targets/g49, time out
+data/LV/patterns/g17, data/LV/targets/g9, time out
+data/LV/patterns/g18, data/LV/targets/g10, time out
+data/LV/patterns/g17, data/LV/targets/g6, time out
+data/LV/patterns/g18, data/LV/targets/g18, 64, 198, 134, 2, 1, 0
+data/LV/patterns/g18, data/LV/targets/g17, time out
+data/LV/patterns/g18, data/LV/targets/g20, time out
+data/LV/patterns/g18, data/LV/targets/g11, time out
+data/LV/patterns/g18, data/LV/targets/g15, time out
+data/LV/patterns/g18, data/LV/targets/g19, time out
+data/LV/patterns/g18, data/LV/targets/g14, time out
+data/LV/patterns/g18, data/LV/targets/g12, time out
+data/LV/patterns/g18, data/LV/targets/g16, time out
+data/LV/patterns/g18, data/LV/targets/g13, time out
+data/LV/patterns/g18, data/LV/targets/g3, 7, 102314, 61522, 39850, 154, 0
+data/LV/patterns/g18, data/LV/targets/g21, 4, 9849969, 7569190, 7215370, 9374, 0
+data/LV/patterns/g18, data/LV/targets/g25, time out
+data/LV/patterns/g18, data/LV/targets/g22, time out
+data/LV/patterns/g18, data/LV/targets/g27, time out
+data/LV/patterns/g18, data/LV/targets/g23, time out
+data/LV/patterns/g18, data/LV/targets/g28, time out
+data/LV/patterns/g18, data/LV/targets/g24, time out
+data/LV/patterns/g18, data/LV/targets/g26, time out
+data/LV/patterns/g18, data/LV/targets/g29, time out
+data/LV/patterns/g18, data/LV/targets/g32, 2, 656263, 649701, 649700, 1613, 0
+data/LV/patterns/g18, data/LV/targets/g31, time out
+data/LV/patterns/g18, data/LV/targets/g30, time out
+data/LV/patterns/g18, data/LV/targets/g36, time out
+data/LV/patterns/g18, data/LV/targets/g34, time out
+data/LV/patterns/g18, data/LV/targets/g38, time out
+data/LV/patterns/g18, data/LV/targets/g33, time out
+data/LV/patterns/g18, data/LV/targets/g37, time out
+data/LV/patterns/g18, data/LV/targets/g35, time out
+data/LV/patterns/g18, data/LV/targets/g39, time out
+data/LV/patterns/g18, data/LV/targets/g4, 2, 7183, 6471, 6470, 7, 0
+data/LV/patterns/g18, data/LV/targets/g41, time out
+data/LV/patterns/g18, data/LV/targets/g44, time out
+data/LV/patterns/g18, data/LV/targets/g45, time out
+data/LV/patterns/g18, data/LV/targets/g42, time out
+data/LV/patterns/g18, data/LV/targets/g46, time out
+data/LV/patterns/g18, data/LV/targets/g40, time out
+data/LV/patterns/g18, data/LV/targets/g48, time out
+data/LV/patterns/g18, data/LV/targets/g47, time out
+data/LV/patterns/g18, data/LV/targets/g43, time out
+data/LV/patterns/g18, data/LV/targets/g5, 10, 1254, 1048, 884, 1, 0
+data/LV/patterns/g18, data/LV/targets/g7, 10, 27446, 24981, 24880, 21, 0
+data/LV/patterns/g18, data/LV/targets/g50, time out
+data/LV/patterns/g18, data/LV/targets/g9, time out
+data/LV/patterns/g18, data/LV/targets/g49, time out
+data/LV/patterns/g19, data/LV/targets/g10, time out
+data/LV/patterns/g18, data/LV/targets/g6, time out
+data/LV/patterns/g18, data/LV/targets/g8, time out
+data/LV/patterns/g19, data/LV/targets/g19, 64, 207, 143, 60, 0, 0
+data/LV/patterns/g19, data/LV/targets/g13, time out
+data/LV/patterns/g19, data/LV/targets/g20, time out
+data/LV/patterns/g19, data/LV/targets/g14, time out
+data/LV/patterns/g19, data/LV/targets/g18, time out
+data/LV/patterns/g19, data/LV/targets/g16, time out
+data/LV/patterns/g19, data/LV/targets/g17, time out
+data/LV/patterns/g19, data/LV/targets/g11, time out
+data/LV/patterns/g19, data/LV/targets/g12, time out
+data/LV/patterns/g19, data/LV/targets/g15, time out
+data/LV/patterns/g19, data/LV/targets/g3, 7, 997858, 585049, 473938, 1498, 0
+data/LV/patterns/g19, data/LV/targets/g26, time out
+data/LV/patterns/g19, data/LV/targets/g28, time out
+data/LV/patterns/g19, data/LV/targets/g23, time out
+data/LV/patterns/g19, data/LV/targets/g29, time out
+data/LV/patterns/g19, data/LV/targets/g21, time out
+data/LV/patterns/g19, data/LV/targets/g25, time out
+data/LV/patterns/g19, data/LV/targets/g27, time out
+data/LV/patterns/g19, data/LV/targets/g24, time out
+data/LV/patterns/g19, data/LV/targets/g22, time out
+data/LV/patterns/g19, data/LV/targets/g32, 2, 1206263, 1194201, 1194200, 4700, 0
+data/LV/patterns/g19, data/LV/targets/g34, time out
+data/LV/patterns/g19, data/LV/targets/g36, time out
+data/LV/patterns/g19, data/LV/targets/g38, time out
+data/LV/patterns/g19, data/LV/targets/g35, time out
+data/LV/patterns/g19, data/LV/targets/g37, time out
+data/LV/patterns/g19, data/LV/targets/g39, time out
+data/LV/patterns/g19, data/LV/targets/g30, time out
+data/LV/patterns/g19, data/LV/targets/g33, time out
+data/LV/patterns/g19, data/LV/targets/g31, time out
+data/LV/patterns/g19, data/LV/targets/g4, 2, 12683, 11421, 11420, 7, 0
+data/LV/patterns/g19, data/LV/targets/g41, time out
+data/LV/patterns/g19, data/LV/targets/g44, time out
+data/LV/patterns/g19, data/LV/targets/g40, time out
+data/LV/patterns/g19, data/LV/targets/g47, time out
+data/LV/patterns/g19, data/LV/targets/g46, time out
+data/LV/patterns/g19, data/LV/targets/g45, time out
+data/LV/patterns/g19, data/LV/targets/g42, time out
+data/LV/patterns/g19, data/LV/targets/g48, time out
+data/LV/patterns/g19, data/LV/targets/g43, time out
+data/LV/patterns/g19, data/LV/targets/g5, 10, 11840, 9274, 8214, 7, 3
+data/LV/patterns/g2, data/LV/targets/g10, 10, 82, 72, 8, 0, 0
+data/LV/patterns/g19, data/LV/targets/g7, 10, 182339, 164461, 164390, 143, 2
+data/LV/patterns/g19, data/LV/targets/g6, time out
+data/LV/patterns/g19, data/LV/targets/g49, time out
+data/LV/patterns/g19, data/LV/targets/g50, time out
+data/LV/patterns/g19, data/LV/targets/g8, time out
+data/LV/patterns/g19, data/LV/targets/g9, time out
+data/LV/patterns/g2, data/LV/targets/g11, 10, 237, 180, 40, 0, 0
+data/LV/patterns/g2, data/LV/targets/g19, 10, 119, 109, 3, 0, 0
+data/LV/patterns/g2, data/LV/targets/g20, 10, 138, 128, 0, 0, 0
+data/LV/patterns/g2, data/LV/targets/g14, 9, 1718, 1223, 727, 1, 0
+data/LV/patterns/g2, data/LV/targets/g17, 10, 180, 143, 31, 0, 0
+data/LV/patterns/g2, data/LV/targets/g16, 10, 116, 102, 15, 0, 0
+data/LV/patterns/g2, data/LV/targets/g18, 10, 99, 89, 1, 0, 0
+data/LV/patterns/g2, data/LV/targets/g13, 9, 4187, 3235, 2335, 3, 2
+data/LV/patterns/g2, data/LV/targets/g15, 9, 10581, 8117, 5864, 7, 6
+data/LV/patterns/g2, data/LV/targets/g12, 9, 26407, 19494, 12808, 17, 3
+data/LV/patterns/g2, data/LV/targets/g24, 9, 501, 390, 219, 0, 0
+data/LV/patterns/g2, data/LV/targets/g29, 10, 203, 193, 1, 0, 0
+data/LV/patterns/g2, data/LV/targets/g27, 10, 950, 732, 276, 1, 0
+data/LV/patterns/g2, data/LV/targets/g3, 6, 1617, 1128, 932, 0, 0
+data/LV/patterns/g2, data/LV/targets/g28, 10, 178, 163, 84, 0, 0
+data/LV/patterns/g2, data/LV/targets/g22, 10, 150, 130, 26, 0, 0
+data/LV/patterns/g2, data/LV/targets/g23, 9, 7167, 5728, 4395, 6, 5
+data/LV/patterns/g2, data/LV/targets/g26, 9, 16208, 12892, 9623, 13, 4
+data/LV/patterns/g2, data/LV/targets/g25, 8, 29317, 21995, 15454, 21, 0
+data/LV/patterns/g2, data/LV/targets/g21, 4, 29767, 22787, 19838, 22, 0
+data/LV/patterns/g2, data/LV/targets/g33, 10, 169, 153, 11, 0, 0
+data/LV/patterns/g2, data/LV/targets/g36, 10, 165, 155, 4, 0, 0
+data/LV/patterns/g2, data/LV/targets/g37, 10, 201, 188, 11, 1, 0
+data/LV/patterns/g2, data/LV/targets/g39, 10, 310, 259, 74, 0, 0
+data/LV/patterns/g2, data/LV/targets/g34, 10, 288, 241, 61, 0, 0
+data/LV/patterns/g2, data/LV/targets/g30, 10, 177, 167, 1, 0, 0
+data/LV/patterns/g2, data/LV/targets/g31, 10, 201, 191, 2, 0, 0
+data/LV/patterns/g2, data/LV/targets/g35, 10, 203, 183, 24, 0, 0
+data/LV/patterns/g2, data/LV/targets/g32, 2, 10809, 10701, 10700, 19, 0
+data/LV/patterns/g2, data/LV/targets/g38, time out
+data/LV/patterns/g2, data/LV/targets/g4, 2, 189, 171, 170, 0, 0
+data/LV/patterns/g2, data/LV/targets/g44, 10, 251, 239, 17, 0, 0
+data/LV/patterns/g2, data/LV/targets/g48, 10, 241, 231, 4, 0, 0
+data/LV/patterns/g2, data/LV/targets/g41, 10, 179, 169, 3, 0, 0
+data/LV/patterns/g2, data/LV/targets/g47, 10, 230, 220, 2, 1, 0
+data/LV/patterns/g2, data/LV/targets/g45, 10, 232, 220, 18, 0, 0
+data/LV/patterns/g2, data/LV/targets/g46, 10, 236, 226, 2, 1, 0
+data/LV/patterns/g2, data/LV/targets/g43, 10, 354, 305, 59, 0, 0
+data/LV/patterns/g2, data/LV/targets/g42, 10, 25582, 19336, 12952, 17, 16
+data/LV/patterns/g2, data/LV/targets/g40, time out
+data/LV/patterns/g2, data/LV/targets/g5, 10, 52, 40, 2, 0, 0
+data/LV/patterns/g2, data/LV/targets/g8, 10, 193, 134, 37, 0, 0
+data/LV/patterns/g2, data/LV/targets/g6, 8, 4953, 3468, 2188, 3, 0
+data/LV/patterns/g2, data/LV/targets/g50, 10, 3180, 2451, 1527, 3, 3
+data/LV/patterns/g2, data/LV/targets/g9, 8, 4187, 3349, 2719, 2, 0
+data/LV/patterns/g2, data/LV/targets/g49, 10, 7610, 6347, 4888, 6, 5
+data/LV/patterns/g2, data/LV/targets/g7, 5, 9495, 8479, 8372, 6, 0
+data/LV/patterns/g20, data/LV/targets/g10, time out
+data/LV/patterns/g20, data/LV/targets/g20, 64, 230, 166, 97, 1, 0
+data/LV/patterns/g20, data/LV/targets/g11, time out
+data/LV/patterns/g20, data/LV/targets/g17, time out
+data/LV/patterns/g20, data/LV/targets/g14, time out
+data/LV/patterns/g20, data/LV/targets/g18, time out
+data/LV/patterns/g20, data/LV/targets/g13, time out
+data/LV/patterns/g20, data/LV/targets/g15, time out
+data/LV/patterns/g20, data/LV/targets/g12, time out
+data/LV/patterns/g20, data/LV/targets/g19, time out
+data/LV/patterns/g20, data/LV/targets/g16, time out
+data/LV/patterns/g20, data/LV/targets/g3, 10, 14457, 8080, 3645, 16, 16
+data/LV/patterns/g20, data/LV/targets/g28, time out
+data/LV/patterns/g20, data/LV/targets/g24, time out
+data/LV/patterns/g20, data/LV/targets/g27, time out
+data/LV/patterns/g20, data/LV/targets/g25, time out
+data/LV/patterns/g20, data/LV/targets/g22, time out
+data/LV/patterns/g20, data/LV/targets/g26, time out
+data/LV/patterns/g20, data/LV/targets/g29, time out
+data/LV/patterns/g20, data/LV/targets/g23, time out
+data/LV/patterns/g20, data/LV/targets/g21, time out
+data/LV/patterns/g20, data/LV/targets/g36, time out
+data/LV/patterns/g20, data/LV/targets/g35, time out
+data/LV/patterns/g20, data/LV/targets/g31, time out
+data/LV/patterns/g20, data/LV/targets/g39, time out
+data/LV/patterns/g20, data/LV/targets/g34, time out
+data/LV/patterns/g20, data/LV/targets/g38, time out
+data/LV/patterns/g20, data/LV/targets/g30, time out
+data/LV/patterns/g20, data/LV/targets/g33, time out
+data/LV/patterns/g20, data/LV/targets/g32, time out
+data/LV/patterns/g20, data/LV/targets/g37, time out
+data/LV/patterns/g20, data/LV/targets/g4, 8, 151822, 135067, 131065, 186, 0
+data/LV/patterns/g20, data/LV/targets/g44, time out
+data/LV/patterns/g20, data/LV/targets/g41, time out
+data/LV/patterns/g20, data/LV/targets/g45, time out
+data/LV/patterns/g20, data/LV/targets/g47, time out
+data/LV/patterns/g20, data/LV/targets/g48, time out
+data/LV/patterns/g20, data/LV/targets/g46, time out
+data/LV/patterns/g20, data/LV/targets/g43, time out
+data/LV/patterns/g20, data/LV/targets/g42, time out
+data/LV/patterns/g20, data/LV/targets/g40, time out
+data/LV/patterns/g20, data/LV/targets/g5, 10, 756857, 401899, 238781, 649, 120
+data/LV/patterns/g21, data/LV/targets/g10, 6, 1685988, 1320602, 1260743, 1653, 0
+data/LV/patterns/g20, data/LV/targets/g8, time out
+data/LV/patterns/g20, data/LV/targets/g9, time out
+data/LV/patterns/g20, data/LV/targets/g49, time out
+data/LV/patterns/g20, data/LV/targets/g6, time out
+data/LV/patterns/g20, data/LV/targets/g7, time out
+data/LV/patterns/g20, data/LV/targets/g50, time out
+data/LV/patterns/g21, data/LV/targets/g16, 9, 3129769, 2454205, 2313009, 4098, 9
+data/LV/patterns/g21, data/LV/targets/g14, 10, 3621588, 2859392, 2557788, 6000, 209
+data/LV/patterns/g21, data/LV/targets/g17, 4, 9242046, 6729486, 6442234, 7118, 0
+data/LV/patterns/g21, data/LV/targets/g18, 4, 12456583, 9200581, 8829222, 9350, 0
+data/LV/patterns/g21, data/LV/targets/g15, time out
+data/LV/patterns/g21, data/LV/targets/g19, time out
+data/LV/patterns/g21, data/LV/targets/g20, time out
+data/LV/patterns/g21, data/LV/targets/g12, time out
+data/LV/patterns/g21, data/LV/targets/g11, time out
+data/LV/patterns/g21, data/LV/targets/g13, time out
+data/LV/patterns/g21, data/LV/targets/g21, 64, 197, 133, 63, 0, 0
+data/LV/patterns/g21, data/LV/targets/g3, 4, 326391, 188071, 176142, 418, 0
+data/LV/patterns/g21, data/LV/targets/g24, 8, 726235, 585978, 571293, 1007, 538
+data/LV/patterns/g21, data/LV/targets/g22, 11, 3861239, 2636919, 2119749, 4756, 62
+data/LV/patterns/g21, data/LV/targets/g28, 4, 7500005, 6128352, 5934080, 6484, 0
+data/LV/patterns/g21, data/LV/targets/g27, time out
+data/LV/patterns/g21, data/LV/targets/g26, time out
+data/LV/patterns/g21, data/LV/targets/g25, time out
+data/LV/patterns/g21, data/LV/targets/g29, time out
+data/LV/patterns/g21, data/LV/targets/g23, time out
+data/LV/patterns/g21, data/LV/targets/g35, 8, 4240408, 3087485, 2847239, 5911, 30
+data/LV/patterns/g21, data/LV/targets/g30, time out
+data/LV/patterns/g21, data/LV/targets/g37, time out
+data/LV/patterns/g21, data/LV/targets/g33, time out
+data/LV/patterns/g21, data/LV/targets/g38, time out
+data/LV/patterns/g21, data/LV/targets/g36, time out
+data/LV/patterns/g21, data/LV/targets/g39, time out
+data/LV/patterns/g21, data/LV/targets/g34, time out
+data/LV/patterns/g21, data/LV/targets/g31, time out
+data/LV/patterns/g21, data/LV/targets/g32, time out
+data/LV/patterns/g21, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g21, data/LV/targets/g42, 12, 3338955, 2576227, 2306905, 5097, 523
+data/LV/patterns/g21, data/LV/targets/g41, time out
+data/LV/patterns/g21, data/LV/targets/g48, time out
+data/LV/patterns/g21, data/LV/targets/g45, time out
+data/LV/patterns/g21, data/LV/targets/g40, time out
+data/LV/patterns/g21, data/LV/targets/g47, time out
+data/LV/patterns/g21, data/LV/targets/g43, time out
+data/LV/patterns/g21, data/LV/targets/g46, time out
+data/LV/patterns/g21, data/LV/targets/g44, time out
+data/LV/patterns/g21, data/LV/targets/g6, 6, 383222, 297094, 284924, 361, 1
+data/LV/patterns/g21, data/LV/targets/g5, 5, 689986, 460538, 367591, 536, 0
+data/LV/patterns/g21, data/LV/targets/g9, 7, 1062580, 826319, 758986, 982, 0
+data/LV/patterns/g21, data/LV/targets/g8, 6, 1411933, 1060289, 996112, 1330, 0
+data/LV/patterns/g21, data/LV/targets/g49, time out
+data/LV/patterns/g21, data/LV/targets/g50, time out
+data/LV/patterns/g22, data/LV/targets/g10, time out
+data/LV/patterns/g21, data/LV/targets/g7, time out
+data/LV/patterns/g22, data/LV/targets/g11, time out
+data/LV/patterns/g22, data/LV/targets/g14, time out
+data/LV/patterns/g22, data/LV/targets/g17, time out
+data/LV/patterns/g22, data/LV/targets/g18, time out
+data/LV/patterns/g22, data/LV/targets/g15, time out
+data/LV/patterns/g22, data/LV/targets/g19, time out
+data/LV/patterns/g22, data/LV/targets/g13, time out
+data/LV/patterns/g22, data/LV/targets/g12, time out
+data/LV/patterns/g22, data/LV/targets/g20, time out
+data/LV/patterns/g22, data/LV/targets/g16, time out
+data/LV/patterns/g22, data/LV/targets/g22, 67, 216, 149, 77, 0, 0
+data/LV/patterns/g22, data/LV/targets/g3, 8, 52463, 33999, 25130, 41, 0
+data/LV/patterns/g22, data/LV/targets/g21, 11, 1632678, 1313623, 1179124, 1976, 1466
+data/LV/patterns/g22, data/LV/targets/g24, time out
+data/LV/patterns/g22, data/LV/targets/g23, time out
+data/LV/patterns/g22, data/LV/targets/g26, time out
+data/LV/patterns/g22, data/LV/targets/g27, time out
+data/LV/patterns/g22, data/LV/targets/g28, time out
+data/LV/patterns/g22, data/LV/targets/g29, time out
+data/LV/patterns/g22, data/LV/targets/g25, time out
+data/LV/patterns/g22, data/LV/targets/g32, 9, 116233, 115070, 114502, 299, 0
+data/LV/patterns/g22, data/LV/targets/g31, time out
+data/LV/patterns/g22, data/LV/targets/g34, time out
+data/LV/patterns/g22, data/LV/targets/g36, time out
+data/LV/patterns/g22, data/LV/targets/g30, time out
+data/LV/patterns/g22, data/LV/targets/g37, time out
+data/LV/patterns/g22, data/LV/targets/g38, time out
+data/LV/patterns/g22, data/LV/targets/g39, time out
+data/LV/patterns/g22, data/LV/targets/g35, time out
+data/LV/patterns/g22, data/LV/targets/g33, time out
+data/LV/patterns/g22, data/LV/targets/g4, 9, 1834, 1652, 1536, 1, 0
+data/LV/patterns/g22, data/LV/targets/g41, time out
+data/LV/patterns/g22, data/LV/targets/g40, time out
+data/LV/patterns/g22, data/LV/targets/g42, time out
+data/LV/patterns/g22, data/LV/targets/g45, time out
+data/LV/patterns/g22, data/LV/targets/g47, time out
+data/LV/patterns/g22, data/LV/targets/g48, time out
+data/LV/patterns/g22, data/LV/targets/g43, time out
+data/LV/patterns/g22, data/LV/targets/g46, time out
+data/LV/patterns/g22, data/LV/targets/g44, time out
+data/LV/patterns/g22, data/LV/targets/g5, 10, 8149, 5563, 4074, 7, 0
+data/LV/patterns/g22, data/LV/targets/g7, 10, 40614, 36933, 36716, 34, 1
+data/LV/patterns/g22, data/LV/targets/g8, time out
+data/LV/patterns/g22, data/LV/targets/g49, time out
+data/LV/patterns/g22, data/LV/targets/g9, time out
+data/LV/patterns/g22, data/LV/targets/g6, time out
+data/LV/patterns/g22, data/LV/targets/g50, time out
+data/LV/patterns/g23, data/LV/targets/g10, time out
+data/LV/patterns/g23, data/LV/targets/g17, time out
+data/LV/patterns/g23, data/LV/targets/g11, time out
+data/LV/patterns/g23, data/LV/targets/g20, time out
+data/LV/patterns/g23, data/LV/targets/g19, time out
+data/LV/patterns/g23, data/LV/targets/g13, time out
+data/LV/patterns/g23, data/LV/targets/g18, time out
+data/LV/patterns/g23, data/LV/targets/g15, time out
+data/LV/patterns/g23, data/LV/targets/g16, time out
+data/LV/patterns/g23, data/LV/targets/g12, time out
+data/LV/patterns/g23, data/LV/targets/g14, time out
+data/LV/patterns/g23, data/LV/targets/g23, 73, 308, 240, 115, 1, 0
+data/LV/patterns/g23, data/LV/targets/g3, 7, 96824, 63159, 56513, 73, 0
+data/LV/patterns/g23, data/LV/targets/g21, time out
+data/LV/patterns/g23, data/LV/targets/g28, time out
+data/LV/patterns/g23, data/LV/targets/g25, time out
+data/LV/patterns/g23, data/LV/targets/g24, time out
+data/LV/patterns/g23, data/LV/targets/g29, time out
+data/LV/patterns/g23, data/LV/targets/g27, time out
+data/LV/patterns/g23, data/LV/targets/g26, time out
+data/LV/patterns/g23, data/LV/targets/g22, time out
+data/LV/patterns/g23, data/LV/targets/g34, time out
+data/LV/patterns/g23, data/LV/targets/g39, time out
+data/LV/patterns/g23, data/LV/targets/g38, time out
+data/LV/patterns/g23, data/LV/targets/g30, time out
+data/LV/patterns/g23, data/LV/targets/g33, time out
+data/LV/patterns/g23, data/LV/targets/g37, time out
+data/LV/patterns/g23, data/LV/targets/g32, time out
+data/LV/patterns/g23, data/LV/targets/g35, time out
+data/LV/patterns/g23, data/LV/targets/g36, time out
+data/LV/patterns/g23, data/LV/targets/g31, time out
+data/LV/patterns/g23, data/LV/targets/g4, 10, 73, 62, 6, 0, 0
+data/LV/patterns/g23, data/LV/targets/g42, time out
+data/LV/patterns/g23, data/LV/targets/g43, time out
+data/LV/patterns/g23, data/LV/targets/g41, time out
+data/LV/patterns/g23, data/LV/targets/g48, time out
+data/LV/patterns/g23, data/LV/targets/g40, time out
+data/LV/patterns/g23, data/LV/targets/g47, time out
+data/LV/patterns/g23, data/LV/targets/g46, time out
+data/LV/patterns/g23, data/LV/targets/g44, time out
+data/LV/patterns/g23, data/LV/targets/g45, time out
+data/LV/patterns/g23, data/LV/targets/g5, 10, 19218, 12683, 9989, 13, 2
+data/LV/patterns/g23, data/LV/targets/g7, 11, 1172820, 990674, 915208, 786, 747
+data/LV/patterns/g23, data/LV/targets/g8, time out
+data/LV/patterns/g23, data/LV/targets/g6, time out
+data/LV/patterns/g24, data/LV/targets/g10, time out
+data/LV/patterns/g23, data/LV/targets/g9, time out
+data/LV/patterns/g23, data/LV/targets/g50, time out
+data/LV/patterns/g23, data/LV/targets/g49, time out
+data/LV/patterns/g24, data/LV/targets/g12, time out
+data/LV/patterns/g24, data/LV/targets/g16, time out
+data/LV/patterns/g24, data/LV/targets/g14, time out
+data/LV/patterns/g24, data/LV/targets/g11, time out
+data/LV/patterns/g24, data/LV/targets/g15, time out
+data/LV/patterns/g24, data/LV/targets/g18, time out
+data/LV/patterns/g24, data/LV/targets/g17, time out
+data/LV/patterns/g24, data/LV/targets/g20, time out
+data/LV/patterns/g24, data/LV/targets/g13, time out
+data/LV/patterns/g24, data/LV/targets/g19, time out
+data/LV/patterns/g24, data/LV/targets/g24, 75, 788, 730, 291, 1, 0
+data/LV/patterns/g24, data/LV/targets/g3, 7, 12023, 8076, 6492, 9, 0
+data/LV/patterns/g24, data/LV/targets/g21, 8, 552889, 475647, 469328, 589, 86
+data/LV/patterns/g24, data/LV/targets/g23, time out
+data/LV/patterns/g24, data/LV/targets/g26, time out
+data/LV/patterns/g24, data/LV/targets/g28, time out
+data/LV/patterns/g24, data/LV/targets/g27, time out
+data/LV/patterns/g24, data/LV/targets/g22, time out
+data/LV/patterns/g24, data/LV/targets/g29, time out
+data/LV/patterns/g24, data/LV/targets/g25, time out
+data/LV/patterns/g24, data/LV/targets/g32, 7, 57944, 57365, 56300, 121, 104
+data/LV/patterns/g24, data/LV/targets/g34, time out
+data/LV/patterns/g24, data/LV/targets/g30, time out
+data/LV/patterns/g24, data/LV/targets/g31, time out
+data/LV/patterns/g24, data/LV/targets/g36, time out
+data/LV/patterns/g24, data/LV/targets/g39, time out
+data/LV/patterns/g24, data/LV/targets/g38, time out
+data/LV/patterns/g24, data/LV/targets/g37, time out
+data/LV/patterns/g24, data/LV/targets/g33, time out
+data/LV/patterns/g24, data/LV/targets/g35, time out
+data/LV/patterns/g24, data/LV/targets/g4, 7, 1334, 1205, 1130, 1, 0
+data/LV/patterns/g24, data/LV/targets/g43, time out
+data/LV/patterns/g24, data/LV/targets/g48, time out
+data/LV/patterns/g24, data/LV/targets/g44, time out
+data/LV/patterns/g24, data/LV/targets/g46, time out
+data/LV/patterns/g24, data/LV/targets/g42, time out
+data/LV/patterns/g24, data/LV/targets/g47, time out
+data/LV/patterns/g24, data/LV/targets/g45, time out
+data/LV/patterns/g24, data/LV/targets/g40, time out
+data/LV/patterns/g24, data/LV/targets/g41, time out
+data/LV/patterns/g24, data/LV/targets/g5, 9, 4241, 3054, 2510, 3, 0
+data/LV/patterns/g24, data/LV/targets/g7, 10, 16900, 15411, 15330, 13, 0
+data/LV/patterns/g24, data/LV/targets/g49, time out
+data/LV/patterns/g24, data/LV/targets/g9, time out
+data/LV/patterns/g24, data/LV/targets/g50, time out
+data/LV/patterns/g24, data/LV/targets/g6, time out
+data/LV/patterns/g25, data/LV/targets/g10, time out
+data/LV/patterns/g24, data/LV/targets/g8, time out
+data/LV/patterns/g25, data/LV/targets/g12, time out
+data/LV/patterns/g25, data/LV/targets/g20, time out
+data/LV/patterns/g25, data/LV/targets/g17, time out
+data/LV/patterns/g25, data/LV/targets/g13, time out
+data/LV/patterns/g25, data/LV/targets/g18, time out
+data/LV/patterns/g25, data/LV/targets/g19, time out
+data/LV/patterns/g25, data/LV/targets/g15, time out
+data/LV/patterns/g25, data/LV/targets/g14, time out
+data/LV/patterns/g25, data/LV/targets/g16, time out
+data/LV/patterns/g25, data/LV/targets/g11, time out
+data/LV/patterns/g25, data/LV/targets/g25, 75, 1233, 1164, 147, 1, 0
+data/LV/patterns/g25, data/LV/targets/g3, 7, 43698, 27882, 21700, 35, 0
+data/LV/patterns/g25, data/LV/targets/g21, 11, 2499232, 2095380, 1985741, 3221, 73
+data/LV/patterns/g25, data/LV/targets/g23, time out
+data/LV/patterns/g25, data/LV/targets/g29, time out
+data/LV/patterns/g25, data/LV/targets/g27, time out
+data/LV/patterns/g25, data/LV/targets/g24, time out
+data/LV/patterns/g25, data/LV/targets/g28, time out
+data/LV/patterns/g25, data/LV/targets/g22, time out
+data/LV/patterns/g25, data/LV/targets/g26, time out
+data/LV/patterns/g25, data/LV/targets/g32, 10, 238521, 236095, 235344, 1046, 0
+data/LV/patterns/g25, data/LV/targets/g31, time out
+data/LV/patterns/g25, data/LV/targets/g34, time out
+data/LV/patterns/g25, data/LV/targets/g35, time out
+data/LV/patterns/g25, data/LV/targets/g33, time out
+data/LV/patterns/g25, data/LV/targets/g39, time out
+data/LV/patterns/g25, data/LV/targets/g38, time out
+data/LV/patterns/g25, data/LV/targets/g30, time out
+data/LV/patterns/g25, data/LV/targets/g37, time out
+data/LV/patterns/g25, data/LV/targets/g36, time out
+data/LV/patterns/g25, data/LV/targets/g4, 10, 78, 65, 4, 0, 0
+data/LV/patterns/g25, data/LV/targets/g46, time out
+data/LV/patterns/g25, data/LV/targets/g48, time out
+data/LV/patterns/g25, data/LV/targets/g47, time out
+data/LV/patterns/g25, data/LV/targets/g41, time out
+data/LV/patterns/g25, data/LV/targets/g40, time out
+data/LV/patterns/g25, data/LV/targets/g44, time out
+data/LV/patterns/g25, data/LV/targets/g43, time out
+data/LV/patterns/g25, data/LV/targets/g45, time out
+data/LV/patterns/g25, data/LV/targets/g42, time out
+data/LV/patterns/g25, data/LV/targets/g7, 10, 110353, 99422, 98444, 84, 12
+data/LV/patterns/g25, data/LV/targets/g5, 8, 140266, 81204, 60450, 108, 0
+data/LV/patterns/g25, data/LV/targets/g8, time out
+data/LV/patterns/g25, data/LV/targets/g6, time out
+data/LV/patterns/g25, data/LV/targets/g50, time out
+data/LV/patterns/g25, data/LV/targets/g49, time out
+data/LV/patterns/g26, data/LV/targets/g10, time out
+data/LV/patterns/g25, data/LV/targets/g9, time out
+data/LV/patterns/g26, data/LV/targets/g12, time out
+data/LV/patterns/g26, data/LV/targets/g14, time out
+data/LV/patterns/g26, data/LV/targets/g20, time out
+data/LV/patterns/g26, data/LV/targets/g19, time out
+data/LV/patterns/g26, data/LV/targets/g17, time out
+data/LV/patterns/g26, data/LV/targets/g18, time out
+data/LV/patterns/g26, data/LV/targets/g13, time out
+data/LV/patterns/g26, data/LV/targets/g15, time out
+data/LV/patterns/g26, data/LV/targets/g11, time out
+data/LV/patterns/g26, data/LV/targets/g16, time out
+data/LV/patterns/g26, data/LV/targets/g26, 80, 288, 225, 134, 0, 0
+data/LV/patterns/g26, data/LV/targets/g3, 8, 468571, 297754, 242127, 381, 365
+data/LV/patterns/g26, data/LV/targets/g22, time out
+data/LV/patterns/g26, data/LV/targets/g21, time out
+data/LV/patterns/g26, data/LV/targets/g28, time out
+data/LV/patterns/g26, data/LV/targets/g24, time out
+data/LV/patterns/g26, data/LV/targets/g27, time out
+data/LV/patterns/g26, data/LV/targets/g23, time out
+data/LV/patterns/g26, data/LV/targets/g29, time out
+data/LV/patterns/g26, data/LV/targets/g25, time out
+data/LV/patterns/g26, data/LV/targets/g35, time out
+data/LV/patterns/g26, data/LV/targets/g39, time out
+data/LV/patterns/g26, data/LV/targets/g34, time out
+data/LV/patterns/g26, data/LV/targets/g36, time out
+data/LV/patterns/g26, data/LV/targets/g31, time out
+data/LV/patterns/g26, data/LV/targets/g32, time out
+data/LV/patterns/g26, data/LV/targets/g33, time out
+data/LV/patterns/g26, data/LV/targets/g37, time out
+data/LV/patterns/g26, data/LV/targets/g38, time out
+data/LV/patterns/g26, data/LV/targets/g30, time out
+data/LV/patterns/g26, data/LV/targets/g4, 10, 13522, 11983, 11498, 14, 14
+data/LV/patterns/g26, data/LV/targets/g43, time out
+data/LV/patterns/g26, data/LV/targets/g46, time out
+data/LV/patterns/g26, data/LV/targets/g41, time out
+data/LV/patterns/g26, data/LV/targets/g48, time out
+data/LV/patterns/g26, data/LV/targets/g47, time out
+data/LV/patterns/g26, data/LV/targets/g45, time out
+data/LV/patterns/g26, data/LV/targets/g40, time out
+data/LV/patterns/g26, data/LV/targets/g42, time out
+data/LV/patterns/g26, data/LV/targets/g44, time out
+data/LV/patterns/g26, data/LV/targets/g5, 10, 17535, 11376, 8370, 13, 0
+data/LV/patterns/g26, data/LV/targets/g7, 11, 180180, 162543, 161899, 159, 0
+data/LV/patterns/g26, data/LV/targets/g8, time out
+data/LV/patterns/g26, data/LV/targets/g50, time out
+data/LV/patterns/g26, data/LV/targets/g6, time out
+data/LV/patterns/g27, data/LV/targets/g10, time out
+data/LV/patterns/g26, data/LV/targets/g9, time out
+data/LV/patterns/g26, data/LV/targets/g49, time out
+data/LV/patterns/g27, data/LV/targets/g12, time out
+data/LV/patterns/g27, data/LV/targets/g13, time out
+data/LV/patterns/g27, data/LV/targets/g11, time out
+data/LV/patterns/g27, data/LV/targets/g15, time out
+data/LV/patterns/g27, data/LV/targets/g18, time out
+data/LV/patterns/g27, data/LV/targets/g20, time out
+data/LV/patterns/g27, data/LV/targets/g14, time out
+data/LV/patterns/g27, data/LV/targets/g17, time out
+data/LV/patterns/g27, data/LV/targets/g19, time out
+data/LV/patterns/g27, data/LV/targets/g16, time out
+data/LV/patterns/g27, data/LV/targets/g27, 86, 267, 191, 92, 0, 0
+data/LV/patterns/g27, data/LV/targets/g3, 8, 143193, 92068, 74857, 128, 24
+data/LV/patterns/g27, data/LV/targets/g21, time out
+data/LV/patterns/g27, data/LV/targets/g22, time out
+data/LV/patterns/g27, data/LV/targets/g28, time out
+data/LV/patterns/g27, data/LV/targets/g23, time out
+data/LV/patterns/g27, data/LV/targets/g26, time out
+data/LV/patterns/g27, data/LV/targets/g24, time out
+data/LV/patterns/g27, data/LV/targets/g29, time out
+data/LV/patterns/g27, data/LV/targets/g25, time out
+data/LV/patterns/g27, data/LV/targets/g33, time out
+data/LV/patterns/g27, data/LV/targets/g35, time out
+data/LV/patterns/g27, data/LV/targets/g32, time out
+data/LV/patterns/g27, data/LV/targets/g36, time out
+data/LV/patterns/g27, data/LV/targets/g31, time out
+data/LV/patterns/g27, data/LV/targets/g34, time out
+data/LV/patterns/g27, data/LV/targets/g39, time out
+data/LV/patterns/g27, data/LV/targets/g38, time out
+data/LV/patterns/g27, data/LV/targets/g37, time out
+data/LV/patterns/g27, data/LV/targets/g30, time out
+data/LV/patterns/g27, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g27, data/LV/targets/g44, time out
+data/LV/patterns/g27, data/LV/targets/g46, time out
+data/LV/patterns/g27, data/LV/targets/g41, time out
+data/LV/patterns/g27, data/LV/targets/g48, time out
+data/LV/patterns/g27, data/LV/targets/g42, time out
+data/LV/patterns/g27, data/LV/targets/g45, time out
+data/LV/patterns/g27, data/LV/targets/g47, time out
+data/LV/patterns/g27, data/LV/targets/g40, time out
+data/LV/patterns/g27, data/LV/targets/g43, time out
+data/LV/patterns/g27, data/LV/targets/g5, 11, 1492, 762, 402, 1, 1
+data/LV/patterns/g27, data/LV/targets/g7, 11, 213302, 192549, 192295, 188, 0
+data/LV/patterns/g27, data/LV/targets/g50, time out
+data/LV/patterns/g27, data/LV/targets/g9, time out
+data/LV/patterns/g27, data/LV/targets/g49, time out
+data/LV/patterns/g27, data/LV/targets/g8, time out
+data/LV/patterns/g28, data/LV/targets/g10, time out
+data/LV/patterns/g27, data/LV/targets/g6, time out
+data/LV/patterns/g28, data/LV/targets/g15, time out
+data/LV/patterns/g28, data/LV/targets/g12, time out
+data/LV/patterns/g28, data/LV/targets/g19, time out
+data/LV/patterns/g28, data/LV/targets/g18, time out
+data/LV/patterns/g28, data/LV/targets/g20, time out
+data/LV/patterns/g28, data/LV/targets/g16, time out
+data/LV/patterns/g28, data/LV/targets/g17, time out
+data/LV/patterns/g28, data/LV/targets/g11, time out
+data/LV/patterns/g28, data/LV/targets/g13, time out
+data/LV/patterns/g28, data/LV/targets/g14, time out
+data/LV/patterns/g28, data/LV/targets/g28, 97, 546, 482, 116, 1, 0
+data/LV/patterns/g28, data/LV/targets/g3, 7, 82436, 50509, 42786, 109, 0
+data/LV/patterns/g28, data/LV/targets/g21, 4, 9204227, 7366047, 7220484, 8082, 0
+data/LV/patterns/g28, data/LV/targets/g22, time out
+data/LV/patterns/g28, data/LV/targets/g27, time out
+data/LV/patterns/g28, data/LV/targets/g25, time out
+data/LV/patterns/g28, data/LV/targets/g29, time out
+data/LV/patterns/g28, data/LV/targets/g26, time out
+data/LV/patterns/g28, data/LV/targets/g24, time out
+data/LV/patterns/g28, data/LV/targets/g23, time out
+data/LV/patterns/g28, data/LV/targets/g32, 2, 549596, 544101, 544100, 2361, 0
+data/LV/patterns/g28, data/LV/targets/g35, time out
+data/LV/patterns/g28, data/LV/targets/g34, time out
+data/LV/patterns/g28, data/LV/targets/g36, time out
+data/LV/patterns/g28, data/LV/targets/g33, time out
+data/LV/patterns/g28, data/LV/targets/g39, time out
+data/LV/patterns/g28, data/LV/targets/g38, time out
+data/LV/patterns/g28, data/LV/targets/g31, time out
+data/LV/patterns/g28, data/LV/targets/g30, time out
+data/LV/patterns/g28, data/LV/targets/g37, time out
+data/LV/patterns/g28, data/LV/targets/g4, 2, 6446, 5811, 5790, 4, 0
+data/LV/patterns/g28, data/LV/targets/g43, time out
+data/LV/patterns/g28, data/LV/targets/g41, time out
+data/LV/patterns/g28, data/LV/targets/g46, time out
+data/LV/patterns/g28, data/LV/targets/g47, time out
+data/LV/patterns/g28, data/LV/targets/g48, time out
+data/LV/patterns/g28, data/LV/targets/g44, time out
+data/LV/patterns/g28, data/LV/targets/g40, time out
+data/LV/patterns/g28, data/LV/targets/g45, time out
+data/LV/patterns/g28, data/LV/targets/g42, time out
+data/LV/patterns/g28, data/LV/targets/g7, 11, 18562, 16908, 16822, 15, 0
+data/LV/patterns/g28, data/LV/targets/g5, 10, 86376, 67125, 63587, 43, 41
+data/LV/patterns/g28, data/LV/targets/g50, time out
+data/LV/patterns/g29, data/LV/targets/g10, time out
+data/LV/patterns/g28, data/LV/targets/g49, time out
+data/LV/patterns/g28, data/LV/targets/g8, time out
+data/LV/patterns/g28, data/LV/targets/g9, time out
+data/LV/patterns/g28, data/LV/targets/g6, time out
+data/LV/patterns/g29, data/LV/targets/g17, time out
+data/LV/patterns/g29, data/LV/targets/g20, time out
+data/LV/patterns/g29, data/LV/targets/g18, time out
+data/LV/patterns/g29, data/LV/targets/g13, time out
+data/LV/patterns/g29, data/LV/targets/g16, time out
+data/LV/patterns/g29, data/LV/targets/g12, time out
+data/LV/patterns/g29, data/LV/targets/g14, time out
+data/LV/patterns/g29, data/LV/targets/g11, time out
+data/LV/patterns/g29, data/LV/targets/g19, time out
+data/LV/patterns/g29, data/LV/targets/g15, time out
+data/LV/patterns/g29, data/LV/targets/g3, 10, 52, 33, 4, 0, 0
+data/LV/patterns/g29, data/LV/targets/g29, 100, 334, 234, 133, 2, 1
+data/LV/patterns/g29, data/LV/targets/g25, time out
+data/LV/patterns/g29, data/LV/targets/g26, time out
+data/LV/patterns/g29, data/LV/targets/g23, time out
+data/LV/patterns/g29, data/LV/targets/g28, time out
+data/LV/patterns/g29, data/LV/targets/g21, time out
+data/LV/patterns/g29, data/LV/targets/g22, time out
+data/LV/patterns/g29, data/LV/targets/g24, time out
+data/LV/patterns/g29, data/LV/targets/g27, time out
+data/LV/patterns/g29, data/LV/targets/g31, time out
+data/LV/patterns/g29, data/LV/targets/g37, time out
+data/LV/patterns/g29, data/LV/targets/g38, time out
+data/LV/patterns/g29, data/LV/targets/g36, time out
+data/LV/patterns/g29, data/LV/targets/g32, time out
+data/LV/patterns/g29, data/LV/targets/g39, time out
+data/LV/patterns/g29, data/LV/targets/g35, time out
+data/LV/patterns/g29, data/LV/targets/g33, time out
+data/LV/patterns/g29, data/LV/targets/g34, time out
+data/LV/patterns/g29, data/LV/targets/g30, time out
+data/LV/patterns/g29, data/LV/targets/g4, 5, 131625, 117621, 116999, 86, 24
+data/LV/patterns/g29, data/LV/targets/g45, time out
+data/LV/patterns/g29, data/LV/targets/g48, time out
+data/LV/patterns/g29, data/LV/targets/g43, time out
+data/LV/patterns/g29, data/LV/targets/g46, time out
+data/LV/patterns/g29, data/LV/targets/g47, time out
+data/LV/patterns/g29, data/LV/targets/g41, time out
+data/LV/patterns/g29, data/LV/targets/g42, time out
+data/LV/patterns/g29, data/LV/targets/g44, time out
+data/LV/patterns/g29, data/LV/targets/g40, time out
+data/LV/patterns/g29, data/LV/targets/g5, 11, 173, 97, 29, 0, 0
+data/LV/patterns/g3, data/LV/targets/g10, 8, 7210, 4844, 3316, 5, 1
+data/LV/patterns/g29, data/LV/targets/g6, 19, 196013, 119409, 74779, 209, 209
+data/LV/patterns/g29, data/LV/targets/g49, time out
+data/LV/patterns/g29, data/LV/targets/g8, time out
+data/LV/patterns/g29, data/LV/targets/g50, time out
+data/LV/patterns/g29, data/LV/targets/g9, time out
+data/LV/patterns/g29, data/LV/targets/g7, time out
+data/LV/patterns/g3, data/LV/targets/g13, 8, 9014, 7179, 5960, 7, 4
+data/LV/patterns/g3, data/LV/targets/g15, 8, 9457, 7505, 6311, 8, 3
+data/LV/patterns/g3, data/LV/targets/g20, 10, 10279, 6505, 2633, 15, 14
+data/LV/patterns/g3, data/LV/targets/g14, 7, 22858, 16919, 12952, 25, 0
+data/LV/patterns/g3, data/LV/targets/g17, 7, 48325, 30399, 21477, 41, 0
+data/LV/patterns/g3, data/LV/targets/g16, 8, 61426, 41655, 27195, 55, 0
+data/LV/patterns/g3, data/LV/targets/g18, 7, 92476, 58751, 42504, 76, 0
+data/LV/patterns/g3, data/LV/targets/g11, 7, 184730, 129739, 97916, 168, 0
+data/LV/patterns/g3, data/LV/targets/g12, 7, 295508, 225749, 177800, 235, 0
+data/LV/patterns/g3, data/LV/targets/g19, 7, 388654, 289131, 228364, 307, 0
+data/LV/patterns/g3, data/LV/targets/g3, 10, 34, 24, 0, 0, 0
+data/LV/patterns/g3, data/LV/targets/g29, 10, 210, 193, 8, 0, 0
+data/LV/patterns/g3, data/LV/targets/g24, 7, 3356, 2417, 1918, 3, 0
+data/LV/patterns/g3, data/LV/targets/g25, 7, 15269, 10802, 7876, 12, 0
+data/LV/patterns/g3, data/LV/targets/g26, 8, 20061, 15337, 11607, 17, 7
+data/LV/patterns/g3, data/LV/targets/g22, 8, 30548, 20935, 14125, 24, 0
+data/LV/patterns/g3, data/LV/targets/g28, 7, 29614, 22675, 18722, 24, 0
+data/LV/patterns/g3, data/LV/targets/g27, 8, 30119, 22414, 16732, 27, 0
+data/LV/patterns/g3, data/LV/targets/g23, 7, 48676, 40548, 34984, 39, 0
+data/LV/patterns/g3, data/LV/targets/g21, 4, 160143, 117285, 94875, 102, 0
+data/LV/patterns/g3, data/LV/targets/g30, 10, 172, 162, 3, 0, 0
+data/LV/patterns/g3, data/LV/targets/g31, 10, 197, 187, 3, 0, 0
+data/LV/patterns/g3, data/LV/targets/g36, 9, 34476, 25658, 16953, 28, 1
+data/LV/patterns/g3, data/LV/targets/g33, 8, 35026, 24700, 17336, 30, 0
+data/LV/patterns/g3, data/LV/targets/g35, 8, 50727, 35030, 23828, 44, 0
+data/LV/patterns/g3, data/LV/targets/g39, 7, 124254, 86086, 67333, 99, 0
+data/LV/patterns/g3, data/LV/targets/g37, 9, 155293, 117807, 81465, 137, 10
+data/LV/patterns/g3, data/LV/targets/g32, 2, 80809, 80001, 79900, 142, 0
+data/LV/patterns/g3, data/LV/targets/g34, 7, 197511, 129860, 95213, 153, 0
+data/LV/patterns/g3, data/LV/targets/g38, 6, 1638945, 1472335, 1401258, 1445, 0
+data/LV/patterns/g3, data/LV/targets/g4, 2, 889, 801, 790, 0, 0
+data/LV/patterns/g3, data/LV/targets/g45, 10, 226, 211, 34, 0, 0
+data/LV/patterns/g3, data/LV/targets/g48, 10, 246, 223, 10, 0, 0
+data/LV/patterns/g3, data/LV/targets/g47, 10, 295, 253, 35, 0, 0
+data/LV/patterns/g3, data/LV/targets/g46, 10, 300, 258, 35, 1, 0
+data/LV/patterns/g3, data/LV/targets/g44, 10, 265, 243, 30, 0, 0
+data/LV/patterns/g3, data/LV/targets/g41, 7, 184614, 125186, 90333, 148, 0
+data/LV/patterns/g3, data/LV/targets/g42, 7, 197248, 138698, 105668, 159, 0
+data/LV/patterns/g3, data/LV/targets/g43, 7, 997449, 759324, 614989, 772, 0
+data/LV/patterns/g3, data/LV/targets/g40, time out
+data/LV/patterns/g3, data/LV/targets/g5, 6, 2858, 1650, 924, 1, 0
+data/LV/patterns/g3, data/LV/targets/g6, 7, 4763, 3169, 2296, 3, 0
+data/LV/patterns/g3, data/LV/targets/g8, 8, 5817, 3808, 2387, 4, 0
+data/LV/patterns/g3, data/LV/targets/g7, 4, 17298, 15431, 15300, 11, 0
+data/LV/patterns/g3, data/LV/targets/g9, 6, 27164, 21144, 17222, 17, 0
+data/LV/patterns/g3, data/LV/targets/g49, 7, 2821325, 2120226, 1693672, 2146, 0
+data/LV/patterns/g3, data/LV/targets/g50, time out
+data/LV/patterns/g30, data/LV/targets/g10, time out
+data/LV/patterns/g30, data/LV/targets/g14, time out
+data/LV/patterns/g30, data/LV/targets/g17, time out
+data/LV/patterns/g30, data/LV/targets/g20, time out
+data/LV/patterns/g30, data/LV/targets/g13, time out
+data/LV/patterns/g30, data/LV/targets/g15, time out
+data/LV/patterns/g30, data/LV/targets/g16, time out
+data/LV/patterns/g30, data/LV/targets/g11, time out
+data/LV/patterns/g30, data/LV/targets/g19, time out
+data/LV/patterns/g30, data/LV/targets/g18, time out
+data/LV/patterns/g30, data/LV/targets/g12, time out
+data/LV/patterns/g30, data/LV/targets/g3, 10, 36, 25, 1, 0, 0
+data/LV/patterns/g30, data/LV/targets/g29, 86, 1652718, 929837, 323791, 8298, 1
+data/LV/patterns/g30, data/LV/targets/g23, time out
+data/LV/patterns/g30, data/LV/targets/g25, time out
+data/LV/patterns/g30, data/LV/targets/g26, time out
+data/LV/patterns/g30, data/LV/targets/g22, time out
+data/LV/patterns/g30, data/LV/targets/g28, time out
+data/LV/patterns/g30, data/LV/targets/g24, time out
+data/LV/patterns/g30, data/LV/targets/g27, time out
+data/LV/patterns/g30, data/LV/targets/g21, time out
+data/LV/patterns/g30, data/LV/targets/g30, 100, 209, 109, 8, 1, 1
+data/LV/patterns/g30, data/LV/targets/g33, time out
+data/LV/patterns/g30, data/LV/targets/g36, time out
+data/LV/patterns/g30, data/LV/targets/g37, time out
+data/LV/patterns/g30, data/LV/targets/g32, time out
+data/LV/patterns/g30, data/LV/targets/g38, time out
+data/LV/patterns/g30, data/LV/targets/g35, time out
+data/LV/patterns/g30, data/LV/targets/g39, time out
+data/LV/patterns/g30, data/LV/targets/g31, time out
+data/LV/patterns/g30, data/LV/targets/g34, time out
+data/LV/patterns/g30, data/LV/targets/g4, 5, 108699, 97117, 96563, 123, 83
+data/LV/patterns/g30, data/LV/targets/g41, time out
+data/LV/patterns/g30, data/LV/targets/g45, time out
+data/LV/patterns/g30, data/LV/targets/g40, time out
+data/LV/patterns/g30, data/LV/targets/g46, time out
+data/LV/patterns/g30, data/LV/targets/g48, time out
+data/LV/patterns/g30, data/LV/targets/g43, time out
+data/LV/patterns/g30, data/LV/targets/g44, time out
+data/LV/patterns/g30, data/LV/targets/g42, time out
+data/LV/patterns/g30, data/LV/targets/g47, time out
+data/LV/patterns/g30, data/LV/targets/g5, 11, 101, 61, 11, 0, 0
+data/LV/patterns/g30, data/LV/targets/g6, 18, 4174584, 2604698, 1675881, 5403, 11
+data/LV/patterns/g30, data/LV/targets/g50, time out
+data/LV/patterns/g30, data/LV/targets/g8, time out
+data/LV/patterns/g30, data/LV/targets/g49, time out
+data/LV/patterns/g31, data/LV/targets/g10, time out
+data/LV/patterns/g30, data/LV/targets/g9, time out
+data/LV/patterns/g30, data/LV/targets/g7, time out
+data/LV/patterns/g31, data/LV/targets/g12, time out
+data/LV/patterns/g31, data/LV/targets/g20, time out
+data/LV/patterns/g31, data/LV/targets/g16, time out
+data/LV/patterns/g31, data/LV/targets/g18, time out
+data/LV/patterns/g31, data/LV/targets/g13, time out
+data/LV/patterns/g31, data/LV/targets/g15, time out
+data/LV/patterns/g31, data/LV/targets/g17, time out
+data/LV/patterns/g31, data/LV/targets/g19, time out
+data/LV/patterns/g31, data/LV/targets/g11, time out
+data/LV/patterns/g31, data/LV/targets/g14, time out
+data/LV/patterns/g31, data/LV/targets/g3, 10, 34, 24, 0, 0, 0
+data/LV/patterns/g31, data/LV/targets/g21, time out
+data/LV/patterns/g31, data/LV/targets/g23, time out
+data/LV/patterns/g31, data/LV/targets/g24, time out
+data/LV/patterns/g31, data/LV/targets/g22, time out
+data/LV/patterns/g31, data/LV/targets/g25, time out
+data/LV/patterns/g31, data/LV/targets/g28, time out
+data/LV/patterns/g31, data/LV/targets/g27, time out
+data/LV/patterns/g31, data/LV/targets/g29, time out
+data/LV/patterns/g31, data/LV/targets/g26, time out
+data/LV/patterns/g31, data/LV/targets/g31, 100, 339, 239, 138, 2, 1
+data/LV/patterns/g31, data/LV/targets/g33, time out
+data/LV/patterns/g31, data/LV/targets/g36, time out
+data/LV/patterns/g31, data/LV/targets/g32, time out
+data/LV/patterns/g31, data/LV/targets/g38, time out
+data/LV/patterns/g31, data/LV/targets/g37, time out
+data/LV/patterns/g31, data/LV/targets/g39, time out
+data/LV/patterns/g31, data/LV/targets/g35, time out
+data/LV/patterns/g31, data/LV/targets/g30, time out
+data/LV/patterns/g31, data/LV/targets/g34, time out
+data/LV/patterns/g31, data/LV/targets/g4, 5, 220782, 196650, 195537, 277, 50
+data/LV/patterns/g31, data/LV/targets/g41, time out
+data/LV/patterns/g31, data/LV/targets/g45, time out
+data/LV/patterns/g31, data/LV/targets/g48, time out
+data/LV/patterns/g31, data/LV/targets/g44, time out
+data/LV/patterns/g31, data/LV/targets/g46, time out
+data/LV/patterns/g31, data/LV/targets/g40, time out
+data/LV/patterns/g31, data/LV/targets/g47, time out
+data/LV/patterns/g31, data/LV/targets/g42, time out
+data/LV/patterns/g31, data/LV/targets/g43, time out
+data/LV/patterns/g31, data/LV/targets/g5, 11, 127, 74, 17, 0, 0
+data/LV/patterns/g32, data/LV/targets/g10, 3, 9334214, 6349233, 6333439, 8264, 0
+data/LV/patterns/g31, data/LV/targets/g6, time out
+data/LV/patterns/g31, data/LV/targets/g8, time out
+data/LV/patterns/g31, data/LV/targets/g50, time out
+data/LV/patterns/g31, data/LV/targets/g9, time out
+data/LV/patterns/g31, data/LV/targets/g7, time out
+data/LV/patterns/g31, data/LV/targets/g49, time out
+data/LV/patterns/g32, data/LV/targets/g11, 2, 1304283, 1105294, 1105107, 1410, 0
+data/LV/patterns/g32, data/LV/targets/g17, 2, 1403459, 1092897, 1092736, 1486, 0
+data/LV/patterns/g32, data/LV/targets/g19, 2, 1946771, 1636209, 1635936, 2109, 0
+data/LV/patterns/g32, data/LV/targets/g18, 2, 1558691, 1248129, 1247936, 2264, 0
+data/LV/patterns/g32, data/LV/targets/g12, 2, 2182902, 1969360, 1968998, 3026, 0
+data/LV/patterns/g32, data/LV/targets/g13, time out
+data/LV/patterns/g32, data/LV/targets/g16, time out
+data/LV/patterns/g32, data/LV/targets/g15, time out
+data/LV/patterns/g32, data/LV/targets/g14, time out
+data/LV/patterns/g32, data/LV/targets/g20, time out
+data/LV/patterns/g32, data/LV/targets/g24, 7, 7782, 7585, 7563, 24, 2
+data/LV/patterns/g32, data/LV/targets/g3, 2, 195119, 146511, 146490, 211, 0
+data/LV/patterns/g32, data/LV/targets/g28, 2, 931295, 742008, 741895, 1032, 0
+data/LV/patterns/g32, data/LV/targets/g25, time out
+data/LV/patterns/g32, data/LV/targets/g27, time out
+data/LV/patterns/g32, data/LV/targets/g22, time out
+data/LV/patterns/g32, data/LV/targets/g21, time out
+data/LV/patterns/g32, data/LV/targets/g29, time out
+data/LV/patterns/g32, data/LV/targets/g23, time out
+data/LV/patterns/g32, data/LV/targets/g26, time out
+data/LV/patterns/g32, data/LV/targets/g32, 100, 5151, 5051, 0, 18, 1
+data/LV/patterns/g32, data/LV/targets/g38, 2, 2185205, 1981365, 1981000, 2636, 0
+data/LV/patterns/g32, data/LV/targets/g34, 2, 2922459, 2340241, 2339880, 3176, 0
+data/LV/patterns/g32, data/LV/targets/g36, 4, 8426568, 6650981, 6649926, 8607, 0
+data/LV/patterns/g32, data/LV/targets/g33, time out
+data/LV/patterns/g32, data/LV/targets/g37, time out
+data/LV/patterns/g32, data/LV/targets/g30, time out
+data/LV/patterns/g32, data/LV/targets/g35, time out
+data/LV/patterns/g32, data/LV/targets/g39, time out
+data/LV/patterns/g32, data/LV/targets/g31, time out
+data/LV/patterns/g32, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g32, data/LV/targets/g44, time out
+data/LV/patterns/g32, data/LV/targets/g48, time out
+data/LV/patterns/g32, data/LV/targets/g45, time out
+data/LV/patterns/g32, data/LV/targets/g43, time out
+data/LV/patterns/g32, data/LV/targets/g40, time out
+data/LV/patterns/g32, data/LV/targets/g47, time out
+data/LV/patterns/g32, data/LV/targets/g42, time out
+data/LV/patterns/g32, data/LV/targets/g46, time out
+data/LV/patterns/g32, data/LV/targets/g41, time out
+data/LV/patterns/g32, data/LV/targets/g7, 2, 1069279, 972161, 971980, 1168, 0
+data/LV/patterns/g32, data/LV/targets/g8, 4, 1756391, 1358588, 1358350, 1694, 46
+data/LV/patterns/g32, data/LV/targets/g9, 6, 1977503, 1660293, 1655706, 1969, 0
+data/LV/patterns/g32, data/LV/targets/g6, 3, 4099029, 2782350, 2772229, 3359, 0
+data/LV/patterns/g32, data/LV/targets/g5, 3, 9654508, 6465148, 6416540, 6994, 0
+data/LV/patterns/g32, data/LV/targets/g49, time out
+data/LV/patterns/g32, data/LV/targets/g50, time out
+data/LV/patterns/g33, data/LV/targets/g10, time out
+data/LV/patterns/g33, data/LV/targets/g16, time out
+data/LV/patterns/g33, data/LV/targets/g18, time out
+data/LV/patterns/g33, data/LV/targets/g12, time out
+data/LV/patterns/g33, data/LV/targets/g14, time out
+data/LV/patterns/g33, data/LV/targets/g19, time out
+data/LV/patterns/g33, data/LV/targets/g17, time out
+data/LV/patterns/g33, data/LV/targets/g13, time out
+data/LV/patterns/g33, data/LV/targets/g15, time out
+data/LV/patterns/g33, data/LV/targets/g20, time out
+data/LV/patterns/g33, data/LV/targets/g11, time out
+data/LV/patterns/g33, data/LV/targets/g3, 8, 98400, 64742, 51053, 170, 0
+data/LV/patterns/g33, data/LV/targets/g22, time out
+data/LV/patterns/g33, data/LV/targets/g21, time out
+data/LV/patterns/g33, data/LV/targets/g23, time out
+data/LV/patterns/g33, data/LV/targets/g26, time out
+data/LV/patterns/g33, data/LV/targets/g24, time out
+data/LV/patterns/g33, data/LV/targets/g27, time out
+data/LV/patterns/g33, data/LV/targets/g29, time out
+data/LV/patterns/g33, data/LV/targets/g28, time out
+data/LV/patterns/g33, data/LV/targets/g25, time out
+data/LV/patterns/g33, data/LV/targets/g33, 101, 316, 215, 113, 1, 1
+data/LV/patterns/g33, data/LV/targets/g31, time out
+data/LV/patterns/g33, data/LV/targets/g35, time out
+data/LV/patterns/g33, data/LV/targets/g32, time out
+data/LV/patterns/g33, data/LV/targets/g37, time out
+data/LV/patterns/g33, data/LV/targets/g38, time out
+data/LV/patterns/g33, data/LV/targets/g34, time out
+data/LV/patterns/g33, data/LV/targets/g30, time out
+data/LV/patterns/g33, data/LV/targets/g39, time out
+data/LV/patterns/g33, data/LV/targets/g36, time out
+data/LV/patterns/g33, data/LV/targets/g4, 4, 13706, 12317, 12272, 8, 2
+data/LV/patterns/g33, data/LV/targets/g43, time out
+data/LV/patterns/g33, data/LV/targets/g42, time out
+data/LV/patterns/g33, data/LV/targets/g45, time out
+data/LV/patterns/g33, data/LV/targets/g44, time out
+data/LV/patterns/g33, data/LV/targets/g48, time out
+data/LV/patterns/g33, data/LV/targets/g46, time out
+data/LV/patterns/g33, data/LV/targets/g47, time out
+data/LV/patterns/g33, data/LV/targets/g41, time out
+data/LV/patterns/g33, data/LV/targets/g40, time out
+data/LV/patterns/g33, data/LV/targets/g5, 10, 13057, 8202, 4009, 10, 0
+data/LV/patterns/g33, data/LV/targets/g7, 10, 158366, 142185, 141352, 127, 25
+data/LV/patterns/g33, data/LV/targets/g6, 17, 2016076, 1349194, 928491, 2158, 714
+data/LV/patterns/g33, data/LV/targets/g50, time out
+data/LV/patterns/g33, data/LV/targets/g49, time out
+data/LV/patterns/g33, data/LV/targets/g9, time out
+data/LV/patterns/g33, data/LV/targets/g8, time out
+data/LV/patterns/g34, data/LV/targets/g10, time out
+data/LV/patterns/g34, data/LV/targets/g12, time out
+data/LV/patterns/g34, data/LV/targets/g15, time out
+data/LV/patterns/g34, data/LV/targets/g20, time out
+data/LV/patterns/g34, data/LV/targets/g11, time out
+data/LV/patterns/g34, data/LV/targets/g13, time out
+data/LV/patterns/g34, data/LV/targets/g14, time out
+data/LV/patterns/g34, data/LV/targets/g17, time out
+data/LV/patterns/g34, data/LV/targets/g19, time out
+data/LV/patterns/g34, data/LV/targets/g16, time out
+data/LV/patterns/g34, data/LV/targets/g18, time out
+data/LV/patterns/g34, data/LV/targets/g3, 7, 228908, 138419, 90014, 228, 0
+data/LV/patterns/g34, data/LV/targets/g24, time out
+data/LV/patterns/g34, data/LV/targets/g25, time out
+data/LV/patterns/g34, data/LV/targets/g22, time out
+data/LV/patterns/g34, data/LV/targets/g21, time out
+data/LV/patterns/g34, data/LV/targets/g28, time out
+data/LV/patterns/g34, data/LV/targets/g27, time out
+data/LV/patterns/g34, data/LV/targets/g23, time out
+data/LV/patterns/g34, data/LV/targets/g26, time out
+data/LV/patterns/g34, data/LV/targets/g29, time out
+data/LV/patterns/g34, data/LV/targets/g34, 120, 368, 248, 5, 1, 1
+data/LV/patterns/g34, data/LV/targets/g32, 2, 1221919, 1209701, 1209700, 5274, 1
+data/LV/patterns/g34, data/LV/targets/g30, time out
+data/LV/patterns/g34, data/LV/targets/g37, time out
+data/LV/patterns/g34, data/LV/targets/g38, time out
+data/LV/patterns/g34, data/LV/targets/g36, time out
+data/LV/patterns/g34, data/LV/targets/g31, time out
+data/LV/patterns/g34, data/LV/targets/g39, time out
+data/LV/patterns/g34, data/LV/targets/g35, time out
+data/LV/patterns/g34, data/LV/targets/g33, time out
+data/LV/patterns/g34, data/LV/targets/g4, 2, 13399, 12071, 12070, 8, 0
+data/LV/patterns/g34, data/LV/targets/g41, time out
+data/LV/patterns/g34, data/LV/targets/g42, time out
+data/LV/patterns/g34, data/LV/targets/g48, time out
+data/LV/patterns/g34, data/LV/targets/g40, time out
+data/LV/patterns/g34, data/LV/targets/g45, time out
+data/LV/patterns/g34, data/LV/targets/g47, time out
+data/LV/patterns/g34, data/LV/targets/g44, time out
+data/LV/patterns/g34, data/LV/targets/g43, time out
+data/LV/patterns/g34, data/LV/targets/g46, time out
+data/LV/patterns/g34, data/LV/targets/g5, 10, 3118, 2510, 2098, 3, 0
+data/LV/patterns/g34, data/LV/targets/g7, 10, 53082, 48341, 48240, 47, 0
+data/LV/patterns/g34, data/LV/targets/g6, time out
+data/LV/patterns/g34, data/LV/targets/g49, time out
+data/LV/patterns/g34, data/LV/targets/g8, time out
+data/LV/patterns/g35, data/LV/targets/g10, time out
+data/LV/patterns/g34, data/LV/targets/g50, time out
+data/LV/patterns/g34, data/LV/targets/g9, time out
+data/LV/patterns/g35, data/LV/targets/g11, time out
+data/LV/patterns/g35, data/LV/targets/g13, time out
+data/LV/patterns/g35, data/LV/targets/g14, time out
+data/LV/patterns/g35, data/LV/targets/g20, time out
+data/LV/patterns/g35, data/LV/targets/g19, time out
+data/LV/patterns/g35, data/LV/targets/g15, time out
+data/LV/patterns/g35, data/LV/targets/g18, time out
+data/LV/patterns/g35, data/LV/targets/g12, time out
+data/LV/patterns/g35, data/LV/targets/g16, time out
+data/LV/patterns/g35, data/LV/targets/g17, time out
+data/LV/patterns/g35, data/LV/targets/g3, 8, 103247, 66163, 49749, 181, 1
+data/LV/patterns/g35, data/LV/targets/g26, time out
+data/LV/patterns/g35, data/LV/targets/g25, time out
+data/LV/patterns/g35, data/LV/targets/g22, time out
+data/LV/patterns/g35, data/LV/targets/g27, time out
+data/LV/patterns/g35, data/LV/targets/g28, time out
+data/LV/patterns/g35, data/LV/targets/g29, time out
+data/LV/patterns/g35, data/LV/targets/g24, time out
+data/LV/patterns/g35, data/LV/targets/g23, time out
+data/LV/patterns/g35, data/LV/targets/g21, time out
+data/LV/patterns/g35, data/LV/targets/g35, 120, 388, 268, 134, 1, 1
+data/LV/patterns/g35, data/LV/targets/g31, time out
+data/LV/patterns/g35, data/LV/targets/g30, time out
+data/LV/patterns/g35, data/LV/targets/g37, time out
+data/LV/patterns/g35, data/LV/targets/g38, time out
+data/LV/patterns/g35, data/LV/targets/g32, time out
+data/LV/patterns/g35, data/LV/targets/g36, time out
+data/LV/patterns/g35, data/LV/targets/g39, time out
+data/LV/patterns/g35, data/LV/targets/g33, time out
+data/LV/patterns/g35, data/LV/targets/g34, time out
+data/LV/patterns/g35, data/LV/targets/g4, 4, 17600, 15728, 15672, 10, 0
+data/LV/patterns/g35, data/LV/targets/g41, time out
+data/LV/patterns/g35, data/LV/targets/g48, time out
+data/LV/patterns/g35, data/LV/targets/g40, time out
+data/LV/patterns/g35, data/LV/targets/g45, time out
+data/LV/patterns/g35, data/LV/targets/g46, time out
+data/LV/patterns/g35, data/LV/targets/g44, time out
+data/LV/patterns/g35, data/LV/targets/g42, time out
+data/LV/patterns/g35, data/LV/targets/g47, time out
+data/LV/patterns/g35, data/LV/targets/g43, time out
+data/LV/patterns/g35, data/LV/targets/g5, 10, 9863, 6807, 4708, 9, 0
+data/LV/patterns/g35, data/LV/targets/g7, 10, 81095, 73647, 73506, 73, 1
+data/LV/patterns/g35, data/LV/targets/g6, 17, 1232826, 850931, 611431, 1375, 8
+data/LV/patterns/g35, data/LV/targets/g9, time out
+data/LV/patterns/g35, data/LV/targets/g49, time out
+data/LV/patterns/g35, data/LV/targets/g8, time out
+data/LV/patterns/g35, data/LV/targets/g50, time out
+data/LV/patterns/g36, data/LV/targets/g10, time out
+data/LV/patterns/g36, data/LV/targets/g11, time out
+data/LV/patterns/g36, data/LV/targets/g13, time out
+data/LV/patterns/g36, data/LV/targets/g18, time out
+data/LV/patterns/g36, data/LV/targets/g15, time out
+data/LV/patterns/g36, data/LV/targets/g16, time out
+data/LV/patterns/g36, data/LV/targets/g20, time out
+data/LV/patterns/g36, data/LV/targets/g17, time out
+data/LV/patterns/g36, data/LV/targets/g19, time out
+data/LV/patterns/g36, data/LV/targets/g14, time out
+data/LV/patterns/g36, data/LV/targets/g12, time out
+data/LV/patterns/g36, data/LV/targets/g3, 9, 144816, 91503, 63016, 144, 79
+data/LV/patterns/g36, data/LV/targets/g22, time out
+data/LV/patterns/g36, data/LV/targets/g27, time out
+data/LV/patterns/g36, data/LV/targets/g21, time out
+data/LV/patterns/g36, data/LV/targets/g26, time out
+data/LV/patterns/g36, data/LV/targets/g28, time out
+data/LV/patterns/g36, data/LV/targets/g24, time out
+data/LV/patterns/g36, data/LV/targets/g23, time out
+data/LV/patterns/g36, data/LV/targets/g29, time out
+data/LV/patterns/g36, data/LV/targets/g25, time out
+data/LV/patterns/g36, data/LV/targets/g36, 120, 369, 249, 119, 1, 1
+data/LV/patterns/g36, data/LV/targets/g32, 4, 822013, 813794, 813500, 2143, 1
+data/LV/patterns/g36, data/LV/targets/g30, time out
+data/LV/patterns/g36, data/LV/targets/g35, time out
+data/LV/patterns/g36, data/LV/targets/g38, time out
+data/LV/patterns/g36, data/LV/targets/g34, time out
+data/LV/patterns/g36, data/LV/targets/g33, time out
+data/LV/patterns/g36, data/LV/targets/g39, time out
+data/LV/patterns/g36, data/LV/targets/g37, time out
+data/LV/patterns/g36, data/LV/targets/g31, time out
+data/LV/patterns/g36, data/LV/targets/g4, 4, 9403, 8474, 8450, 6, 0
+data/LV/patterns/g36, data/LV/targets/g42, time out
+data/LV/patterns/g36, data/LV/targets/g47, time out
+data/LV/patterns/g36, data/LV/targets/g48, time out
+data/LV/patterns/g36, data/LV/targets/g41, time out
+data/LV/patterns/g36, data/LV/targets/g40, time out
+data/LV/patterns/g36, data/LV/targets/g45, time out
+data/LV/patterns/g36, data/LV/targets/g44, time out
+data/LV/patterns/g36, data/LV/targets/g46, time out
+data/LV/patterns/g36, data/LV/targets/g43, time out
+data/LV/patterns/g36, data/LV/targets/g5, 10, 7909, 5767, 4354, 7, 0
+data/LV/patterns/g36, data/LV/targets/g7, 10, 70055, 63743, 63566, 65, 1
+data/LV/patterns/g36, data/LV/targets/g6, 17, 1837335, 1233675, 863824, 2030, 20
+data/LV/patterns/g36, data/LV/targets/g8, time out
+data/LV/patterns/g36, data/LV/targets/g9, time out
+data/LV/patterns/g37, data/LV/targets/g10, time out
+data/LV/patterns/g36, data/LV/targets/g50, time out
+data/LV/patterns/g36, data/LV/targets/g49, time out
+data/LV/patterns/g37, data/LV/targets/g15, time out
+data/LV/patterns/g37, data/LV/targets/g19, time out
+data/LV/patterns/g37, data/LV/targets/g14, time out
+data/LV/patterns/g37, data/LV/targets/g11, time out
+data/LV/patterns/g37, data/LV/targets/g12, time out
+data/LV/patterns/g37, data/LV/targets/g16, time out
+data/LV/patterns/g37, data/LV/targets/g18, time out
+data/LV/patterns/g37, data/LV/targets/g20, time out
+data/LV/patterns/g37, data/LV/targets/g13, time out
+data/LV/patterns/g37, data/LV/targets/g17, time out
+data/LV/patterns/g37, data/LV/targets/g3, 9, 748250, 456856, 334215, 1332, 541
+data/LV/patterns/g37, data/LV/targets/g26, time out
+data/LV/patterns/g37, data/LV/targets/g25, time out
+data/LV/patterns/g37, data/LV/targets/g21, time out
+data/LV/patterns/g37, data/LV/targets/g27, time out
+data/LV/patterns/g37, data/LV/targets/g29, time out
+data/LV/patterns/g37, data/LV/targets/g24, time out
+data/LV/patterns/g37, data/LV/targets/g23, time out
+data/LV/patterns/g37, data/LV/targets/g28, time out
+data/LV/patterns/g37, data/LV/targets/g22, time out
+data/LV/patterns/g37, data/LV/targets/g37, 120, 374, 254, 128, 1, 1
+data/LV/patterns/g37, data/LV/targets/g32, 9, 832363, 824039, 822702, 2148, 1472
+data/LV/patterns/g37, data/LV/targets/g35, time out
+data/LV/patterns/g37, data/LV/targets/g36, time out
+data/LV/patterns/g37, data/LV/targets/g30, time out
+data/LV/patterns/g37, data/LV/targets/g38, time out
+data/LV/patterns/g37, data/LV/targets/g34, time out
+data/LV/patterns/g37, data/LV/targets/g39, time out
+data/LV/patterns/g37, data/LV/targets/g33, time out
+data/LV/patterns/g37, data/LV/targets/g31, time out
+data/LV/patterns/g37, data/LV/targets/g4, 9, 8438, 7597, 7173, 5, 2
+data/LV/patterns/g37, data/LV/targets/g43, time out
+data/LV/patterns/g37, data/LV/targets/g46, time out
+data/LV/patterns/g37, data/LV/targets/g44, time out
+data/LV/patterns/g37, data/LV/targets/g45, time out
+data/LV/patterns/g37, data/LV/targets/g42, time out
+data/LV/patterns/g37, data/LV/targets/g47, time out
+data/LV/patterns/g37, data/LV/targets/g48, time out
+data/LV/patterns/g37, data/LV/targets/g41, time out
+data/LV/patterns/g37, data/LV/targets/g40, time out
+data/LV/patterns/g37, data/LV/targets/g5, 10, 36736, 23746, 16681, 33, 2
+data/LV/patterns/g37, data/LV/targets/g6, 18, 143145, 94806, 70152, 178, 53
+data/LV/patterns/g37, data/LV/targets/g7, 10, 1213284, 1090593, 1073855, 1050, 7
+data/LV/patterns/g37, data/LV/targets/g8, 30, 1873621, 1224858, 976368, 2293, 2293
+data/LV/patterns/g37, data/LV/targets/g49, time out
+data/LV/patterns/g37, data/LV/targets/g9, time out
+data/LV/patterns/g38, data/LV/targets/g10, time out
+data/LV/patterns/g37, data/LV/targets/g50, time out
+data/LV/patterns/g38, data/LV/targets/g12, time out
+data/LV/patterns/g38, data/LV/targets/g11, time out
+data/LV/patterns/g38, data/LV/targets/g13, time out
+data/LV/patterns/g38, data/LV/targets/g16, time out
+data/LV/patterns/g38, data/LV/targets/g15, time out
+data/LV/patterns/g38, data/LV/targets/g14, time out
+data/LV/patterns/g38, data/LV/targets/g18, time out
+data/LV/patterns/g38, data/LV/targets/g17, time out
+data/LV/patterns/g38, data/LV/targets/g19, time out
+data/LV/patterns/g38, data/LV/targets/g20, time out
+data/LV/patterns/g38, data/LV/targets/g3, 6, 3375540, 2182108, 2117096, 4268, 0
+data/LV/patterns/g38, data/LV/targets/g23, time out
+data/LV/patterns/g38, data/LV/targets/g25, time out
+data/LV/patterns/g38, data/LV/targets/g24, time out
+data/LV/patterns/g38, data/LV/targets/g27, time out
+data/LV/patterns/g38, data/LV/targets/g28, time out
+data/LV/patterns/g38, data/LV/targets/g29, time out
+data/LV/patterns/g38, data/LV/targets/g21, time out
+data/LV/patterns/g38, data/LV/targets/g22, time out
+data/LV/patterns/g38, data/LV/targets/g26, time out
+data/LV/patterns/g38, data/LV/targets/g38, 121, 2620, 2513, 257, 5, 1
+data/LV/patterns/g38, data/LV/targets/g32, 2, 1922020, 1902801, 1902800, 4751, 0
+data/LV/patterns/g38, data/LV/targets/g35, time out
+data/LV/patterns/g38, data/LV/targets/g34, time out
+data/LV/patterns/g38, data/LV/targets/g36, time out
+data/LV/patterns/g38, data/LV/targets/g31, time out
+data/LV/patterns/g38, data/LV/targets/g33, time out
+data/LV/patterns/g38, data/LV/targets/g39, time out
+data/LV/patterns/g38, data/LV/targets/g30, time out
+data/LV/patterns/g38, data/LV/targets/g37, time out
+data/LV/patterns/g38, data/LV/targets/g4, 2, 20410, 18381, 18260, 16, 0
+data/LV/patterns/g38, data/LV/targets/g43, time out
+data/LV/patterns/g38, data/LV/targets/g44, time out
+data/LV/patterns/g38, data/LV/targets/g42, time out
+data/LV/patterns/g38, data/LV/targets/g46, time out
+data/LV/patterns/g38, data/LV/targets/g45, time out
+data/LV/patterns/g38, data/LV/targets/g41, time out
+data/LV/patterns/g38, data/LV/targets/g48, time out
+data/LV/patterns/g38, data/LV/targets/g47, time out
+data/LV/patterns/g38, data/LV/targets/g40, time out
+data/LV/patterns/g38, data/LV/targets/g7, 20, 141, 121, 0, 0, 0
+data/LV/patterns/g38, data/LV/targets/g5, time out
+data/LV/patterns/g38, data/LV/targets/g50, time out
+data/LV/patterns/g38, data/LV/targets/g49, time out
+data/LV/patterns/g38, data/LV/targets/g8, time out
+data/LV/patterns/g39, data/LV/targets/g10, time out
+data/LV/patterns/g38, data/LV/targets/g6, time out
+data/LV/patterns/g38, data/LV/targets/g9, time out
+data/LV/patterns/g39, data/LV/targets/g17, time out
+data/LV/patterns/g39, data/LV/targets/g14, time out
+data/LV/patterns/g39, data/LV/targets/g18, time out
+data/LV/patterns/g39, data/LV/targets/g13, time out
+data/LV/patterns/g39, data/LV/targets/g16, time out
+data/LV/patterns/g39, data/LV/targets/g15, time out
+data/LV/patterns/g39, data/LV/targets/g19, time out
+data/LV/patterns/g39, data/LV/targets/g20, time out
+data/LV/patterns/g39, data/LV/targets/g12, time out
+data/LV/patterns/g39, data/LV/targets/g11, time out
+data/LV/patterns/g39, data/LV/targets/g3, 7, 171516, 111386, 88732, 301, 0
+data/LV/patterns/g39, data/LV/targets/g25, time out
+data/LV/patterns/g39, data/LV/targets/g26, time out
+data/LV/patterns/g39, data/LV/targets/g28, time out
+data/LV/patterns/g39, data/LV/targets/g21, time out
+data/LV/patterns/g39, data/LV/targets/g24, time out
+data/LV/patterns/g39, data/LV/targets/g29, time out
+data/LV/patterns/g39, data/LV/targets/g27, time out
+data/LV/patterns/g39, data/LV/targets/g22, time out
+data/LV/patterns/g39, data/LV/targets/g23, time out
+data/LV/patterns/g39, data/LV/targets/g39, 121, 369, 248, 44, 2, 1
+data/LV/patterns/g39, data/LV/targets/g32, 3, 3359532, 3325727, 3325330, 8393, 0
+data/LV/patterns/g39, data/LV/targets/g30, time out
+data/LV/patterns/g39, data/LV/targets/g34, time out
+data/LV/patterns/g39, data/LV/targets/g37, time out
+data/LV/patterns/g39, data/LV/targets/g38, time out
+data/LV/patterns/g39, data/LV/targets/g31, time out
+data/LV/patterns/g39, data/LV/targets/g33, time out
+data/LV/patterns/g39, data/LV/targets/g36, time out
+data/LV/patterns/g39, data/LV/targets/g35, time out
+data/LV/patterns/g39, data/LV/targets/g4, 3, 16653, 14969, 14932, 10, 0
+data/LV/patterns/g39, data/LV/targets/g43, time out
+data/LV/patterns/g39, data/LV/targets/g44, time out
+data/LV/patterns/g39, data/LV/targets/g40, time out
+data/LV/patterns/g39, data/LV/targets/g41, time out
+data/LV/patterns/g39, data/LV/targets/g46, time out
+data/LV/patterns/g39, data/LV/targets/g47, time out
+data/LV/patterns/g39, data/LV/targets/g42, time out
+data/LV/patterns/g39, data/LV/targets/g48, time out
+data/LV/patterns/g39, data/LV/targets/g45, time out
+data/LV/patterns/g39, data/LV/targets/g5, 10, 13166, 8348, 4119, 11, 0
+data/LV/patterns/g4, data/LV/targets/g10, 3, 9899, 7428, 7159, 5, 0
+data/LV/patterns/g39, data/LV/targets/g7, 10, 71795, 65344, 65250, 64, 1
+data/LV/patterns/g39, data/LV/targets/g49, time out
+data/LV/patterns/g39, data/LV/targets/g8, time out
+data/LV/patterns/g39, data/LV/targets/g9, time out
+data/LV/patterns/g39, data/LV/targets/g6, time out
+data/LV/patterns/g39, data/LV/targets/g50, time out
+data/LV/patterns/g4, data/LV/targets/g15, 10, 205, 179, 113, 0, 0
+data/LV/patterns/g4, data/LV/targets/g13, 9, 2200, 1796, 1568, 1, 0
+data/LV/patterns/g4, data/LV/targets/g14, 8, 4460, 3894, 3521, 4, 1
+data/LV/patterns/g4, data/LV/targets/g11, 2, 9993, 8509, 8323, 5, 0
+data/LV/patterns/g4, data/LV/targets/g17, 2, 10889, 8577, 8416, 5, 0
+data/LV/patterns/g4, data/LV/targets/g18, 2, 12041, 9729, 9536, 6, 0
+data/LV/patterns/g4, data/LV/targets/g19, 2, 14921, 12609, 12336, 8, 0
+data/LV/patterns/g4, data/LV/targets/g12, 2, 16557, 14965, 14720, 10, 0
+data/LV/patterns/g4, data/LV/targets/g16, 6, 116312, 87365, 70783, 55, 0
+data/LV/patterns/g4, data/LV/targets/g20, 8, 115579, 102520, 93140, 72, 0
+data/LV/patterns/g4, data/LV/targets/g24, 7, 312, 295, 273, 0, 0
+data/LV/patterns/g4, data/LV/targets/g3, 2, 1529, 1161, 1140, 0, 0
+data/LV/patterns/g4, data/LV/targets/g23, 10, 199, 189, 93, 0, 0
+data/LV/patterns/g4, data/LV/targets/g21, 10, 506, 496, 0, 1, 0
+data/LV/patterns/g4, data/LV/targets/g25, 10, 159, 147, 81, 0, 0
+data/LV/patterns/g4, data/LV/targets/g27, 10, 267, 257, 132, 0, 0
+data/LV/patterns/g4, data/LV/targets/g22, 9, 960, 852, 729, 0, 0
+data/LV/patterns/g4, data/LV/targets/g28, 2, 7625, 6213, 6105, 5, 0
+data/LV/patterns/g4, data/LV/targets/g26, 10, 52601, 38848, 29611, 26, 26
+data/LV/patterns/g4, data/LV/targets/g29, 5, 205389, 171752, 163909, 112, 5
+data/LV/patterns/g4, data/LV/targets/g32, 10, 966, 956, 0, 1, 0
+data/LV/patterns/g4, data/LV/targets/g37, 9, 4567, 3976, 3445, 3, 1
+data/LV/patterns/g4, data/LV/targets/g36, 4, 18528, 15551, 15216, 11, 0
+data/LV/patterns/g4, data/LV/targets/g34, 2, 22569, 18241, 17880, 12, 0
+data/LV/patterns/g4, data/LV/targets/g38, 2, 17105, 15585, 15350, 17, 0
+data/LV/patterns/g4, data/LV/targets/g33, 4, 21032, 17285, 16866, 20, 2
+data/LV/patterns/g4, data/LV/targets/g35, 4, 81411, 60362, 55848, 42, 0
+data/LV/patterns/g4, data/LV/targets/g30, 5, 121469, 102548, 98197, 75, 4
+data/LV/patterns/g4, data/LV/targets/g39, 3, 163115, 112736, 108375, 87, 0
+data/LV/patterns/g4, data/LV/targets/g31, 5, 370652, 304500, 286278, 198, 6
+data/LV/patterns/g4, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g4, data/LV/targets/g43, 10, 279, 269, 42, 0, 0
+data/LV/patterns/g4, data/LV/targets/g40, 10, 481, 471, 0, 1, 0
+data/LV/patterns/g4, data/LV/targets/g41, 4, 24828, 20414, 19928, 16, 2
+data/LV/patterns/g4, data/LV/targets/g47, 4, 153515, 124245, 119235, 86, 0
+data/LV/patterns/g4, data/LV/targets/g46, 4, 168238, 136223, 130737, 94, 0
+data/LV/patterns/g4, data/LV/targets/g45, 5, 177849, 148060, 140268, 101, 0
+data/LV/patterns/g4, data/LV/targets/g48, 4, 231500, 186021, 178358, 127, 0
+data/LV/patterns/g4, data/LV/targets/g44, 5, 351424, 287219, 268426, 193, 0
+data/LV/patterns/g4, data/LV/targets/g42, 8, 1184034, 880524, 622056, 575, 1
+data/LV/patterns/g4, data/LV/targets/g49, 10, 211, 201, 10, 0, 0
+data/LV/patterns/g4, data/LV/targets/g9, 6, 1013, 888, 846, 0, 0
+data/LV/patterns/g4, data/LV/targets/g6, 3, 4119, 3075, 2945, 2, 0
+data/LV/patterns/g4, data/LV/targets/g50, 10, 804, 794, 0, 1, 0
+data/LV/patterns/g4, data/LV/targets/g5, 3, 6553, 4558, 4190, 3, 0
+data/LV/patterns/g4, data/LV/targets/g8, 4, 3197, 2617, 2559, 1, 0
+data/LV/patterns/g4, data/LV/targets/g7, 2, 8089, 7361, 7200, 4, 0
+data/LV/patterns/g40, data/LV/targets/g10, time out
+data/LV/patterns/g40, data/LV/targets/g16, time out
+data/LV/patterns/g40, data/LV/targets/g11, time out
+data/LV/patterns/g40, data/LV/targets/g12, time out
+data/LV/patterns/g40, data/LV/targets/g17, time out
+data/LV/patterns/g40, data/LV/targets/g13, time out
+data/LV/patterns/g40, data/LV/targets/g18, time out
+data/LV/patterns/g40, data/LV/targets/g19, time out
+data/LV/patterns/g40, data/LV/targets/g14, time out
+data/LV/patterns/g40, data/LV/targets/g20, time out
+data/LV/patterns/g40, data/LV/targets/g15, time out
+data/LV/patterns/g40, data/LV/targets/g25, time out
+data/LV/patterns/g40, data/LV/targets/g28, time out
+data/LV/patterns/g40, data/LV/targets/g29, time out
+data/LV/patterns/g40, data/LV/targets/g27, time out
+data/LV/patterns/g40, data/LV/targets/g22, time out
+data/LV/patterns/g40, data/LV/targets/g23, time out
+data/LV/patterns/g40, data/LV/targets/g3, time out
+data/LV/patterns/g40, data/LV/targets/g26, time out
+data/LV/patterns/g40, data/LV/targets/g21, time out
+data/LV/patterns/g40, data/LV/targets/g24, time out
+data/LV/patterns/g40, data/LV/targets/g31, time out
+data/LV/patterns/g40, data/LV/targets/g37, time out
+data/LV/patterns/g40, data/LV/targets/g34, time out
+data/LV/patterns/g40, data/LV/targets/g30, time out
+data/LV/patterns/g40, data/LV/targets/g32, time out
+data/LV/patterns/g40, data/LV/targets/g39, time out
+data/LV/patterns/g40, data/LV/targets/g33, time out
+data/LV/patterns/g40, data/LV/targets/g35, time out
+data/LV/patterns/g40, data/LV/targets/g36, time out
+data/LV/patterns/g40, data/LV/targets/g38, time out
+data/LV/patterns/g40, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g40, data/LV/targets/g40, 121, 451, 330, 185, 3, 2
+data/LV/patterns/g40, data/LV/targets/g45, time out
+data/LV/patterns/g40, data/LV/targets/g46, time out
+data/LV/patterns/g40, data/LV/targets/g44, time out
+data/LV/patterns/g40, data/LV/targets/g47, time out
+data/LV/patterns/g40, data/LV/targets/g43, time out
+data/LV/patterns/g40, data/LV/targets/g42, time out
+data/LV/patterns/g40, data/LV/targets/g48, time out
+data/LV/patterns/g40, data/LV/targets/g41, time out
+data/LV/patterns/g40, data/LV/targets/g5, time out
+data/LV/patterns/g40, data/LV/targets/g50, time out
+data/LV/patterns/g40, data/LV/targets/g49, time out
+data/LV/patterns/g40, data/LV/targets/g8, time out
+data/LV/patterns/g40, data/LV/targets/g6, time out
+data/LV/patterns/g40, data/LV/targets/g7, time out
+data/LV/patterns/g40, data/LV/targets/g9, time out
+data/LV/patterns/g41, data/LV/targets/g10, time out
+data/LV/patterns/g41, data/LV/targets/g13, time out
+data/LV/patterns/g41, data/LV/targets/g14, time out
+data/LV/patterns/g41, data/LV/targets/g15, time out
+data/LV/patterns/g41, data/LV/targets/g17, time out
+data/LV/patterns/g41, data/LV/targets/g20, time out
+data/LV/patterns/g41, data/LV/targets/g18, time out
+data/LV/patterns/g41, data/LV/targets/g16, time out
+data/LV/patterns/g41, data/LV/targets/g12, time out
+data/LV/patterns/g41, data/LV/targets/g19, time out
+data/LV/patterns/g41, data/LV/targets/g11, time out
+data/LV/patterns/g41, data/LV/targets/g3, 7, 365857, 228315, 176481, 383, 0
+data/LV/patterns/g41, data/LV/targets/g27, time out
+data/LV/patterns/g41, data/LV/targets/g24, time out
+data/LV/patterns/g41, data/LV/targets/g28, time out
+data/LV/patterns/g41, data/LV/targets/g26, time out
+data/LV/patterns/g41, data/LV/targets/g21, time out
+data/LV/patterns/g41, data/LV/targets/g23, time out
+data/LV/patterns/g41, data/LV/targets/g25, time out
+data/LV/patterns/g41, data/LV/targets/g29, time out
+data/LV/patterns/g41, data/LV/targets/g22, time out
+data/LV/patterns/g41, data/LV/targets/g36, time out
+data/LV/patterns/g41, data/LV/targets/g30, time out
+data/LV/patterns/g41, data/LV/targets/g34, time out
+data/LV/patterns/g41, data/LV/targets/g39, time out
+data/LV/patterns/g41, data/LV/targets/g33, time out
+data/LV/patterns/g41, data/LV/targets/g31, time out
+data/LV/patterns/g41, data/LV/targets/g38, time out
+data/LV/patterns/g41, data/LV/targets/g32, time out
+data/LV/patterns/g41, data/LV/targets/g35, time out
+data/LV/patterns/g41, data/LV/targets/g37, time out
+data/LV/patterns/g41, data/LV/targets/g41, 128, 394, 266, 136, 1, 1
+data/LV/patterns/g41, data/LV/targets/g4, 4, 27785, 24881, 24756, 16, 13
+data/LV/patterns/g41, data/LV/targets/g44, time out
+data/LV/patterns/g41, data/LV/targets/g48, time out
+data/LV/patterns/g41, data/LV/targets/g46, time out
+data/LV/patterns/g41, data/LV/targets/g40, time out
+data/LV/patterns/g41, data/LV/targets/g47, time out
+data/LV/patterns/g41, data/LV/targets/g43, time out
+data/LV/patterns/g41, data/LV/targets/g42, time out
+data/LV/patterns/g41, data/LV/targets/g45, time out
+data/LV/patterns/g41, data/LV/targets/g5, 11, 43, 32, 0, 0, 0
+data/LV/patterns/g41, data/LV/targets/g7, 10, 95216, 86481, 86306, 143, 3
+data/LV/patterns/g41, data/LV/targets/g49, time out
+data/LV/patterns/g41, data/LV/targets/g8, time out
+data/LV/patterns/g41, data/LV/targets/g50, time out
+data/LV/patterns/g42, data/LV/targets/g10, time out
+data/LV/patterns/g41, data/LV/targets/g6, time out
+data/LV/patterns/g41, data/LV/targets/g9, time out
+data/LV/patterns/g42, data/LV/targets/g11, time out
+data/LV/patterns/g42, data/LV/targets/g20, time out
+data/LV/patterns/g42, data/LV/targets/g19, time out
+data/LV/patterns/g42, data/LV/targets/g16, time out
+data/LV/patterns/g42, data/LV/targets/g17, time out
+data/LV/patterns/g42, data/LV/targets/g12, time out
+data/LV/patterns/g42, data/LV/targets/g14, time out
+data/LV/patterns/g42, data/LV/targets/g18, time out
+data/LV/patterns/g42, data/LV/targets/g13, time out
+data/LV/patterns/g42, data/LV/targets/g15, time out
+data/LV/patterns/g42, data/LV/targets/g3, 7, 360753, 229655, 187408, 642, 0
+data/LV/patterns/g42, data/LV/targets/g23, time out
+data/LV/patterns/g42, data/LV/targets/g29, time out
+data/LV/patterns/g42, data/LV/targets/g22, time out
+data/LV/patterns/g42, data/LV/targets/g21, time out
+data/LV/patterns/g42, data/LV/targets/g27, time out
+data/LV/patterns/g42, data/LV/targets/g25, time out
+data/LV/patterns/g42, data/LV/targets/g28, time out
+data/LV/patterns/g42, data/LV/targets/g24, time out
+data/LV/patterns/g42, data/LV/targets/g26, time out
+data/LV/patterns/g42, data/LV/targets/g33, time out
+data/LV/patterns/g42, data/LV/targets/g32, time out
+data/LV/patterns/g42, data/LV/targets/g30, time out
+data/LV/patterns/g42, data/LV/targets/g34, time out
+data/LV/patterns/g42, data/LV/targets/g36, time out
+data/LV/patterns/g42, data/LV/targets/g35, time out
+data/LV/patterns/g42, data/LV/targets/g31, time out
+data/LV/patterns/g42, data/LV/targets/g39, time out
+data/LV/patterns/g42, data/LV/targets/g37, time out
+data/LV/patterns/g42, data/LV/targets/g38, time out
+data/LV/patterns/g42, data/LV/targets/g42, 128, 424, 296, 105, 1, 1
+data/LV/patterns/g42, data/LV/targets/g4, 8, 9968, 8915, 8596, 6, 2
+data/LV/patterns/g42, data/LV/targets/g45, time out
+data/LV/patterns/g42, data/LV/targets/g41, time out
+data/LV/patterns/g42, data/LV/targets/g47, time out
+data/LV/patterns/g42, data/LV/targets/g46, time out
+data/LV/patterns/g42, data/LV/targets/g48, time out
+data/LV/patterns/g42, data/LV/targets/g43, time out
+data/LV/patterns/g42, data/LV/targets/g40, time out
+data/LV/patterns/g42, data/LV/targets/g44, time out
+data/LV/patterns/g42, data/LV/targets/g7, 10, 115325, 104800, 104346, 116, 2
+data/LV/patterns/g42, data/LV/targets/g5, 10, 332767, 170651, 117980, 265, 244
+data/LV/patterns/g42, data/LV/targets/g6, 17, 2766666, 1856421, 1365017, 3086, 19
+data/LV/patterns/g42, data/LV/targets/g9, time out
+data/LV/patterns/g42, data/LV/targets/g50, time out
+data/LV/patterns/g43, data/LV/targets/g10, time out
+data/LV/patterns/g42, data/LV/targets/g49, time out
+data/LV/patterns/g42, data/LV/targets/g8, time out
+data/LV/patterns/g43, data/LV/targets/g16, time out
+data/LV/patterns/g43, data/LV/targets/g13, time out
+data/LV/patterns/g43, data/LV/targets/g12, time out
+data/LV/patterns/g43, data/LV/targets/g14, time out
+data/LV/patterns/g43, data/LV/targets/g17, time out
+data/LV/patterns/g43, data/LV/targets/g20, time out
+data/LV/patterns/g43, data/LV/targets/g18, time out
+data/LV/patterns/g43, data/LV/targets/g11, time out
+data/LV/patterns/g43, data/LV/targets/g19, time out
+data/LV/patterns/g43, data/LV/targets/g15, time out
+data/LV/patterns/g43, data/LV/targets/g3, 7, 2246533, 1376526, 1193690, 3926, 0
+data/LV/patterns/g43, data/LV/targets/g22, time out
+data/LV/patterns/g43, data/LV/targets/g23, time out
+data/LV/patterns/g43, data/LV/targets/g27, time out
+data/LV/patterns/g43, data/LV/targets/g28, time out
+data/LV/patterns/g43, data/LV/targets/g29, time out
+data/LV/patterns/g43, data/LV/targets/g26, time out
+data/LV/patterns/g43, data/LV/targets/g25, time out
+data/LV/patterns/g43, data/LV/targets/g24, time out
+data/LV/patterns/g43, data/LV/targets/g21, time out
+data/LV/patterns/g43, data/LV/targets/g34, time out
+data/LV/patterns/g43, data/LV/targets/g39, time out
+data/LV/patterns/g43, data/LV/targets/g37, time out
+data/LV/patterns/g43, data/LV/targets/g31, time out
+data/LV/patterns/g43, data/LV/targets/g32, time out
+data/LV/patterns/g43, data/LV/targets/g38, time out
+data/LV/patterns/g43, data/LV/targets/g30, time out
+data/LV/patterns/g43, data/LV/targets/g33, time out
+data/LV/patterns/g43, data/LV/targets/g35, time out
+data/LV/patterns/g43, data/LV/targets/g36, time out
+data/LV/patterns/g43, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g43, data/LV/targets/g43, 128, 472, 344, 194, 1, 1
+data/LV/patterns/g43, data/LV/targets/g44, time out
+data/LV/patterns/g43, data/LV/targets/g40, time out
+data/LV/patterns/g43, data/LV/targets/g45, time out
+data/LV/patterns/g43, data/LV/targets/g46, time out
+data/LV/patterns/g43, data/LV/targets/g42, time out
+data/LV/patterns/g43, data/LV/targets/g47, time out
+data/LV/patterns/g43, data/LV/targets/g48, time out
+data/LV/patterns/g43, data/LV/targets/g41, time out
+data/LV/patterns/g43, data/LV/targets/g5, 10, 128912, 77354, 57138, 132, 11
+data/LV/patterns/g43, data/LV/targets/g7, 10, 1485868, 1338047, 1333302, 1349, 53
+data/LV/patterns/g43, data/LV/targets/g6, 17, 7311538, 4748454, 3664770, 8297, 974
+data/LV/patterns/g43, data/LV/targets/g49, time out
+data/LV/patterns/g43, data/LV/targets/g50, time out
+data/LV/patterns/g43, data/LV/targets/g8, time out
+data/LV/patterns/g44, data/LV/targets/g10, time out
+data/LV/patterns/g43, data/LV/targets/g9, time out
+data/LV/patterns/g44, data/LV/targets/g15, time out
+data/LV/patterns/g44, data/LV/targets/g18, time out
+data/LV/patterns/g44, data/LV/targets/g11, time out
+data/LV/patterns/g44, data/LV/targets/g17, time out
+data/LV/patterns/g44, data/LV/targets/g12, time out
+data/LV/patterns/g44, data/LV/targets/g14, time out
+data/LV/patterns/g44, data/LV/targets/g13, time out
+data/LV/patterns/g44, data/LV/targets/g16, time out
+data/LV/patterns/g44, data/LV/targets/g19, time out
+data/LV/patterns/g44, data/LV/targets/g20, time out
+data/LV/patterns/g44, data/LV/targets/g3, 10, 1452, 778, 353, 2, 2
+data/LV/patterns/g44, data/LV/targets/g23, time out
+data/LV/patterns/g44, data/LV/targets/g22, time out
+data/LV/patterns/g44, data/LV/targets/g29, time out
+data/LV/patterns/g44, data/LV/targets/g26, time out
+data/LV/patterns/g44, data/LV/targets/g21, time out
+data/LV/patterns/g44, data/LV/targets/g28, time out
+data/LV/patterns/g44, data/LV/targets/g27, time out
+data/LV/patterns/g44, data/LV/targets/g24, time out
+data/LV/patterns/g44, data/LV/targets/g25, time out
+data/LV/patterns/g44, data/LV/targets/g32, time out
+data/LV/patterns/g44, data/LV/targets/g37, time out
+data/LV/patterns/g44, data/LV/targets/g33, time out
+data/LV/patterns/g44, data/LV/targets/g35, time out
+data/LV/patterns/g44, data/LV/targets/g36, time out
+data/LV/patterns/g44, data/LV/targets/g39, time out
+data/LV/patterns/g44, data/LV/targets/g38, time out
+data/LV/patterns/g44, data/LV/targets/g31, time out
+data/LV/patterns/g44, data/LV/targets/g34, time out
+data/LV/patterns/g44, data/LV/targets/g30, time out
+data/LV/patterns/g44, data/LV/targets/g44, 128, 413, 290, 167, 1, 1
+data/LV/patterns/g44, data/LV/targets/g4, 5, 187444, 167166, 166482, 232, 2
+data/LV/patterns/g44, data/LV/targets/g45, 114, 492121, 384130, 353337, 1383, 1
+data/LV/patterns/g44, data/LV/targets/g46, time out
+data/LV/patterns/g44, data/LV/targets/g40, time out
+data/LV/patterns/g44, data/LV/targets/g41, time out
+data/LV/patterns/g44, data/LV/targets/g47, time out
+data/LV/patterns/g44, data/LV/targets/g48, time out
+data/LV/patterns/g44, data/LV/targets/g42, time out
+data/LV/patterns/g44, data/LV/targets/g43, time out
+data/LV/patterns/g44, data/LV/targets/g5, 11, 79, 50, 7, 0, 0
+data/LV/patterns/g44, data/LV/targets/g6, 19, 54259, 35948, 28229, 41, 41
+data/LV/patterns/g44, data/LV/targets/g9, time out
+data/LV/patterns/g44, data/LV/targets/g7, time out
+data/LV/patterns/g44, data/LV/targets/g49, time out
+data/LV/patterns/g45, data/LV/targets/g10, time out
+data/LV/patterns/g44, data/LV/targets/g50, time out
+data/LV/patterns/g44, data/LV/targets/g8, time out
+data/LV/patterns/g45, data/LV/targets/g12, time out
+data/LV/patterns/g45, data/LV/targets/g18, time out
+data/LV/patterns/g45, data/LV/targets/g15, time out
+data/LV/patterns/g45, data/LV/targets/g19, time out
+data/LV/patterns/g45, data/LV/targets/g13, time out
+data/LV/patterns/g45, data/LV/targets/g20, time out
+data/LV/patterns/g45, data/LV/targets/g17, time out
+data/LV/patterns/g45, data/LV/targets/g16, time out
+data/LV/patterns/g45, data/LV/targets/g14, time out
+data/LV/patterns/g45, data/LV/targets/g11, time out
+data/LV/patterns/g45, data/LV/targets/g3, 10, 1681, 868, 374, 1, 1
+data/LV/patterns/g45, data/LV/targets/g23, time out
+data/LV/patterns/g45, data/LV/targets/g22, time out
+data/LV/patterns/g45, data/LV/targets/g26, time out
+data/LV/patterns/g45, data/LV/targets/g24, time out
+data/LV/patterns/g45, data/LV/targets/g21, time out
+data/LV/patterns/g45, data/LV/targets/g29, time out
+data/LV/patterns/g45, data/LV/targets/g28, time out
+data/LV/patterns/g45, data/LV/targets/g27, time out
+data/LV/patterns/g45, data/LV/targets/g25, time out
+data/LV/patterns/g45, data/LV/targets/g33, time out
+data/LV/patterns/g45, data/LV/targets/g31, time out
+data/LV/patterns/g45, data/LV/targets/g39, time out
+data/LV/patterns/g45, data/LV/targets/g30, time out
+data/LV/patterns/g45, data/LV/targets/g34, time out
+data/LV/patterns/g45, data/LV/targets/g38, time out
+data/LV/patterns/g45, data/LV/targets/g32, time out
+data/LV/patterns/g45, data/LV/targets/g36, time out
+data/LV/patterns/g45, data/LV/targets/g35, time out
+data/LV/patterns/g45, data/LV/targets/g37, time out
+data/LV/patterns/g45, data/LV/targets/g45, 128, 257, 135, 14, 1, 1
+data/LV/patterns/g45, data/LV/targets/g4, 5, 116953, 104382, 103900, 75, 1
+data/LV/patterns/g45, data/LV/targets/g44, 114, 148777, 100275, 68227, 480, 1
+data/LV/patterns/g45, data/LV/targets/g41, time out
+data/LV/patterns/g45, data/LV/targets/g48, time out
+data/LV/patterns/g45, data/LV/targets/g43, time out
+data/LV/patterns/g45, data/LV/targets/g46, time out
+data/LV/patterns/g45, data/LV/targets/g40, time out
+data/LV/patterns/g45, data/LV/targets/g47, time out
+data/LV/patterns/g45, data/LV/targets/g42, time out
+data/LV/patterns/g45, data/LV/targets/g5, 11, 111, 66, 12, 0, 0
+data/LV/patterns/g45, data/LV/targets/g6, 18, 3802406, 2387294, 1578449, 5329, 44
+data/LV/patterns/g45, data/LV/targets/g7, time out
+data/LV/patterns/g45, data/LV/targets/g8, time out
+data/LV/patterns/g45, data/LV/targets/g50, time out
+data/LV/patterns/g46, data/LV/targets/g10, time out
+data/LV/patterns/g45, data/LV/targets/g49, time out
+data/LV/patterns/g45, data/LV/targets/g9, time out
+data/LV/patterns/g46, data/LV/targets/g15, time out
+data/LV/patterns/g46, data/LV/targets/g18, time out
+data/LV/patterns/g46, data/LV/targets/g11, time out
+data/LV/patterns/g46, data/LV/targets/g17, time out
+data/LV/patterns/g46, data/LV/targets/g20, time out
+data/LV/patterns/g46, data/LV/targets/g14, time out
+data/LV/patterns/g46, data/LV/targets/g19, time out
+data/LV/patterns/g46, data/LV/targets/g12, time out
+data/LV/patterns/g46, data/LV/targets/g13, time out
+data/LV/patterns/g46, data/LV/targets/g16, time out
+data/LV/patterns/g46, data/LV/targets/g3, 10, 601, 309, 144, 1, 1
+data/LV/patterns/g46, data/LV/targets/g26, time out
+data/LV/patterns/g46, data/LV/targets/g29, time out
+data/LV/patterns/g46, data/LV/targets/g21, time out
+data/LV/patterns/g46, data/LV/targets/g22, time out
+data/LV/patterns/g46, data/LV/targets/g28, time out
+data/LV/patterns/g46, data/LV/targets/g25, time out
+data/LV/patterns/g46, data/LV/targets/g23, time out
+data/LV/patterns/g46, data/LV/targets/g24, time out
+data/LV/patterns/g46, data/LV/targets/g27, time out
+data/LV/patterns/g46, data/LV/targets/g36, time out
+data/LV/patterns/g46, data/LV/targets/g37, time out
+data/LV/patterns/g46, data/LV/targets/g38, time out
+data/LV/patterns/g46, data/LV/targets/g34, time out
+data/LV/patterns/g46, data/LV/targets/g32, time out
+data/LV/patterns/g46, data/LV/targets/g33, time out
+data/LV/patterns/g46, data/LV/targets/g39, time out
+data/LV/patterns/g46, data/LV/targets/g35, time out
+data/LV/patterns/g46, data/LV/targets/g31, time out
+data/LV/patterns/g46, data/LV/targets/g30, time out
+data/LV/patterns/g46, data/LV/targets/g46, 128, 413, 285, 156, 2, 1
+data/LV/patterns/g46, data/LV/targets/g47, 123, 8830, 7486, 6799, 18, 1
+data/LV/patterns/g46, data/LV/targets/g4, 4, 82833, 74342, 73773, 87, 1
+data/LV/patterns/g46, data/LV/targets/g44, time out
+data/LV/patterns/g46, data/LV/targets/g42, time out
+data/LV/patterns/g46, data/LV/targets/g48, time out
+data/LV/patterns/g46, data/LV/targets/g45, time out
+data/LV/patterns/g46, data/LV/targets/g41, time out
+data/LV/patterns/g46, data/LV/targets/g43, time out
+data/LV/patterns/g46, data/LV/targets/g40, time out
+data/LV/patterns/g46, data/LV/targets/g5, 11, 248, 135, 38, 0, 0
+data/LV/patterns/g46, data/LV/targets/g6, 18, 3671528, 2401264, 1649000, 5357, 10
+data/LV/patterns/g46, data/LV/targets/g8, time out
+data/LV/patterns/g46, data/LV/targets/g50, time out
+data/LV/patterns/g46, data/LV/targets/g7, time out
+data/LV/patterns/g47, data/LV/targets/g10, time out
+data/LV/patterns/g46, data/LV/targets/g49, time out
+data/LV/patterns/g46, data/LV/targets/g9, time out
+data/LV/patterns/g47, data/LV/targets/g13, time out
+data/LV/patterns/g47, data/LV/targets/g17, time out
+data/LV/patterns/g47, data/LV/targets/g14, time out
+data/LV/patterns/g47, data/LV/targets/g18, time out
+data/LV/patterns/g47, data/LV/targets/g20, time out
+data/LV/patterns/g47, data/LV/targets/g11, time out
+data/LV/patterns/g47, data/LV/targets/g16, time out
+data/LV/patterns/g47, data/LV/targets/g12, time out
+data/LV/patterns/g47, data/LV/targets/g19, time out
+data/LV/patterns/g47, data/LV/targets/g15, time out
+data/LV/patterns/g47, data/LV/targets/g3, 10, 368, 192, 89, 1, 1
+data/LV/patterns/g47, data/LV/targets/g22, time out
+data/LV/patterns/g47, data/LV/targets/g28, time out
+data/LV/patterns/g47, data/LV/targets/g27, time out
+data/LV/patterns/g47, data/LV/targets/g29, time out
+data/LV/patterns/g47, data/LV/targets/g25, time out
+data/LV/patterns/g47, data/LV/targets/g24, time out
+data/LV/patterns/g47, data/LV/targets/g23, time out
+data/LV/patterns/g47, data/LV/targets/g26, time out
+data/LV/patterns/g47, data/LV/targets/g21, time out
+data/LV/patterns/g47, data/LV/targets/g32, time out
+data/LV/patterns/g47, data/LV/targets/g35, time out
+data/LV/patterns/g47, data/LV/targets/g34, time out
+data/LV/patterns/g47, data/LV/targets/g36, time out
+data/LV/patterns/g47, data/LV/targets/g30, time out
+data/LV/patterns/g47, data/LV/targets/g38, time out
+data/LV/patterns/g47, data/LV/targets/g37, time out
+data/LV/patterns/g47, data/LV/targets/g39, time out
+data/LV/patterns/g47, data/LV/targets/g31, time out
+data/LV/patterns/g47, data/LV/targets/g33, time out
+data/LV/patterns/g47, data/LV/targets/g47, 128, 260, 132, 2, 2, 2
+data/LV/patterns/g47, data/LV/targets/g46, 123, 1024, 739, 470, 3, 1
+data/LV/patterns/g47, data/LV/targets/g4, 4, 80213, 71962, 71340, 53, 1
+data/LV/patterns/g47, data/LV/targets/g41, time out
+data/LV/patterns/g47, data/LV/targets/g44, time out
+data/LV/patterns/g47, data/LV/targets/g40, time out
+data/LV/patterns/g47, data/LV/targets/g45, time out
+data/LV/patterns/g47, data/LV/targets/g43, time out
+data/LV/patterns/g47, data/LV/targets/g42, time out
+data/LV/patterns/g47, data/LV/targets/g48, time out
+data/LV/patterns/g47, data/LV/targets/g5, 11, 218, 120, 33, 0, 0
+data/LV/patterns/g47, data/LV/targets/g6, 18, 2986105, 1949361, 1337602, 4315, 22
+data/LV/patterns/g47, data/LV/targets/g7, 11, 9980203, 8947427, 8894228, 8885, 0
+data/LV/patterns/g47, data/LV/targets/g9, time out
+data/LV/patterns/g47, data/LV/targets/g49, time out
+data/LV/patterns/g47, data/LV/targets/g50, time out
+data/LV/patterns/g47, data/LV/targets/g8, time out
+data/LV/patterns/g48, data/LV/targets/g10, time out
+data/LV/patterns/g48, data/LV/targets/g14, time out
+data/LV/patterns/g48, data/LV/targets/g18, time out
+data/LV/patterns/g48, data/LV/targets/g19, time out
+data/LV/patterns/g48, data/LV/targets/g17, time out
+data/LV/patterns/g48, data/LV/targets/g16, time out
+data/LV/patterns/g48, data/LV/targets/g15, time out
+data/LV/patterns/g48, data/LV/targets/g13, time out
+data/LV/patterns/g48, data/LV/targets/g20, time out
+data/LV/patterns/g48, data/LV/targets/g11, time out
+data/LV/patterns/g48, data/LV/targets/g12, time out
+data/LV/patterns/g48, data/LV/targets/g3, 10, 95, 56, 12, 0, 0
+data/LV/patterns/g48, data/LV/targets/g23, time out
+data/LV/patterns/g48, data/LV/targets/g28, time out
+data/LV/patterns/g48, data/LV/targets/g25, time out
+data/LV/patterns/g48, data/LV/targets/g21, time out
+data/LV/patterns/g48, data/LV/targets/g26, time out
+data/LV/patterns/g48, data/LV/targets/g27, time out
+data/LV/patterns/g48, data/LV/targets/g29, time out
+data/LV/patterns/g48, data/LV/targets/g22, time out
+data/LV/patterns/g48, data/LV/targets/g24, time out
+data/LV/patterns/g48, data/LV/targets/g34, time out
+data/LV/patterns/g48, data/LV/targets/g33, time out
+data/LV/patterns/g48, data/LV/targets/g36, time out
+data/LV/patterns/g48, data/LV/targets/g38, time out
+data/LV/patterns/g48, data/LV/targets/g35, time out
+data/LV/patterns/g48, data/LV/targets/g37, time out
+data/LV/patterns/g48, data/LV/targets/g39, time out
+data/LV/patterns/g48, data/LV/targets/g32, time out
+data/LV/patterns/g48, data/LV/targets/g31, time out
+data/LV/patterns/g48, data/LV/targets/g30, time out
+data/LV/patterns/g48, data/LV/targets/g48, 128, 415, 287, 158, 3, 2
+data/LV/patterns/g48, data/LV/targets/g4, 4, 109952, 98501, 97940, 79, 0
+data/LV/patterns/g48, data/LV/targets/g40, time out
+data/LV/patterns/g48, data/LV/targets/g44, time out
+data/LV/patterns/g48, data/LV/targets/g47, time out
+data/LV/patterns/g48, data/LV/targets/g45, time out
+data/LV/patterns/g48, data/LV/targets/g46, time out
+data/LV/patterns/g48, data/LV/targets/g41, time out
+data/LV/patterns/g48, data/LV/targets/g42, time out
+data/LV/patterns/g48, data/LV/targets/g43, time out
+data/LV/patterns/g48, data/LV/targets/g5, 11, 1085, 573, 259, 1, 1
+data/LV/patterns/g48, data/LV/targets/g6, 18, 5995211, 3872272, 2598485, 8664, 11
+data/LV/patterns/g48, data/LV/targets/g8, time out
+data/LV/patterns/g48, data/LV/targets/g50, time out
+data/LV/patterns/g48, data/LV/targets/g49, time out
+data/LV/patterns/g49, data/LV/targets/g10, time out
+data/LV/patterns/g48, data/LV/targets/g7, time out
+data/LV/patterns/g48, data/LV/targets/g9, time out
+data/LV/patterns/g49, data/LV/targets/g19, time out
+data/LV/patterns/g49, data/LV/targets/g12, time out
+data/LV/patterns/g49, data/LV/targets/g11, time out
+data/LV/patterns/g49, data/LV/targets/g16, time out
+data/LV/patterns/g49, data/LV/targets/g20, time out
+data/LV/patterns/g49, data/LV/targets/g14, time out
+data/LV/patterns/g49, data/LV/targets/g15, time out
+data/LV/patterns/g49, data/LV/targets/g13, time out
+data/LV/patterns/g49, data/LV/targets/g18, time out
+data/LV/patterns/g49, data/LV/targets/g17, time out
+data/LV/patterns/g49, data/LV/targets/g3, 7, 3268459, 1986783, 1594182, 3101, 0
+data/LV/patterns/g49, data/LV/targets/g25, time out
+data/LV/patterns/g49, data/LV/targets/g24, time out
+data/LV/patterns/g49, data/LV/targets/g29, time out
+data/LV/patterns/g49, data/LV/targets/g27, time out
+data/LV/patterns/g49, data/LV/targets/g21, time out
+data/LV/patterns/g49, data/LV/targets/g28, time out
+data/LV/patterns/g49, data/LV/targets/g23, time out
+data/LV/patterns/g49, data/LV/targets/g26, time out
+data/LV/patterns/g49, data/LV/targets/g22, time out
+data/LV/patterns/g49, data/LV/targets/g33, time out
+data/LV/patterns/g49, data/LV/targets/g36, time out
+data/LV/patterns/g49, data/LV/targets/g37, time out
+data/LV/patterns/g49, data/LV/targets/g35, time out
+data/LV/patterns/g49, data/LV/targets/g39, time out
+data/LV/patterns/g49, data/LV/targets/g30, time out
+data/LV/patterns/g49, data/LV/targets/g32, time out
+data/LV/patterns/g49, data/LV/targets/g31, time out
+data/LV/patterns/g49, data/LV/targets/g38, time out
+data/LV/patterns/g49, data/LV/targets/g34, time out
+data/LV/patterns/g49, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g49, data/LV/targets/g45, time out
+data/LV/patterns/g49, data/LV/targets/g43, time out
+data/LV/patterns/g49, data/LV/targets/g47, time out
+data/LV/patterns/g49, data/LV/targets/g46, time out
+data/LV/patterns/g49, data/LV/targets/g41, time out
+data/LV/patterns/g49, data/LV/targets/g44, time out
+data/LV/patterns/g49, data/LV/targets/g40, time out
+data/LV/patterns/g49, data/LV/targets/g48, time out
+data/LV/patterns/g49, data/LV/targets/g42, time out
+data/LV/patterns/g49, data/LV/targets/g49, 128, 414, 286, 132, 1, 1
+data/LV/patterns/g5, data/LV/targets/g10, 10, 4963, 3562, 2576, 2, 2
+data/LV/patterns/g49, data/LV/targets/g5, 10, 121022, 72250, 50350, 112, 2
+data/LV/patterns/g49, data/LV/targets/g7, 10, 1801031, 1622807, 1616875, 1470, 8
+data/LV/patterns/g49, data/LV/targets/g6, time out
+data/LV/patterns/g49, data/LV/targets/g8, time out
+data/LV/patterns/g49, data/LV/targets/g50, time out
+data/LV/patterns/g49, data/LV/targets/g9, time out
+data/LV/patterns/g5, data/LV/targets/g17, 10, 259, 217, 95, 0, 0
+data/LV/patterns/g5, data/LV/targets/g16, 10, 1287, 876, 489, 0, 0
+data/LV/patterns/g5, data/LV/targets/g18, 10, 178, 163, 65, 0, 0
+data/LV/patterns/g5, data/LV/targets/g14, 9, 5473, 3837, 2462, 4, 0
+data/LV/patterns/g5, data/LV/targets/g13, 9, 9293, 6906, 5009, 6, 0
+data/LV/patterns/g5, data/LV/targets/g15, 9, 14912, 10967, 7799, 10, 0
+data/LV/patterns/g5, data/LV/targets/g11, 10, 20452, 17213, 16184, 11, 11
+data/LV/patterns/g5, data/LV/targets/g19, 10, 32631, 27593, 25792, 18, 17
+data/LV/patterns/g5, data/LV/targets/g12, 9, 450766, 409835, 395785, 262, 251
+data/LV/patterns/g5, data/LV/targets/g20, 10, 2197287, 1513256, 924575, 1288, 1287
+data/LV/patterns/g5, data/LV/targets/g27, 11, 866, 652, 318, 0, 0
+data/LV/patterns/g5, data/LV/targets/g29, 11, 175, 161, 6, 0, 0
+data/LV/patterns/g5, data/LV/targets/g26, 10, 2514, 1934, 1352, 2, 0
+data/LV/patterns/g5, data/LV/targets/g3, 6, 1637, 1144, 942, 1, 0
+data/LV/patterns/g5, data/LV/targets/g24, 9, 1594, 1304, 1027, 2, 1
+data/LV/patterns/g5, data/LV/targets/g23, 10, 3797, 3017, 2289, 3, 1
+data/LV/patterns/g5, data/LV/targets/g22, 10, 14737, 11197, 9410, 10, 10
+data/LV/patterns/g5, data/LV/targets/g28, 10, 19668, 17323, 16919, 11, 11
+data/LV/patterns/g5, data/LV/targets/g25, 8, 58163, 44116, 31702, 38, 0
+data/LV/patterns/g5, data/LV/targets/g21, 5, 1530739, 1143258, 963172, 1036, 0
+data/LV/patterns/g5, data/LV/targets/g31, 11, 252, 211, 25, 0, 0
+data/LV/patterns/g5, data/LV/targets/g34, 10, 423, 371, 181, 1, 1
+data/LV/patterns/g5, data/LV/targets/g36, 10, 1955, 1453, 888, 2, 1
+data/LV/patterns/g5, data/LV/targets/g30, 11, 194, 168, 12, 0, 0
+data/LV/patterns/g5, data/LV/targets/g35, 10, 2331, 1747, 1204, 2, 2
+data/LV/patterns/g5, data/LV/targets/g33, 10, 873, 510, 147, 0, 0
+data/LV/patterns/g5, data/LV/targets/g39, 10, 12901, 8057, 3483, 9, 9
+data/LV/patterns/g5, data/LV/targets/g37, 10, 27303, 19632, 13717, 18, 18
+data/LV/patterns/g5, data/LV/targets/g32, 3, 1060909, 1050201, 1050100, 1791, 0
+data/LV/patterns/g5, data/LV/targets/g38, time out
+data/LV/patterns/g5, data/LV/targets/g41, 11, 160, 149, 126, 0, 0
+data/LV/patterns/g5, data/LV/targets/g46, 11, 273, 228, 39, 0, 0
+data/LV/patterns/g5, data/LV/targets/g45, 11, 225, 195, 64, 1, 0
+data/LV/patterns/g5, data/LV/targets/g44, 11, 224, 203, 50, 0, 0
+data/LV/patterns/g5, data/LV/targets/g48, 11, 283, 241, 39, 0, 0
+data/LV/patterns/g5, data/LV/targets/g47, 11, 263, 220, 40, 1, 0
+data/LV/patterns/g5, data/LV/targets/g4, 3, 1699, 1521, 1510, 1, 0
+data/LV/patterns/g5, data/LV/targets/g42, 10, 24398, 18637, 15894, 16, 16
+data/LV/patterns/g5, data/LV/targets/g43, 10, 74279, 58425, 46064, 55, 54
+data/LV/patterns/g5, data/LV/targets/g40, time out
+data/LV/patterns/g5, data/LV/targets/g5, 11, 43, 32, 10, 0, 0
+data/LV/patterns/g5, data/LV/targets/g8, 10, 1242, 874, 523, 0, 0
+data/LV/patterns/g5, data/LV/targets/g6, 8, 7378, 5242, 3514, 4, 1
+data/LV/patterns/g5, data/LV/targets/g9, 8, 13594, 10328, 8255, 8, 5
+data/LV/patterns/g5, data/LV/targets/g7, 6, 56347, 50181, 49823, 29, 0
+data/LV/patterns/g5, data/LV/targets/g49, 10, 252176, 196219, 161981, 168, 168
+data/LV/patterns/g5, data/LV/targets/g50, 10, 742224, 620809, 499657, 714, 4
+data/LV/patterns/g50, data/LV/targets/g10, time out
+data/LV/patterns/g50, data/LV/targets/g12, time out
+data/LV/patterns/g50, data/LV/targets/g20, time out
+data/LV/patterns/g50, data/LV/targets/g14, time out
+data/LV/patterns/g50, data/LV/targets/g15, time out
+data/LV/patterns/g50, data/LV/targets/g19, time out
+data/LV/patterns/g50, data/LV/targets/g13, time out
+data/LV/patterns/g50, data/LV/targets/g16, time out
+data/LV/patterns/g50, data/LV/targets/g11, time out
+data/LV/patterns/g50, data/LV/targets/g17, time out
+data/LV/patterns/g50, data/LV/targets/g18, time out
+data/LV/patterns/g50, data/LV/targets/g22, time out
+data/LV/patterns/g50, data/LV/targets/g25, time out
+data/LV/patterns/g50, data/LV/targets/g29, time out
+data/LV/patterns/g50, data/LV/targets/g28, time out
+data/LV/patterns/g50, data/LV/targets/g21, time out
+data/LV/patterns/g50, data/LV/targets/g24, time out
+data/LV/patterns/g50, data/LV/targets/g23, time out
+data/LV/patterns/g50, data/LV/targets/g3, time out
+data/LV/patterns/g50, data/LV/targets/g27, time out
+data/LV/patterns/g50, data/LV/targets/g26, time out
+data/LV/patterns/g50, data/LV/targets/g35, time out
+data/LV/patterns/g50, data/LV/targets/g34, time out
+data/LV/patterns/g50, data/LV/targets/g32, time out
+data/LV/patterns/g50, data/LV/targets/g36, time out
+data/LV/patterns/g50, data/LV/targets/g37, time out
+data/LV/patterns/g50, data/LV/targets/g38, time out
+data/LV/patterns/g50, data/LV/targets/g31, time out
+data/LV/patterns/g50, data/LV/targets/g39, time out
+data/LV/patterns/g50, data/LV/targets/g33, time out
+data/LV/patterns/g50, data/LV/targets/g30, time out
+data/LV/patterns/g50, data/LV/targets/g4, 10, 66, 56, 0, 0, 0
+data/LV/patterns/g50, data/LV/targets/g43, time out
+data/LV/patterns/g50, data/LV/targets/g46, time out
+data/LV/patterns/g50, data/LV/targets/g48, time out
+data/LV/patterns/g50, data/LV/targets/g47, time out
+data/LV/patterns/g50, data/LV/targets/g40, time out
+data/LV/patterns/g50, data/LV/targets/g44, time out
+data/LV/patterns/g50, data/LV/targets/g42, time out
+data/LV/patterns/g50, data/LV/targets/g45, time out
+data/LV/patterns/g50, data/LV/targets/g41, time out
+data/LV/patterns/g50, data/LV/targets/g50, 128, 435, 307, 169, 2, 1
+data/LV/patterns/g6, data/LV/targets/g10, 17, 6464, 4819, 3604, 5, 4
+data/LV/patterns/g50, data/LV/targets/g5, 10, 7848661, 4678581, 3715053, 8034, 0
+data/LV/patterns/g50, data/LV/targets/g49, time out
+data/LV/patterns/g50, data/LV/targets/g6, time out
+data/LV/patterns/g50, data/LV/targets/g9, time out
+data/LV/patterns/g50, data/LV/targets/g8, time out
+data/LV/patterns/g50, data/LV/targets/g7, time out
+data/LV/patterns/g6, data/LV/targets/g16, 18, 88463, 64310, 46507, 92, 92
+data/LV/patterns/g6, data/LV/targets/g15, 17, 96969, 79192, 66784, 98, 93
+data/LV/patterns/g6, data/LV/targets/g13, 17, 225125, 186845, 161196, 319, 316
+data/LV/patterns/g6, data/LV/targets/g12, 16, 405645, 330506, 266523, 388, 282
+data/LV/patterns/g6, data/LV/targets/g14, 16, 603693, 504725, 435884, 633, 320
+data/LV/patterns/g6, data/LV/targets/g17, 15, 862131, 699267, 537190, 827, 821
+data/LV/patterns/g6, data/LV/targets/g11, 16, 1060101, 958804, 857779, 1051, 1
+data/LV/patterns/g6, data/LV/targets/g19, 16, 1609579, 1109317, 652221, 1409, 1385
+data/LV/patterns/g6, data/LV/targets/g18, 15, 2077688, 1708005, 1341408, 2030, 2022
+data/LV/patterns/g6, data/LV/targets/g20, time out
+data/LV/patterns/g6, data/LV/targets/g3, 7, 6650, 4229, 3410, 6, 0
+data/LV/patterns/g6, data/LV/targets/g29, 19, 18151, 11901, 5790, 29, 29
+data/LV/patterns/g6, data/LV/targets/g24, 16, 54910, 48045, 41271, 51, 6
+data/LV/patterns/g6, data/LV/targets/g21, 6, 558006, 467723, 457077, 440, 1
+data/LV/patterns/g6, data/LV/targets/g27, 17, 604398, 490626, 396566, 505, 309
+data/LV/patterns/g6, data/LV/targets/g23, 17, 897370, 800036, 710236, 722, 711
+data/LV/patterns/g6, data/LV/targets/g25, 16, 806082, 766534, 741656, 748, 692
+data/LV/patterns/g6, data/LV/targets/g22, 17, 1177699, 910318, 656519, 947, 938
+data/LV/patterns/g6, data/LV/targets/g26, 17, 1888323, 1663639, 1449220, 1387, 1339
+data/LV/patterns/g6, data/LV/targets/g28, 16, 3281169, 3070347, 2859952, 3274, 36
+data/LV/patterns/g6, data/LV/targets/g35, 17, 91341, 67691, 48806, 86, 63
+data/LV/patterns/g6, data/LV/targets/g30, 18, 64373, 42880, 21638, 97, 7
+data/LV/patterns/g6, data/LV/targets/g36, 17, 140783, 102362, 70011, 124, 66
+data/LV/patterns/g6, data/LV/targets/g34, 16, 153799, 127012, 100611, 166, 66
+data/LV/patterns/g6, data/LV/targets/g39, 16, 131056, 89990, 64292, 181, 180
+data/LV/patterns/g6, data/LV/targets/g32, 3, 131716, 130399, 130300, 230, 0
+data/LV/patterns/g6, data/LV/targets/g31, 19, 271182, 178624, 86298, 290, 290
+data/LV/patterns/g6, data/LV/targets/g37, 18, 341268, 258191, 188471, 379, 378
+data/LV/patterns/g6, data/LV/targets/g33, 17, 488711, 348030, 226715, 455, 446
+data/LV/patterns/g6, data/LV/targets/g38, time out
+data/LV/patterns/g6, data/LV/targets/g4, 3, 1486, 1339, 1320, 0, 0
+data/LV/patterns/g6, data/LV/targets/g44, 19, 16849, 12966, 9504, 15, 14
+data/LV/patterns/g6, data/LV/targets/g46, 18, 20444, 13751, 7055, 24, 4
+data/LV/patterns/g6, data/LV/targets/g47, 18, 25058, 17670, 10288, 26, 8
+data/LV/patterns/g6, data/LV/targets/g48, 18, 31905, 21398, 10868, 41, 5
+data/LV/patterns/g6, data/LV/targets/g41, 17, 53032, 36846, 23730, 59, 58
+data/LV/patterns/g6, data/LV/targets/g45, 18, 68106, 47200, 27144, 64, 14
+data/LV/patterns/g6, data/LV/targets/g42, 17, 99892, 79665, 67652, 100, 96
+data/LV/patterns/g6, data/LV/targets/g43, time out
+data/LV/patterns/g6, data/LV/targets/g40, time out
+data/LV/patterns/g6, data/LV/targets/g6, 19, 60, 44, 29, 0, 0
+data/LV/patterns/g6, data/LV/targets/g7, 10, 6938, 6237, 6075, 4, 1
+data/LV/patterns/g6, data/LV/targets/g5, 8, 18424, 11055, 7266, 11, 3
+data/LV/patterns/g6, data/LV/targets/g8, 16, 22457, 15340, 9412, 15, 14
+data/LV/patterns/g6, data/LV/targets/g9, 16, 169560, 142879, 122710, 105, 100
+data/LV/patterns/g7, data/LV/targets/g10, 10, 409951, 301878, 226562, 182, 171
+data/LV/patterns/g6, data/LV/targets/g49, 17, 5852239, 4712181, 3788355, 5409, 3390
+data/LV/patterns/g6, data/LV/targets/g50, time out
+data/LV/patterns/g7, data/LV/targets/g18, 10, 20473, 16272, 15836, 15, 1
+data/LV/patterns/g7, data/LV/targets/g17, 10, 17518, 13685, 13234, 23, 2
+data/LV/patterns/g7, data/LV/targets/g11, 11, 120669, 102007, 98429, 115, 6
+data/LV/patterns/g7, data/LV/targets/g19, 10, 200583, 169129, 165936, 135, 2
+data/LV/patterns/g7, data/LV/targets/g16, 10, 304802, 249241, 233298, 186, 65
+data/LV/patterns/g7, data/LV/targets/g14, 10, 5642691, 4402949, 3522114, 2626, 2055
+data/LV/patterns/g7, data/LV/targets/g12, time out
+data/LV/patterns/g7, data/LV/targets/g13, time out
+data/LV/patterns/g7, data/LV/targets/g20, time out
+data/LV/patterns/g7, data/LV/targets/g15, time out
+data/LV/patterns/g7, data/LV/targets/g24, 10, 10749, 8753, 8174, 8, 0
+data/LV/patterns/g7, data/LV/targets/g28, 11, 12732, 9463, 8928, 10, 0
+data/LV/patterns/g7, data/LV/targets/g3, 4, 38399, 29322, 28890, 34, 0
+data/LV/patterns/g7, data/LV/targets/g22, 10, 89711, 75208, 73378, 64, 3
+data/LV/patterns/g7, data/LV/targets/g26, 11, 171932, 143481, 134126, 117, 21
+data/LV/patterns/g7, data/LV/targets/g27, 11, 224555, 189814, 185678, 168, 0
+data/LV/patterns/g7, data/LV/targets/g25, 10, 761821, 625669, 529908, 404, 280
+data/LV/patterns/g7, data/LV/targets/g23, 11, 3167249, 2530646, 1902418, 1519, 1464
+data/LV/patterns/g7, data/LV/targets/g21, time out
+data/LV/patterns/g7, data/LV/targets/g29, time out
+data/LV/patterns/g7, data/LV/targets/g38, 20, 336, 316, 195, 1, 0
+data/LV/patterns/g7, data/LV/targets/g34, 10, 35586, 28641, 27708, 33, 1
+data/LV/patterns/g7, data/LV/targets/g39, 10, 45035, 38069, 36938, 44, 1
+data/LV/patterns/g7, data/LV/targets/g35, 10, 121752, 99415, 96689, 104, 15
+data/LV/patterns/g7, data/LV/targets/g36, 10, 173068, 143624, 140661, 125, 2
+data/LV/patterns/g7, data/LV/targets/g33, 10, 1227251, 917049, 773464, 612, 542
+data/LV/patterns/g7, data/LV/targets/g32, 2, 811819, 803701, 803700, 1380, 0
+data/LV/patterns/g7, data/LV/targets/g37, 10, 4816248, 3949329, 3360070, 2702, 577
+data/LV/patterns/g7, data/LV/targets/g31, time out
+data/LV/patterns/g7, data/LV/targets/g30, time out
+data/LV/patterns/g7, data/LV/targets/g4, 2, 8299, 7471, 7440, 7, 0
+data/LV/patterns/g7, data/LV/targets/g41, 10, 118683, 97531, 94704, 93, 18
+data/LV/patterns/g7, data/LV/targets/g42, 10, 182729, 155591, 152879, 154, 7
+data/LV/patterns/g7, data/LV/targets/g43, 10, 1515906, 1281245, 1247139, 1079, 182
+data/LV/patterns/g7, data/LV/targets/g47, 11, 8739346, 7084554, 6936801, 6981, 0
+data/LV/patterns/g7, data/LV/targets/g46, 11, 10034118, 8111558, 7945177, 8011, 0
+data/LV/patterns/g7, data/LV/targets/g44, time out
+data/LV/patterns/g7, data/LV/targets/g40, time out
+data/LV/patterns/g7, data/LV/targets/g48, time out
+data/LV/patterns/g7, data/LV/targets/g45, time out
+data/LV/patterns/g7, data/LV/targets/g7, 20, 141, 121, 0, 0, 0
+data/LV/patterns/g7, data/LV/targets/g9, 10, 38707, 29389, 25929, 20, 12
+data/LV/patterns/g7, data/LV/targets/g8, 10, 49459, 38158, 35083, 28, 13
+data/LV/patterns/g7, data/LV/targets/g5, 6, 365108, 285426, 265803, 191, 0
+data/LV/patterns/g7, data/LV/targets/g6, 10, 1411068, 1127058, 847734, 685, 13
+data/LV/patterns/g8, data/LV/targets/g10, 23, 1547609, 1104001, 795787, 1263, 322
+data/LV/patterns/g7, data/LV/targets/g49, 10, 2144034, 1860407, 1820927, 1553, 13
+data/LV/patterns/g7, data/LV/targets/g50, time out
+data/LV/patterns/g8, data/LV/targets/g16, 30, 3286651, 2405147, 1687305, 2956, 2956
+data/LV/patterns/g8, data/LV/targets/g12, time out
+data/LV/patterns/g8, data/LV/targets/g11, time out
+data/LV/patterns/g8, data/LV/targets/g14, time out
+data/LV/patterns/g8, data/LV/targets/g13, time out
+data/LV/patterns/g8, data/LV/targets/g15, time out
+data/LV/patterns/g8, data/LV/targets/g20, time out
+data/LV/patterns/g8, data/LV/targets/g18, time out
+data/LV/patterns/g8, data/LV/targets/g19, time out
+data/LV/patterns/g8, data/LV/targets/g17, time out
+data/LV/patterns/g8, data/LV/targets/g3, 8, 20534, 12927, 9722, 24, 1
+data/LV/patterns/g8, data/LV/targets/g21, 6, 809648, 642366, 618034, 949, 0
+data/LV/patterns/g8, data/LV/targets/g22, 25, 7096171, 5641293, 4350843, 9662, 9569
+data/LV/patterns/g8, data/LV/targets/g28, time out
+data/LV/patterns/g8, data/LV/targets/g27, time out
+data/LV/patterns/g8, data/LV/targets/g26, time out
+data/LV/patterns/g8, data/LV/targets/g29, time out
+data/LV/patterns/g8, data/LV/targets/g24, time out
+data/LV/patterns/g8, data/LV/targets/g23, time out
+data/LV/patterns/g8, data/LV/targets/g25, time out
+data/LV/patterns/g8, data/LV/targets/g37, 30, 589366, 450042, 369344, 1388, 1388
+data/LV/patterns/g8, data/LV/targets/g33, 25, 1327071, 931284, 604884, 1762, 1100
+data/LV/patterns/g8, data/LV/targets/g32, 4, 1153023, 1141394, 1141100, 2840, 2633
+data/LV/patterns/g8, data/LV/targets/g31, time out
+data/LV/patterns/g8, data/LV/targets/g35, time out
+data/LV/patterns/g8, data/LV/targets/g39, time out
+data/LV/patterns/g8, data/LV/targets/g38, time out
+data/LV/patterns/g8, data/LV/targets/g36, time out
+data/LV/patterns/g8, data/LV/targets/g30, time out
+data/LV/patterns/g8, data/LV/targets/g34, time out
+data/LV/patterns/g8, data/LV/targets/g4, 4, 3004, 2696, 2672, 1, 1
+data/LV/patterns/g8, data/LV/targets/g41, 25, 2604293, 1926547, 1328897, 3856, 3273
+data/LV/patterns/g8, data/LV/targets/g42, time out
+data/LV/patterns/g8, data/LV/targets/g45, time out
+data/LV/patterns/g8, data/LV/targets/g46, time out
+data/LV/patterns/g8, data/LV/targets/g47, time out
+data/LV/patterns/g8, data/LV/targets/g43, time out
+data/LV/patterns/g8, data/LV/targets/g40, time out
+data/LV/patterns/g8, data/LV/targets/g48, time out
+data/LV/patterns/g8, data/LV/targets/g44, time out
+data/LV/patterns/g8, data/LV/targets/g8, 30, 98, 69, 38, 0, 0
+data/LV/patterns/g8, data/LV/targets/g5, 10, 2116, 1499, 1022, 1, 0
+data/LV/patterns/g8, data/LV/targets/g7, 10, 24674, 21793, 20831, 16, 5
+data/LV/patterns/g8, data/LV/targets/g6, 16, 495441, 356488, 262190, 385, 9
+data/LV/patterns/g8, data/LV/targets/g9, time out
+data/LV/patterns/g8, data/LV/targets/g49, time out
+data/LV/patterns/g8, data/LV/targets/g50, time out
+data/LV/patterns/g9, data/LV/targets/g10, time out
+data/LV/patterns/g9, data/LV/targets/g15, time out
+data/LV/patterns/g9, data/LV/targets/g13, time out
+data/LV/patterns/g9, data/LV/targets/g16, time out
+data/LV/patterns/g9, data/LV/targets/g19, time out
+data/LV/patterns/g9, data/LV/targets/g12, time out
+data/LV/patterns/g9, data/LV/targets/g14, time out
+data/LV/patterns/g9, data/LV/targets/g17, time out
+data/LV/patterns/g9, data/LV/targets/g18, time out
+data/LV/patterns/g9, data/LV/targets/g20, time out
+data/LV/patterns/g9, data/LV/targets/g11, time out
+data/LV/patterns/g9, data/LV/targets/g3, 6, 100350, 72532, 63059, 116, 0
+data/LV/patterns/g9, data/LV/targets/g21, 7, 1340573, 1059363, 952428, 1330, 0
+data/LV/patterns/g9, data/LV/targets/g24, time out
+data/LV/patterns/g9, data/LV/targets/g22, time out
+data/LV/patterns/g9, data/LV/targets/g27, time out
+data/LV/patterns/g9, data/LV/targets/g23, time out
+data/LV/patterns/g9, data/LV/targets/g26, time out
+data/LV/patterns/g9, data/LV/targets/g28, time out
+data/LV/patterns/g9, data/LV/targets/g29, time out
+data/LV/patterns/g9, data/LV/targets/g25, time out
+data/LV/patterns/g9, data/LV/targets/g32, 6, 113222, 112088, 111604, 484, 33
+data/LV/patterns/g9, data/LV/targets/g33, time out
+data/LV/patterns/g9, data/LV/targets/g34, time out
+data/LV/patterns/g9, data/LV/targets/g35, time out
+data/LV/patterns/g9, data/LV/targets/g36, time out
+data/LV/patterns/g9, data/LV/targets/g38, time out
+data/LV/patterns/g9, data/LV/targets/g37, time out
+data/LV/patterns/g9, data/LV/targets/g39, time out
+data/LV/patterns/g9, data/LV/targets/g30, time out
+data/LV/patterns/g9, data/LV/targets/g31, time out
+data/LV/patterns/g9, data/LV/targets/g4, 6, 1442, 1298, 1254, 0, 0
+data/LV/patterns/g9, data/LV/targets/g42, 34, 256585, 210307, 158062, 417, 13
+data/LV/patterns/g9, data/LV/targets/g44, time out
+data/LV/patterns/g9, data/LV/targets/g41, time out
+data/LV/patterns/g9, data/LV/targets/g43, time out
+data/LV/patterns/g9, data/LV/targets/g48, time out
+data/LV/patterns/g9, data/LV/targets/g45, time out
+data/LV/patterns/g9, data/LV/targets/g40, time out
+data/LV/patterns/g9, data/LV/targets/g46, time out
+data/LV/patterns/g9, data/LV/targets/g47, time out
+data/LV/patterns/g9, data/LV/targets/g9, 37, 159, 129, 68, 0, 0
+data/LV/patterns/g9, data/LV/targets/g7, 10, 16855, 15285, 15190, 12, 1
+data/LV/patterns/g9, data/LV/targets/g5, 8, 22795, 13200, 11054, 12, 2
+data/LV/patterns/g9, data/LV/targets/g6, 16, 9113701, 6962027, 5801963, 5678, 3194
+data/LV/patterns/g9, data/LV/targets/g8, time out
+data/LV/patterns/g9, data/LV/targets/g50, time out
+data/LV/patterns/g9, data/LV/targets/g49, time out
