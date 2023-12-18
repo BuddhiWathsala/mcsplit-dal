@@ -611,10 +611,6 @@ void solve(const Graph &g0, const Graph &g1, vector<gtype> &V, vector<gtype> &lg
 //        cout << "time out" << endl;
 //        exit(0);
 //    }
-    if (abort_due_to_timeout) {
-        return;
-    }
-    nodes++;
     //if (arguments.verbose) show(current, domains, left, right);
 
     if (current.size() > incumbent.size()) {//incumbent 现任的
@@ -624,6 +620,11 @@ void solve(const Graph &g0, const Graph &g1, vector<gtype> &V, vector<gtype> &lg
         duration = std::chrono::steady_clock::now() - START;
 //        if (!arguments.quiet) cout << "Incumbent size: " << incumbent.size() << endl;
     }
+
+    if (abort_due_to_timeout) {
+        return;
+    }
+    nodes++;
 
     unsigned int bound = current.size() + calc_bound(domains);//计算相连和不相连同构数的最大可能加上当前已经同构的点数
     if (bound <= incumbent.size() || bound < matching_size_goal) {//剪枝
