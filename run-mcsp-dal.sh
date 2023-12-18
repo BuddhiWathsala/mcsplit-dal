@@ -32,7 +32,8 @@ task () {
 }
 
 # files=("largerLV" "si" "scalefree" "scalefree" "meshes-CVIU11" "LV" "images-CVIU11" "images-PR15")
-files=("si")
+#files=("completedLV")
+files=("LV" "largerLV" "meshes-CVIU11"  "images-CVIU11" "si" "scalefree" "phase")
 for f in ${files[@]}; do
     file_name=indicators/${f}_data.txt
     results_file_name=results/${f}_${MCSP_HEURISTIC}_${TIMEOUT}.txt
