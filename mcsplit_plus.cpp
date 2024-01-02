@@ -237,7 +237,7 @@ void show(const vector<VtxPair> &current, const vector<Bidomain> &domains,
 }
 
 bool check_sol(const Graph &g0, const Graph &g1, const vector<VtxPair> &solution) {
-    return true;
+//    return true;
     vector<bool> used_left(g0.n, false);
     vector<bool> used_right(g1.n, false);
     for (unsigned int i = 0; i < solution.size(); i++) {
@@ -544,7 +544,7 @@ vector<Bidomain> rewardfeed(const vector<Bidomain> &d, int bd_idx, vector<VtxPai
 
         lgrade[v] += total;
         float UB = 0.2;
-        lgrade[v] = 0.97 * lgrade[v] + UB; // CHANGE
+//        lgrade[v] = 0.97 * lgrade[v] + UB; // CHANGE
         rgrade[w] += total;
 
         if (lgrade[v] > short_memory_threshold)
