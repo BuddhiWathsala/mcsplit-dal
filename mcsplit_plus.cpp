@@ -543,7 +543,7 @@ vector<Bidomain> rewardfeed(const vector<Bidomain> &d, int bd_idx, vector<VtxPai
         conflicts++;
 
         lgrade[v] += total;
-        float UB = 0.2;
+//        float UB = 0.2;
 //        lgrade[v] = 0.97 * lgrade[v] + UB; // CHANGE
         rgrade[w] += total;
 
