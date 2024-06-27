@@ -17,7 +17,7 @@ write_output () {
 task () {
   # echo ./bin/run.o ./${1} ./${2} -l -t ${TIMEOUT} -i ${INIT_COUNT}
   # out1=$(/Users/buddhi/Documents/Work/PhD/Implementation/mcsplit-plus/bin/run.o ./${1} ./${2} -l -q -t ${TIMEOUT} -i ${INIT_COUNT} -m ${MAX_INNER_THRESHOLD})
-  out1=$(./bin/run.o min_max ./${1} ./${2}  -c -l -q -t ${TIMEOUT})
+  out1=$(./bin/run.o min_max ./${1} ./${2} -c -l -q -t ${TIMEOUT})
   # echo ${MAX_INNER_THRESHOLD}
   out1="${1}, ${2}, ${out1}"
 #   out1=${out1//[,]/' '} 
