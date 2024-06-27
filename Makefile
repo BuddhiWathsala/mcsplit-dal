@@ -1,11 +1,13 @@
 all:
-	g++ -Wall -std=c++17 *.cpp -pthread -o bin/run.o
+	g++ -O3 -ffast-math -pedantic -Wall -std=c++17 *.cpp -pthread -o bin/run.o
 build:
-	g++ -Wall -std=c++17 *.cpp -pthread -o bin/run.o
+	g++ -O3 -ffast-math -pedantic -Wall -std=c++17 *.cpp -pthread -o bin/run.o
+linuxbuild:
+	g++ -O3 -ffast-math -pedantic -Wall -std=c++17 *.cpp -g -pthread -o bin/run.o
 macbuild:
-	/usr/bin/clang++ -Wall -std=c++17 *.cpp -pthread -g -o bin/run.o -I/opt/homebrew/Cellar/argp-standalone/1.3/include -L/opt/homebrew/Cellar/argp-standalone/1.3/lib/ -largp
+	/usr/bin/clang++ -O3 -ffast-math -pedantic -Wall -std=c++17 *.cpp -pthread -g -o bin/run.o -I/opt/homebrew/Cellar/argp-standalone/1.3/include -L/opt/homebrew/Cellar/argp-standalone/1.3/lib/ -largp
 run:
-	./bin/run.o min_max ./data/tests/case1/pattern ./data/tests/case1/pattern -l -c
+	./bin/run.o min_max ./data/tests/case1/pattern ./data/tests/case1/target -l -c
 
 MAX_TIME := 10
 test:
