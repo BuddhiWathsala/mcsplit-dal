@@ -1,7 +1,7 @@
 all:
 	g++ -O3 -ffast-math -pedantic -Wall -std=c++17 *.cpp -pthread -o bin/run.o
 build:
-	g++ -O3 -ffast-math -pedantic -Wall -std=c++17 *.cpp -pthread -o bin/run.o
+	g++ -O3 -ffast-math -g -pedantic -Wall -std=c++17 *.cpp -pthread -o bin/run.o
 linuxbuild:
 	g++ -O3 -ffast-math -pedantic -Wall -std=c++17 *.cpp -g -pthread -o bin/run.o
 macbuild:
