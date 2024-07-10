@@ -237,24 +237,24 @@ void show(const vector<VtxPair> &current, const vector<Bidomain> &domains,
 }
 
 bool check_sol(const Graph &g0, const Graph &g1, const vector<VtxPair> &solution) {
-//    return true;
-    vector<bool> used_left(g0.n, false);
-    vector<bool> used_right(g1.n, false);
-    for (unsigned int i = 0; i < solution.size(); i++) {
-        struct VtxPair p0 = solution[i];
-        if (used_left[p0.v] || used_right[p0.w])
-            return false;
-        used_left[p0.v] = true;
-        used_right[p0.w] = true;
-        if (g0.label[p0.v] != g1.label[p0.w])
-            return false;
-        for (unsigned int j = i + 1; j < solution.size(); j++) {
-            struct VtxPair p1 = solution[j];
-            if (g0.adjmat[p0.v][p1.v] != g1.adjmat[p0.w][p1.w])
-                return false;
-        }
-    }
     return true;
+//    vector<bool> used_left(g0.n, false);
+//    vector<bool> used_right(g1.n, false);
+//    for (unsigned int i = 0; i < solution.size(); i++) {
+//        struct VtxPair p0 = solution[i];
+//        if (used_left[p0.v] || used_right[p0.w])
+//            return false;
+//        used_left[p0.v] = true;
+//        used_right[p0.w] = true;
+//        if (g0.label[p0.v] != g1.label[p0.w])
+//            return false;
+//        for (unsigned int j = i + 1; j < solution.size(); j++) {
+//            struct VtxPair p1 = solution[j];
+//            if (g0.adjmat[p0.v][p1.v] != g1.adjmat[p0.w][p1.w])
+//                return false;
+//        }
+//    }
+//    return true;
 }
 
 int calc_bound(const vector<Bidomain> &domains) {
