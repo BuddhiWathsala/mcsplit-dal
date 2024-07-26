@@ -65,3 +65,4 @@ data/meshes-CVIU11
 data/scalefree
 data/si
 .DS_Store
+cmake-build-debug
