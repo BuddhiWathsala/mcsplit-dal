@@ -30,3 +30,10 @@ test:
 	./bin/run.o min_max ./data/tests/case19/g22 ./data/tests/case19/g57 -l -c -q -t ${MAX_TIME}
 	./bin/run.o min_max ./data/tests/case20/g5 ./data/tests/case20/g61 -l -c -q -t ${MAX_TIME}
 	./bin/run.o min_max ./data/tests/case21/g9 ./data/tests/case21/g80 -l -c -q -t ${MAX_TIME}
+	./bin/run.o min_max data/LV/patterns/g15 data/LV/targets/g6 -l -c -q -t ${MAX_TIME}
+
+err:
+	./bin/run.o min_max data/largerLV/patterns/g13 data/largerLV/targets/g57 -l -c -q -t 1000
+	./bin/run.o min_max data/largerLV/patterns/g38 data/largerLV/targets/g57 -l -c -q -t 1000
+	./bin/run.o min_max data/LV/patterns/g14 data/LV/targets/g6 -l -q -t 1000
+
