@@ -237,24 +237,24 @@ void show(const vector<VtxPair> &current, const vector<Bidomain> &domains,
 }
 
 bool check_sol(const Graph &g0, const Graph &g1, const vector<VtxPair> &solution) {
-    return true;
-//    vector<bool> used_left(g0.n, false);
-//    vector<bool> used_right(g1.n, false);
-//    for (unsigned int i = 0; i < solution.size(); i++) {
-//        struct VtxPair p0 = solution[i];
-//        if (used_left[p0.v] || used_right[p0.w])
-//            return false;
-//        used_left[p0.v] = true;
-//        used_right[p0.w] = true;
-//        if (g0.label[p0.v] != g1.label[p0.w])
-//            return false;
-//        for (unsigned int j = i + 1; j < solution.size(); j++) {
-//            struct VtxPair p1 = solution[j];
-//            if (g0.adjmat[p0.v][p1.v] != g1.adjmat[p0.w][p1.w])
-//                return false;
-//        }
-//    }
 //    return true;
+    vector<bool> used_left(g0.n, false);
+    vector<bool> used_right(g1.n, false);
+    for (unsigned int i = 0; i < solution.size(); i++) {
+        struct VtxPair p0 = solution[i];
+        if (used_left[p0.v] || used_right[p0.w])
+            return false;
+        used_left[p0.v] = true;
+        used_right[p0.w] = true;
+        if (g0.label[p0.v] != g1.label[p0.w])
+            return false;
+        for (unsigned int j = i + 1; j < solution.size(); j++) {
+            struct VtxPair p1 = solution[j];
+            if (g0.adjmat[p0.v][p1.v] != g1.adjmat[p0.w][p1.w])
+                return false;
+        }
+    }
+    return true;
 }
 
 int calc_bound(const vector<Bidomain> &domains) {
@@ -881,7 +881,7 @@ int main(int argc, char **argv) {
     std::condition_variable timeout_cv;
     abort_due_to_timeout.store(false);
     bool aborted = false;
-    START = std::chrono::steady_clock::now();
+
     if (0 != arguments.timeout) {
         timeout_thread = std::thread([&] {
             auto abort_time = std::chrono::steady_clock::now() + std::chrono::seconds(arguments.timeout);
@@ -902,7 +902,7 @@ int main(int argc, char **argv) {
     }
     //  auto start = std::chrono::steady_clock::now();
     start = clock();
-
+    START = std::chrono::steady_clock::now();
     vector<int> g0_deg = calculate_degrees(g0);
     vector<int> g1_deg = calculate_degrees(g1);
 
