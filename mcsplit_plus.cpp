@@ -199,12 +199,16 @@ struct Bidomain {
     int l,        r;        // start indices of left and right sets
     int left_len, right_len;
     bool is_adjacent;
-    Bidomain(int l, int r, int left_len, int right_len, bool is_adjacent):
+    int size;
+    bool is_valid;
+    Bidomain(int l, int r, int left_len, int right_len, bool is_adjacent, int size, bool is_valid):
             l(l),
             r(r),
             left_len (left_len),
             right_len (right_len),
-            is_adjacent (is_adjacent) { };
+            is_adjacent (is_adjacent),
+            size(size),
+            is_valid(is_valid) { };
 };
 
 void show(const vector<VtxPair>& current, const vector<Bidomain> &domains,
@@ -252,10 +256,177 @@ bool check_sol(const Graph &g0, const Graph &g1, const vector<VtxPair> &solution
 //    return true;
 }
 
-int calc_bound(const vector<Bidomain>& domains) {
-    int bound = 0;
-    for (const Bidomain &bd : domains) {
-        bound += std::min(bd.left_len, bd.right_len);
+const int THRESHOLD = 16;
+const int boxes = 2;
+const int index_partition_size = 2;
+const int best_partition_ub = THRESHOLD;
+const int best_partition_diff = 10;
+int MAX_COUNT = 100;
+int MAX_SUCCESS = 30;
+int called_count = 0;
+int success_count = 0;
+bool bound_enabled = true;
+bool count_enabled = true;
+
+const int ROWS = THRESHOLD - index_partition_size + 2;
+long double array[ROWS*boxes];
+int s_degrees[best_partition_ub];
+
+void initializeArray() {
+    for (auto & i : array) {
+        i = 1.0;
+    }
+}
+
+unsigned int calc_bound(const Graph &g0, const Graph &g1, vector<Bidomain> &domains,
+                        const vector<int> &left, const vector<int> &right, const vector<VtxPair> &incumbent,
+                        const vector<VtxPair> &current) {
+
+    unsigned int incumbent_size = incumbent.size();
+    unsigned int current_size = current.size();
+    unsigned int mcsplit_bound = current_size;
+    long double possible_reductions = 0;
+    if (!bound_enabled) {
+        for (const Bidomain &bd: domains) {
+            mcsplit_bound += std::min(bd.left_len, bd.right_len);
+        }
+        return mcsplit_bound;
+    }
+    for (const Bidomain &bd: domains) {
+        const auto [min_len, max_len] = std::minmax(bd.left_len, bd.right_len);
+        const int size_diff = std::abs(bd.left_len - bd.right_len);
+        if (min_len > 2 && max_len <= best_partition_ub && size_diff <= best_partition_diff) {
+            if (bd.is_valid) {
+                possible_reductions = min_len - bd.size;
+            } else {
+                possible_reductions += array[((max_len - index_partition_size)*index_partition_size) + (size_diff > 2 ? 1 : 0)];
+            }
+        }
+        mcsplit_bound += min_len;
+    }
+    if (mcsplit_bound <= incumbent_size || (possible_reductions < 1) || ((mcsplit_bound - possible_reductions) > incumbent_size)) {
+        return mcsplit_bound;
+    }
+    if (count_enabled && called_count == MAX_COUNT) {
+        count_enabled = false;
+        if (success_count < MAX_SUCCESS) {
+            bound_enabled = false;
+        }
+        return mcsplit_bound;
+    }
+    unsigned int bound = current_size;
+    for (Bidomain &bd: domains) {
+        const auto [min_len, max_len] = std::minmax(bd.left_len, bd.right_len);
+        const int size_diff = std::abs(bd.left_len - bd.right_len);
+        if (bd.is_valid) {
+            bound += bd.size;
+            continue;
+        }
+        if (bd.left_len == 2 && bd.right_len == 2) {
+            if (g0.adjmat[left[bd.l]][left[bd.l+1]] != g1.adjmat[right[bd.r]][right[bd.r+1]]) {
+                bound += 1;
+                bd.size = 1;
+                int index = (max_len - index_partition_size)*index_partition_size;
+                array[index] = (array[index] + 1) / 2;
+            } else {
+                bd.size = 2;
+                int index = (max_len - index_partition_size)*index_partition_size;
+                array[index] = (array[index]) / 2;
+                bound += 2;
+            }
+            bd.is_valid = true;
+            continue;
+        }
+        if (min_len > 2 && max_len <= best_partition_ub && size_diff <= best_partition_diff) {
+            int s_len, b_len;
+            int val = min_len;
+            int index = (max_len - index_partition_size)*index_partition_size + (size_diff > 2 ? 1 : 0);
+            int s_connections = 0, b_connections = 0; // small and big side
+//            std::vector<int> s_degrees(min_len);
+            std::fill(s_degrees, s_degrees + min_len, 0);
+            if (bd.left_len <= bd.right_len) {
+                s_len = bd.left_len;
+                b_len = bd.right_len;
+                for (int i = 0; i < s_len; ++i) {
+                    const int v1 = left[bd.l +i]; // using references can only make things more expensive for small data types
+                    for (int j = i + 1; j < s_len; ++j) {
+                        const int v2 = left[bd.l + j];
+                        if (g0.adjmat[v1][v2]) {
+                            s_degrees[i]++;
+                            s_degrees[j]++;
+                            s_connections++; // minor trick: we only count undirected edges (everything divided by 2)
+                        }
+                    }
+                }
+                // no need to compute degrees for the bigger side
+                for (int i = 0; i < b_len; ++i) {
+                    const int u1 = right[bd.r + i];
+                    for (int j = i + 1; j < b_len; ++j) {
+                        const int u2 = right[bd.r + j];
+                        if (g1.adjmat[u1][u2])
+                            b_connections++;
+                    }
+                }
+            } else {
+                s_len = bd.right_len;
+                b_len = bd.left_len;
+                for (int i = 0; i < s_len; ++i) {
+                    const int v1 = right[bd.r +
+                                         i]; // using references can only make things more expensive for small data types
+                    for (int j = i + 1; j < s_len; ++j) {
+                        const int v2 = right[bd.r + j];
+                        if (g1.adjmat[v1][v2]) {
+                            s_degrees[i]++;
+                            s_degrees[j]++;
+                            s_connections++; // minor trick: we only count undirected edges (everything divided by 2)
+                        }
+                    }
+                }
+                // no need to compute degrees for the bigger side
+                for (int i = 0; i < b_len; ++i) {
+                    const int u1 = left[bd.l + i];
+                    for (int j = i + 1; j < b_len; ++j) {
+                        const int u2 = left[bd.l + j];
+                        if (g0.adjmat[u1][u2])
+                            b_connections++;
+                    }
+                }
+            }
+            // compute non-connections from connections
+            int s_non_connections = s_len * (s_len - 1) / 2 - s_connections;
+            int b_non_connections = b_len * (b_len - 1) / 2 - b_connections;
+            // optimization starts here
+            int diff = s_connections - b_connections;
+            if (diff > 0) {
+//                std::sort(s_degrees.begin(), s_degrees.end());
+                std::sort(s_degrees, s_degrees+s_len);
+                diff -= s_degrees[--val];
+                while (diff > 0)
+                    diff -= s_degrees[--val];
+            } else {
+                diff = s_non_connections - b_non_connections;
+                if (diff > 0) {
+//                    std::sort(s_degrees.begin(), s_degrees.end(), std::greater<>());
+                    std::sort(s_degrees, s_degrees+s_len, std::greater<>());
+                    diff -= s_len - s_degrees[--val];
+                    while (diff > 0)
+                        diff -= s_len - s_degrees[--val];
+                }
+            }
+            array[index] = (array[index] + min_len - val) / 2;
+            bound += val;
+            bd.size = val;
+        } else {
+            bound += min_len;
+            bd.size = min_len;
+        }
+        bd.is_valid = true;
+    }
+    if (count_enabled) {
+        if (bound <= incumbent_size) {
+            success_count++;
+        }
+        called_count++;
     }
     return bound;
 }
@@ -371,8 +542,15 @@ vector<Bidomain> rewardfeed_RL(const vector<Bidomain> & d,int bd_idx,vector<VtxP
            cout<<"j="<<j<< "  idx="<<bd_idx<<endl;
            cout<<"gl="<<lgrade[v]<<" gr="<<rgrade[w]<<endl;
     #endif
-           if (left_len_noedge && right_len_noedge)//new_domain存在的条件是同一domain内需要存在与该对应点同时相连，或者同时不相连的点的点
-               new_d.push_back({l+left_len, r+right_len, left_len_noedge, right_len_noedge, old_bd.is_adjacent});
+           if (left_len_noedge && right_len_noedge) {
+               if (left_len != 0 || right_len != 0) {
+                   new_d.emplace_back(l+left_len, r+right_len, left_len_noedge, right_len_noedge, old_bd.is_adjacent, -1,
+                                      false);
+               } else {
+                   new_d.emplace_back(l+left_len, r+right_len, left_len_noedge, right_len_noedge, old_bd.is_adjacent, old_bd.size, old_bd.is_valid);
+               }
+           }
+
                //Question:when the value of 'left_len_noedge' will be 0,
                //what does it mean if it happens?
            if (multiway && left_len && right_len) {//不与顶点相连的顶点
@@ -398,11 +576,15 @@ vector<Bidomain> rewardfeed_RL(const vector<Bidomain> & d,int bd_idx,vector<VtxP
                        int rmin = r;
                        do { l++; } while (l<l_top && adjrow_v[left[l]]==left_label);
                        do { r++; } while (r<r_top && adjrow_w[right[r]]==left_label);
-                       new_d.push_back({lmin, rmin, l-lmin, r-rmin, true});
+                       new_d.emplace_back(lmin, rmin, l-lmin, r-rmin, true, -1, false);
                    }
                }
            } else if (left_len && right_len) {
-               new_d.push_back({l, r, left_len, right_len, true});//与顶点相连的顶点 标志为Ture
+               if (left_len_noedge != 0 || right_len_noedge != 0) {
+                   new_d.emplace_back(l, r, left_len, right_len, true, -1, false);
+               } else {
+                   new_d.emplace_back(l, r, left_len, right_len, true, old_bd.size, old_bd.is_valid);
+               }
            }
        }
        if(total>0){
@@ -511,8 +693,14 @@ vector<Bidomain> rewardfeed(const vector<Bidomain> & d,int bd_idx,vector<VtxPair
         cout<<"j="<<j<< "  idx="<<bd_idx<<endl;
         cout<<"gl="<<lgrade[v]<<" gr="<<rgrade[w]<<endl;
  #endif
-        if (left_len_noedge && right_len_noedge)//new_domain存在的条件是同一domain内需要存在与该对应点同时相连，或者同时不相连的点的点
-            new_d.push_back({l+left_len, r+right_len, left_len_noedge, right_len_noedge, old_bd.is_adjacent});
+        if (left_len_noedge && right_len_noedge) {
+            if (left_len != 0 || right_len != 0) {
+                new_d.emplace_back(l+left_len, r+right_len, left_len_noedge, right_len_noedge, old_bd.is_adjacent, -1,
+                                   false);
+            } else {
+                new_d.emplace_back(l+left_len, r+right_len, left_len_noedge, right_len_noedge, old_bd.is_adjacent, old_bd.size, old_bd.is_valid);
+            }
+        }
         if (multiway && left_len && right_len) {//不与顶点相连的顶点
             auto& adjrow_v = g0.adjmat[v];
             auto& adjrow_w = g1.adjmat[w];
@@ -536,11 +724,15 @@ vector<Bidomain> rewardfeed(const vector<Bidomain> & d,int bd_idx,vector<VtxPair
                     int rmin = r;
                     do { l++; } while (l<l_top && adjrow_v[left[l]]==left_label);
                     do { r++; } while (r<r_top && adjrow_w[right[r]]==left_label);
-                    new_d.push_back({lmin, rmin, l-lmin, r-rmin, true});
+                    new_d.emplace_back(lmin, rmin, l-lmin, r-rmin, true, -1, false);
                 }
             }
         } else if (left_len && right_len) {
-            new_d.push_back({l, r, left_len, right_len, true});//与顶点相连的顶点 标志为Ture
+            if (left_len_noedge != 0 || right_len_noedge != 0) {
+                new_d.emplace_back(l, r, left_len, right_len, true, -1, false);
+            } else {
+                new_d.emplace_back(l, r, left_len, right_len, true, old_bd.size, old_bd.is_valid);
+            }
         }
     }
     int domgrade = new_d.size();
@@ -631,7 +823,7 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
     }
     nodes++;
 
-    unsigned int bound = current.size() + calc_bound(domains);//计算相连和不相连同构数的最大可能加上当前已经同构的点数
+    unsigned int bound = calc_bound(g0, g1, domains, left, right, incumbent, current);//计算相连和不相连同构数的最大可能加上当前已经同构的点数
     if (bound <=incumbent.size() || bound < matching_size_goal){//剪枝
         //num--;
         cut_branches++;
@@ -804,7 +996,7 @@ vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
 
         int left_len = left.size() - start_l;
         int right_len = right.size() - start_r;
-        domains.push_back({start_l, start_r, left_len, right_len, false});
+        domains.push_back({start_l, start_r, left_len, right_len, false, -1, false});
     }
 
     vector<VtxPair> incumbent;
@@ -875,6 +1067,7 @@ void pack_leaves(Graph &g) {
 
 int main(int argc, char** argv) {
     set_default_arguments();
+    initializeArray();
     argp_parse(&argp, argc, argv, 0, 0, 0);
 
     char format = arguments.dimacs ? 'D' : arguments.lad ? 'L' : 'B';
