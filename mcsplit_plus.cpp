@@ -270,7 +270,10 @@ bool count_enabled = true;
 
 const int ROWS = THRESHOLD - index_partition_size + 2;
 long double array[ROWS*boxes];
+const unsigned VAL = (1 << 16);
+const unsigned VAL1 = (1 << 16) | 1;
 int s_degrees[best_partition_ub];
+int s1_degrees[best_partition_ub];
 
 void initializeArray() {
     for (auto & i : array) {
@@ -342,8 +345,10 @@ unsigned int calc_bound(const Graph &g0, const Graph &g1, vector<Bidomain> &doma
             int val = min_len;
             int index = (max_len - index_partition_size)*index_partition_size + (size_diff > 2 ? 1 : 0);
             int s_connections = 0, b_connections = 0; // small and big side
+            int s1_connections = 0, b1_connections = 0; // small and big side
 //            std::vector<int> s_degrees(min_len);
             std::fill(s_degrees, s_degrees + min_len, 0);
+            std::fill(s1_degrees, s1_degrees + min_len, 0);
             if (bd.left_len <= bd.right_len) {
                 s_len = bd.left_len;
                 b_len = bd.right_len;
@@ -351,10 +356,14 @@ unsigned int calc_bound(const Graph &g0, const Graph &g1, vector<Bidomain> &doma
                     const int v1 = left[bd.l +i]; // using references can only make things more expensive for small data types
                     for (int j = i + 1; j < s_len; ++j) {
                         const int v2 = left[bd.l + j];
-                        if (g0.adjmat[v1][v2]) {
+                        if (g0.adjmat[v1][v2] == 1 || g0.adjmat[v1][v2] == VAL) {
                             s_degrees[i]++;
                             s_degrees[j]++;
                             s_connections++; // minor trick: we only count undirected edges (everything divided by 2)
+                        } else if (g0.adjmat[v1][v2] == VAL1) {
+                            s1_degrees[i]++;
+                            s1_degrees[j]++;
+                            s1_connections++;
                         }
                     }
                 }
@@ -363,8 +372,11 @@ unsigned int calc_bound(const Graph &g0, const Graph &g1, vector<Bidomain> &doma
                     const int u1 = right[bd.r + i];
                     for (int j = i + 1; j < b_len; ++j) {
                         const int u2 = right[bd.r + j];
-                        if (g1.adjmat[u1][u2])
+                        if (g1.adjmat[u1][u2] == 1 || g1.adjmat[u1][u2] == VAL) {
                             b_connections++;
+                        } else if (g1.adjmat[u1][u2] == VAL1) {
+                            b1_connections++;
+                        }
                     }
                 }
             } else {
@@ -375,10 +387,14 @@ unsigned int calc_bound(const Graph &g0, const Graph &g1, vector<Bidomain> &doma
                                          i]; // using references can only make things more expensive for small data types
                     for (int j = i + 1; j < s_len; ++j) {
                         const int v2 = right[bd.r + j];
-                        if (g1.adjmat[v1][v2]) {
+                        if (g1.adjmat[v1][v2] == 1 || g1.adjmat[v1][v2] == VAL) {
                             s_degrees[i]++;
                             s_degrees[j]++;
                             s_connections++; // minor trick: we only count undirected edges (everything divided by 2)
+                        } else if (g1.adjmat[v1][v2] == VAL1) {
+                            s1_degrees[i]++;
+                            s1_degrees[j]++;
+                            s1_connections++;
                         }
                     }
                 }
@@ -387,16 +403,27 @@ unsigned int calc_bound(const Graph &g0, const Graph &g1, vector<Bidomain> &doma
                     const int u1 = left[bd.l + i];
                     for (int j = i + 1; j < b_len; ++j) {
                         const int u2 = left[bd.l + j];
-                        if (g0.adjmat[u1][u2])
+                        if (g0.adjmat[u1][u2] == 1 || g0.adjmat[u1][u2] == VAL) {
                             b_connections++;
+                        } else if (g0.adjmat[u1][u2] == VAL1) {
+                            b1_connections++;
+                        }
                     }
                 }
             }
             // compute non-connections from connections
-            int s_non_connections = s_len * (s_len - 1) / 2 - s_connections;
-            int b_non_connections = b_len * (b_len - 1) / 2 - b_connections;
+            int s_non_connections = s_len * (s_len - 1) / 2 - s_connections - s1_connections;
+            int b_non_connections = b_len * (b_len - 1) / 2 - b_connections - b1_connections;
             // optimization starts here
             int diff = s_connections - b_connections;
+            int val1 = min_len;
+            int diff1 = s1_connections - b1_connections;
+            if (diff1 > 0) {
+                std::sort(s1_degrees, s1_degrees+s_len);
+                diff1 -= s1_degrees[--val1];
+                while (diff1 > 0)
+                    diff1 -= s1_degrees[--val1];
+            }
             if (diff > 0) {
 //                std::sort(s_degrees.begin(), s_degrees.end());
                 std::sort(s_degrees, s_degrees+s_len);
