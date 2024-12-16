@@ -180,6 +180,10 @@ int Maxnum = 0;
 int M = 1;
 int num = 0;
 clock_t start;
+std::chrono::duration<double> duration_for_simulations;
+size_t b1_incumbent_size = 0;
+size_t b2_incumbent_size = 0;
+unsigned long long b1_nodes = 0, b2_nodes = 0;
 
 /*******************************************************************************
                                  MCS functions
@@ -762,6 +766,244 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
     solve(g0, g1, V, lgrade,rgrade,Q, incumbent, current, g0_matched, g1_matched, domains, left, right, matching_size_goal);
 }
 
+void remove_vtx_from_left_domain(vector<int>& left, Bidomain& bd, int v) {
+    int i = 0;
+    while(left[bd.l + i] != v) i++;
+    std::swap(left[bd.l+i], left[bd.l+bd.left_len-1]);
+    bd.left_len--;
+}
+
+int find_min_value(const vector<int>& arr, int start_idx, int len) {
+    int min_v = INT_MAX;
+    for (int i=0; i<len; i++)
+        if (arr[start_idx + i] < min_v)
+            min_v = arr[start_idx + i];
+    return min_v;
+}
+
+int index_of_next_smallest(const vector<int>& arr, int start_idx, int len, int w) {
+    int idx = -1;
+    int smallest = INT_MAX;
+    for (int i=0; i<len; i++) {
+        if (arr[start_idx + i]>w && arr[start_idx + i]<smallest) {
+            smallest = arr[start_idx + i];
+            idx = i;
+        }
+    }
+    return idx;
+}
+vector<Bidomain> filter_domains(const vector<Bidomain> & d, vector<int> & left,
+                                vector<int> & right, const Graph & g0, const Graph & g1, int v, int w,
+                                bool multiway)
+{
+    vector<Bidomain> new_d;
+    new_d.reserve(d.size());
+    for (const Bidomain &old_bd : d) {
+        int l = old_bd.l;
+        int r = old_bd.r;
+        // After these two partitions, left_len and right_len are the lengths of the
+        // arrays of vertices with edges from v or w (int the directed case, edges
+        // either from or to v or w)
+        int left_len = partition(left, l, old_bd.left_len, g0.adjmat[v]);
+        int right_len = partition(right, r, old_bd.right_len, g1.adjmat[w]);
+        int left_len_noedge = old_bd.left_len - left_len;
+        int right_len_noedge = old_bd.right_len - right_len;
+        if (left_len_noedge && right_len_noedge)
+            new_d.push_back({l+left_len, r+right_len, left_len_noedge, right_len_noedge, old_bd.is_adjacent});
+        if (multiway && left_len && right_len) {
+            auto& adjrow_v = g0.adjmat[v];
+            auto& adjrow_w = g1.adjmat[w];
+            auto l_begin = std::begin(left) + l;
+            auto r_begin = std::begin(right) + r;
+            std::sort(l_begin, l_begin+left_len, [&](int a, int b)
+            { return adjrow_v[a] < adjrow_v[b]; });
+            std::sort(r_begin, r_begin+right_len, [&](int a, int b)
+            { return adjrow_w[a] < adjrow_w[b]; });
+            int l_top = l + left_len;
+            int r_top = r + right_len;
+            while (l<l_top && r<r_top) {
+                unsigned int left_label = adjrow_v[left[l]];
+                unsigned int right_label = adjrow_w[right[r]];
+                if (left_label < right_label) {
+                    l++;
+                } else if (left_label > right_label) {
+                    r++;
+                } else {
+                    int lmin = l;
+                    int rmin = r;
+                    do { l++; } while (l<l_top && adjrow_v[left[l]]==left_label);
+                    do { r++; } while (r<r_top && adjrow_w[right[r]]==left_label);
+                    new_d.push_back({lmin, rmin, l-lmin, r-rmin, true});
+                }
+            }
+        } else if (left_len && right_len) {
+            new_d.push_back({l, r, left_len, right_len, true});
+        }
+    }
+    return new_d;
+}
+
+
+int select_random_bidomain(const vector<Bidomain>& domains, const vector<int> & left,
+                           int current_matching_size)
+{
+    if (domains.empty()) {
+        return -1;
+    }
+    if (arguments.connected && current_matching_size > 0) {
+        vector<int> connected_indices;
+        for (unsigned int i = 0; i < domains.size(); ++i) {
+            if (domains[i].is_adjacent) {
+                connected_indices.push_back(i);
+            }
+        }
+        if (connected_indices.empty()) {
+            return -1;
+        }
+        return connected_indices[std::rand() % static_cast<int>(connected_indices.size())];
+    }
+    return std::rand() % static_cast<int>(domains.size());
+}
+
+std::pair<double, double> calculateMeanAndStdDev(const std::vector<double>& data) {
+    // Calculate the mean
+    double sum = std::accumulate(data.begin(), data.end(), 0.0);
+    double mean = sum / data.size();
+
+    // Calculate the standard deviation
+    double sq_sum = 0.0;
+    for (double value : data) {
+        sq_sum += (value - mean) * (value - mean);
+    }
+    double std_dev = std::sqrt(sq_sum / data.size());
+
+    return {mean, std_dev}; // Return both mean and standard deviation as a pair
+}
+
+
+const int max_random_calls = 40;
+const int n_episodes = 4;
+const double stdev_threshold = 0.2;
+void bootstrap1(const Graph & g0, const Graph & g1, vector<VtxPair> & incumbent,
+                vector<VtxPair> current, vector<Bidomain> domains,
+                vector<int> left, vector<int> right, unsigned int matching_size_goal)
+{
+    int possible_calls = std::min(domains[0].left_len, domains[0].right_len);
+    possible_calls = std::min(possible_calls, max_random_calls) / n_episodes;
+    bool init_branch;
+    vector<double> primal_dual_gaps;
+    vector<int> left_init = left;
+    for (int e=0; e < n_episodes; ++e) {
+        primal_dual_gaps.clear();
+        for (int i = 0; i < possible_calls; ++i) {
+            std::srand(std::time(nullptr));
+            vector<Bidomain> domains_copy = domains;
+            int bd_idx = 0;
+            int v = left_init[domains[0].l + e*possible_calls + i];
+            init_branch = true;
+            while (bd_idx != -1) {
+                unsigned int bound = current.size() + calc_bound(domains_copy);
+                unsigned int incumbent_size = incumbent.size();
+                double pd_gap = (bound - incumbent_size)*1.0 / std::max(bound, incumbent_size);
+                primal_dual_gaps.push_back(pd_gap);
+                if (bound <= incumbent_size) {
+                    break;
+                }
+                Bidomain &bd = domains_copy[bd_idx];
+                v = !init_branch ? find_min_value(left, bd.l, bd.left_len) : v;
+                nodes++;
+                init_branch = false;
+                remove_vtx_from_left_domain(left, domains_copy[bd_idx], v);
+                int w = -1;
+                bd.right_len--;
+                int idx = index_of_next_smallest(right, bd.r, bd.right_len+1, w);
+                w = right[bd.r + idx];
+                right[bd.r + idx] = right[bd.r + bd.right_len];
+                right[bd.r + bd.right_len] = w;
+                domains_copy = filter_domains(domains_copy, left, right, g0, g1, v, w,
+                                              arguments.directed || arguments.edge_labelled);
+                current.push_back(VtxPair(v, w));
+                if (current.size() > incumbent.size()) {
+                    incumbent = current;
+                    calls_for_optimal = nodes;
+                    duration = std::chrono::steady_clock::now() - START;
+                }
+                bd_idx = select_random_bidomain(domains_copy, left, current.size());
+            }
+            current.clear();
+        }
+        auto [mean, std_dev] = calculateMeanAndStdDev(primal_dual_gaps);
+        double threshold = (mean != 0) ? std_dev/mean : 0;
+        if (threshold < stdev_threshold) {
+            return;
+        }
+    }
+}
+
+void bootstrap2(const Graph & g0, const Graph & g1, vector<VtxPair> & incumbent,
+                vector<VtxPair> current, vector<Bidomain> domains,
+                vector<int> left, vector<int> right, unsigned int matching_size_goal)
+{
+    int possible_calls = std::min(domains[0].left_len, domains[0].right_len);
+    possible_calls = std::min(possible_calls, max_random_calls) / n_episodes;
+    int v_init = left[domains[0].l];
+    vector<double> primal_dual_gaps;
+    for (int e=0; e < n_episodes; ++e) {
+        primal_dual_gaps.clear();
+        for (int i = 0; i < possible_calls; ++i) {
+            std::srand(std::time(nullptr));
+            vector<Bidomain> domains_copy = domains;
+            int v = v_init;
+            int bd_idx = 0;
+            remove_vtx_from_left_domain(left, domains_copy[bd_idx], v);
+            Bidomain &init_bd = domains_copy[bd_idx];
+            init_bd.right_len--;
+            int index = e*possible_calls + i;
+            int w = right[init_bd.r + index];
+            right[init_bd.r + index] = right[init_bd.r + init_bd.right_len];
+            right[init_bd.r + init_bd.right_len] = w;
+            domains_copy = filter_domains(domains_copy, left, right, g0, g1, v, w,
+                                          arguments.directed || arguments.edge_labelled);
+            current.push_back(VtxPair(v, w));
+            bd_idx = select_random_bidomain(domains_copy, left, current.size());
+            while (bd_idx != -1) {
+                unsigned int bound = current.size() + calc_bound(domains_copy);
+                unsigned int incumbent_size = incumbent.size();
+                double pd_gap = (bound - incumbent_size)*1.0 / std::max(bound, incumbent_size);
+                primal_dual_gaps.push_back(pd_gap);
+                if (bound <= incumbent_size) {
+                    break;
+                }
+                Bidomain &bd = domains_copy[bd_idx];
+                v = find_min_value(left, bd.l, bd.left_len);
+                nodes++;
+                remove_vtx_from_left_domain(left, domains_copy[bd_idx], v);
+                bd.right_len--;
+                w = -1;
+                int idx = index_of_next_smallest(right, bd.r, bd.right_len+1, w);
+                w = right[bd.r + idx];
+                right[bd.r + idx] = right[bd.r + bd.right_len];
+                right[bd.r + bd.right_len] = w;
+                domains_copy = filter_domains(domains_copy, left, right, g0, g1, v, w,
+                                              arguments.directed || arguments.edge_labelled);
+                current.push_back(VtxPair(v, w));
+                if (current.size() > incumbent.size()) {
+                    incumbent = current;
+                    calls_for_optimal = nodes;
+                    duration = std::chrono::steady_clock::now() - START;
+                }
+                bd_idx = select_random_bidomain(domains_copy, left, current.size());
+            }
+            current.clear();
+        }
+        auto [mean, std_dev] = calculateMeanAndStdDev(primal_dual_gaps);
+        double threshold = (mean != 0) ? std_dev/mean : 0;
+        if (threshold < stdev_threshold) {
+            return;
+        }
+    }
+}
+
 vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
     vector<int> left;  // the buffer of vertex indices for the left partitions
     vector<int> right;  // the buffer of vertex indices for the right partitions
@@ -823,6 +1065,14 @@ vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
 
     } else {
         vector<VtxPair> current;
+        auto sim_start = std::chrono::steady_clock::now();
+        bootstrap1(g0, g1, incumbent, current, domains, left, right, 1);
+        b1_incumbent_size = incumbent.size();
+        b1_nodes = nodes;
+        bootstrap2(g0, g1, incumbent, current, domains, left, right, 1);
+        b2_incumbent_size = incumbent.size();
+        b2_nodes = nodes;
+        duration_for_simulations = std::chrono::steady_clock::now() - sim_start;
         solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched, domains, left, right, 1);
     }
 
@@ -1013,8 +1263,10 @@ int main(int argc, char** argv) {
 //        cout << "TIMEOUT" << endl;
 
     cout << solution.size() << ", " << check_sol(g0, g1, solution) << ", " << duration.count() << ", "
-         << time_elapsed.count() << ", " << nodes << ", " << calls_for_optimal << ", " << cut_branches << ", " <<
-         aborted << endl;
+         << time_elapsed.count() << ", " << nodes << ", " << calls_for_optimal << ", " << cut_branches << ", "
+            <<  b1_incumbent_size << ", " << b2_incumbent_size << ", " << duration_for_simulations.count() << ", "
+            <<  b1_nodes << ", " << b2_nodes << ", "
+            << aborted << endl;
 
 }
 
