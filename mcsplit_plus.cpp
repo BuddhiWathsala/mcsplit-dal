@@ -335,12 +335,16 @@ int remove_matched_vertex(vector<int> &arr, int start, int len, const vector<int
     return p;
 }
 vector<Bidomain> rewardfeed_RL(const vector<Bidomain> & d,int bd_idx,vector<VtxPair> & current, vector<int> & left,
-                               vector<int> & right,vector<gtype> & lgrade,vector<gtype> & rgrade,const Graph & g0, const Graph & g1, int v, int w,
+                               vector<int> & right,vector<gtype> & lgrade,vector<gtype> & rgrade,const Graph & g0, const Graph & g1,
+                               vector<int> &g0_matched, vector<int> &g1_matched, int v, int w,
                                bool multiway)
     {//每个domain均分成2个new_domain分别是与当前对应点相连或者不相连
        vector<Bidomain> new_d;
        new_d.reserve(d.size());
        current.push_back(VtxPair(v,w));
+        g0_matched[v] = 1;
+        g1_matched[w] = 1;
+
        //unsigned int old_bound = current.size() + calc_bound(d)+1;//这里的domain是已经去掉选了的点，但是该点还没纳入current所以+1
        //unsigned int new_bound(0);
        int l,r,j=-1; unsigned int i;
@@ -729,7 +733,7 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
         switch (M) {
         case 1:
         {
-            new_domains = rewardfeed_RL(domains,bd_idx,current, left, right, lgrade,rgrade,g0, g1, v, w,
+            new_domains = rewardfeed_RL(domains,bd_idx,current, left, right, lgrade,rgrade,g0, g1, g0_matched, g1_matched, v, w,
                     arguments.directed || arguments.edge_labelled);
             break;
         }
