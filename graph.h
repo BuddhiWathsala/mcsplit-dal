@@ -9,6 +9,7 @@ struct Graph {
     int n;
     std::vector <std::vector<unsigned int>> adjmat;//双数组 记载边
     std::vector<unsigned int> label;
+    double density;
     std::vector <std::vector<std::pair < std::pair < unsigned int, unsigned int>, std::vector<int>>>>
     leaves; //leaves -> vector(pair(edge label, vertex label), vector(leaves list))
     Graph(unsigned int n);
