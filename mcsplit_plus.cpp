@@ -811,9 +811,8 @@ void sym_solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtyp
                 g1_matched[pr.w] = 0;
             }
         }
+        bd.right_len++;
     }
-
-    bd.right_len++;
     if (bd.left_len == 0)
         remove_bidomain(domains, bd_idx);
     matched_g0[v] = DISCARD;
