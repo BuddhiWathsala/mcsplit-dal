@@ -627,11 +627,15 @@ unsigned int findVerticesWithCommonNeighborsAdjmat(const Graph& graph, vector<in
     vector<unsigned int> degrees (graph.n, 0);
     for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
         size_t positive_hash = 1;
+        size_t negative_hash = 1;
         for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
             if (graph.adjmat[v][u]) {
                 positive_hash ^= std::hash<unsigned int>{}(u) + 0x9e3779b9
                                  + ((positive_hash << 6) & 0xFFFFFFFF)
                                  + ((positive_hash >> 2) & 0xFFFFFFFF);
+                negative_hash ^= std::hash<unsigned int>{}(u) + 0x9e3779b9
+                                 + ((negative_hash << 6) & 0xFFFFFFFF)
+                                 + ((negative_hash >> 2) & 0xFFFFFFFF);
                 degrees[v]++;
             }
             if (v == u) {
@@ -641,6 +645,7 @@ unsigned int findVerticesWithCommonNeighborsAdjmat(const Graph& graph, vector<in
             }
         }
         neighborhoodGroups[positive_hash].push_back(v);
+        neighborhoodGroups[negative_hash].push_back(v);
     }
 
     unsigned int n_syms = 0;
