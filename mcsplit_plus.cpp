@@ -1,5 +1,6 @@
 
 #include "graph.h"
+#include "primes.h"
 
 #include <algorithm>
 #include <numeric>
@@ -621,38 +622,66 @@ void remove_bidomain(vector<Bidomain>& domains, int idx) {
     domains.pop_back();
 }
 
-unsigned int findVerticesWithCommonNeighborsAdjmat(const Graph& graph, vector<int> &disable) {
+int findVerticesWithCommonNeighbors(const Graph& graph, vector<int> &disable) {
     std::unordered_map<size_t, std::vector<unsigned int>> neighborhoodGroups;
-    neighborhoodGroups.reserve(graph.n / 4);
-    vector<unsigned int> degrees (graph.n, 0);
+    neighborhoodGroups.reserve(graph.n);
     for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
         size_t positive_hash = 1;
         size_t negative_hash = 1;
+        vector<int> t;
         for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
             if (graph.adjmat[v][u]) {
-                positive_hash ^= std::hash<unsigned int>{}(u) + 0x9e3779b9
-                                 + ((positive_hash << 6) & 0xFFFFFFFF)
-                                 + ((positive_hash >> 2) & 0xFFFFFFFF);
-                negative_hash ^= std::hash<unsigned int>{}(u) + 0x9e3779b9
-                                 + ((negative_hash << 6) & 0xFFFFFFFF)
-                                 + ((negative_hash >> 2) & 0xFFFFFFFF);
-                degrees[v]++;
+                positive_hash *= PRIMES[u];
+                negative_hash *= PRIMES[u];;
             }
             if (v == u) {
-                positive_hash ^= std::hash<unsigned int>{}(u) + 0x9e3779b9
-                                 + ((positive_hash << 6) & 0xFFFFFFFF)
-                                 + ((positive_hash >> 2) & 0xFFFFFFFF);
+                positive_hash *= PRIMES[u];;
             }
         }
         neighborhoodGroups[positive_hash].push_back(v);
         neighborhoodGroups[negative_hash].push_back(v);
     }
 
-    unsigned int n_syms = 0;
+    int n_syms = 0;
     for (const auto& batch : neighborhoodGroups) {
         if (batch.second.size() > 1) {
             int w = batch.second[0];
             for (size_t i = 1; i < batch.second.size(); i++) {
+                n_syms++;
+                disable[batch.second[i]] = w;
+            }
+        }
+    }
+
+    return n_syms;
+}
+
+int findVerticesWithCommonNeighborsRev(const Graph& graph, vector<int> &disable) {
+    std::unordered_map<size_t, std::vector<unsigned int>> neighborhoodGroups;
+    neighborhoodGroups.reserve(graph.n);
+    for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
+        size_t positive_hash = 1;
+        size_t negative_hash = 1;
+        vector<int> t;
+        for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
+            if (graph.adjmat[v][u]) {
+                positive_hash *= PRIMES[u];
+                negative_hash *= PRIMES[u];;
+            }
+            if (v == u) {
+                positive_hash *= PRIMES[u];;
+            }
+        }
+        neighborhoodGroups[positive_hash].push_back(v);
+        neighborhoodGroups[negative_hash].push_back(v);
+    }
+
+    int n_syms = 0;
+    for (const auto& batch : neighborhoodGroups) {
+        if (batch.second.size() > 1) {
+            size_t n = batch.second.size();
+            int w = batch.second.at(n-1);
+            for (size_t i = 0; i < (n-1); i++) {
                 n_syms++;
                 disable[batch.second[i]] = w;
             }
@@ -745,6 +774,7 @@ void sym_solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtyp
         g0_pruned++;
     } else {
         // Try assigning v to each vertex w in the colour class beginning at bd.r, in turn
+        matched_g0[v] = MATCHED;
         vector<int> wselected(g1.n, 0);
         bd.right_len--;//
         for (int i=0; i<=bd.right_len; i++) {
@@ -772,7 +802,7 @@ void sym_solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtyp
             w = right[bd.r + tmp_idx];
             wselected[w]=1;
             std::swap(right[bd.r + tmp_idx], right[bd.r + bd.right_len]);
-            if (g1_has_syms && disable_g1[w] != -1 && matched_g1[disable_g1[w]] == ACTIVE) {
+            if (g1_has_syms && disable_g1[w] != -1 && matched_g1[disable_g1[w]] == MATCHED) {
                 g1_pruned++;
                 continue;
             }
@@ -979,7 +1009,7 @@ void without_sym_solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vec
     without_sym_solve(g0, g1, V, lgrade,rgrade,Q, incumbent, current, g0_matched, g1_matched, domains, left, right, matching_size_goal);
 }
 
-double DENSITY = 0.1;
+double ISOLATED_N_PERCENTAGE = 0.5;
 vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
     vector<int> left;  // the buffer of vertex indices for the left partitions
     vector<int> right;  // the buffer of vertex indices for the right partitions
@@ -1010,8 +1040,8 @@ vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
 
     vector<int> disable_g0 (g0.n, -1);
     vector<int> disable_g1 (g1.n, -1);
-    g0_n_syms = findVerticesWithCommonNeighborsAdjmat(g0, disable_g0);
-    g1_n_syms = findVerticesWithCommonNeighborsAdjmat(g1, disable_g1);
+    g0_n_syms = findVerticesWithCommonNeighbors(g0, disable_g0);
+    g1_n_syms = findVerticesWithCommonNeighborsRev(g1, disable_g1);
     if (g0_n_syms > 0) {
         g0_has_syms = true;
     }
@@ -1055,12 +1085,12 @@ vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
         if (!g0_has_syms && !g1_has_syms) {
             without_sym_solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched, domains, left, right, 1);
         } else {
-            if (g0.density > DENSITY || g1.density > DENSITY) {
+            if (g0.isolatedPercentage > ISOLATED_N_PERCENTAGE || g1.isolatedPercentage > ISOLATED_N_PERCENTAGE || g0_n_syms == 0) {
+                without_sym_solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched, domains, left, right, 1);
+            } else {
                 vector<MatchingState> matched_g0 (g0.n, ACTIVE);
                 vector<MatchingState> matched_g1 (g1.n, ACTIVE);
                 sym_solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched, domains, left, right, 1, matched_g0, matched_g1, disable_g0, disable_g1);
-            } else {
-                without_sym_solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched, domains, left, right, 1);
             }
         }
     }
