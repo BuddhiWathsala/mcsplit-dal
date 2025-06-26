@@ -839,6 +839,7 @@ void sym_solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtyp
             dl++;
             sym_solve(g0, g1, V, lgrade,rgrade,Q, incumbent, current, g0_matched, g1_matched, new_domains, left, right, matching_size_goal,
                       matched_g0, matched_g1, disable_g0, disable_g1);
+            matched_g1[w] = ACTIVE;
             while(current.size() > cur_len) {
                 VtxPair pr = current.back();
                 current.pop_back();
