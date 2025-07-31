@@ -622,20 +622,29 @@ void remove_bidomain(vector<Bidomain>& domains, int idx) {
     domains.pop_back();
 }
 
+unsigned int DIR1 = 1, DIR2 = 65536, DIR3 = 65537;
 int findVerticesWithCommonNeighbors(const Graph& graph, vector<int> &disable) {
     std::unordered_map<size_t, std::vector<unsigned int>> neighborhoodGroups;
     neighborhoodGroups.reserve(graph.n);
+    unsigned int idx = 3;
+    // cap1 = 0
+    unsigned int cap2 = 1, cap3 = 2;
     for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
         size_t positive_hash = 1;
         size_t negative_hash = 1;
-        vector<int> t;
         for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
-            if (graph.adjmat[v][u]) {
-                positive_hash *= PRIMES[u];
-                negative_hash *= PRIMES[u];;
+            if (graph.adjmat[v][u] == DIR1) {
+                positive_hash *= PRIMES[(idx)*u];
+                negative_hash *= PRIMES[(idx)*u];;
+            } else if (graph.adjmat[v][u] == DIR2) {
+                positive_hash *= PRIMES[(idx)*u + cap2];
+                negative_hash *= PRIMES[(idx)*u + cap2];
+            } else if (graph.adjmat[v][u] == DIR3) {
+                positive_hash *= PRIMES[(idx)*u + cap3];
+                negative_hash *= PRIMES[(idx)*u + cap3];
             }
             if (v == u) {
-                positive_hash *= PRIMES[u];;
+                positive_hash *= PRIMES[(idx)*u + cap3];
             }
         }
         neighborhoodGroups[positive_hash].push_back(v);
@@ -659,17 +668,25 @@ int findVerticesWithCommonNeighbors(const Graph& graph, vector<int> &disable) {
 int findVerticesWithCommonNeighborsRev(const Graph& graph, vector<int> &disable) {
     std::unordered_map<size_t, std::vector<unsigned int>> neighborhoodGroups;
     neighborhoodGroups.reserve(graph.n);
+    unsigned int idx = 3;
+    // cap1 = 0
+    unsigned int cap2 = 1, cap3 = 2;
     for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
         size_t positive_hash = 1;
         size_t negative_hash = 1;
-        vector<int> t;
         for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
-            if (graph.adjmat[v][u]) {
-                positive_hash *= PRIMES[u];
-                negative_hash *= PRIMES[u];;
+            if (graph.adjmat[v][u] == DIR1) {
+                positive_hash *= PRIMES[(idx)*u];
+                negative_hash *= PRIMES[(idx)*u];;
+            } else if (graph.adjmat[v][u] == DIR2) {
+                positive_hash *= PRIMES[(idx)*u + cap2];
+                negative_hash *= PRIMES[(idx)*u + cap2];
+            } else if (graph.adjmat[v][u] == DIR3) {
+                positive_hash *= PRIMES[(idx)*u + cap3];
+                negative_hash *= PRIMES[(idx)*u + cap3];
             }
             if (v == u) {
-                positive_hash *= PRIMES[u];;
+                positive_hash *= PRIMES[(idx)*u + cap3];
             }
         }
         neighborhoodGroups[positive_hash].push_back(v);
