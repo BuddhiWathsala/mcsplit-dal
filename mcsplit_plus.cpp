@@ -15,6 +15,8 @@
 #include <condition_variable>
 #include <atomic>
 
+#include <boost/functional/hash.hpp>
+
 #include <argp.h>
 #include <limits.h>
 #include <stdio.h>
@@ -188,11 +190,6 @@ unsigned int g1_n_syms = 0;
 unsigned int g0_pruned = 0;
 unsigned int g1_pruned = 0;
 
-enum MatchingState {
-    ACTIVE,  // 0
-    MATCHED, // 1
-    DISCARD  // 2
-};
 
 /*******************************************************************************
                                  MCS functions
@@ -622,28 +619,34 @@ void remove_bidomain(vector<Bidomain>& domains, int idx) {
     domains.pop_back();
 }
 
-int findVerticesWithCommonNeighbors(const Graph& graph, vector<int> &disable) {
-    std::unordered_map<size_t, std::vector<unsigned int>> neighborhoodGroups;
-    neighborhoodGroups.reserve(graph.n);
+std::vector<int>  G1_Symmetry_Classes;
+unsigned int SELF_LOOP_VAL = 2147483648;
+unsigned int SELF_LOOP_NUM = 2147483648;
+
+int common_neighbors(const Graph& graph, vector<int> &disable) {
+    std::unordered_map<size_t, std::vector<unsigned int>> neighborhood;
+    neighborhood.reserve(graph.n);
     for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
-        size_t positive_hash = 1;
-        size_t negative_hash = 1;
-        vector<int> t;
+        std::size_t n_hash = 0, p_hash = 0;
         for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
-            if (graph.adjmat[v][u]) {
-                positive_hash *= PRIMES[u];
-                negative_hash *= PRIMES[u];;
+            if (v != u && graph.adjmat[v][u]) {
+                boost::hash_combine(n_hash, u);
+                boost::hash_combine(p_hash, u);
             }
             if (v == u) {
-                positive_hash *= PRIMES[u];;
+                boost::hash_combine(p_hash, v);
             }
         }
-        neighborhoodGroups[positive_hash].push_back(v);
-        neighborhoodGroups[negative_hash].push_back(v);
+        if (graph.label[v] == SELF_LOOP_VAL) {
+            boost::hash_combine(n_hash, SELF_LOOP_NUM);
+            boost::hash_combine(p_hash, SELF_LOOP_NUM);
+        }
+        neighborhood[p_hash].push_back(v);
+        neighborhood[n_hash].push_back(v);
     }
 
     int n_syms = 0;
-    for (const auto& batch : neighborhoodGroups) {
+    for (const auto& batch : neighborhood) {
         if (batch.second.size() > 1) {
             int w = batch.second[0];
             for (size_t i = 1; i < batch.second.size(); i++) {
@@ -656,27 +659,30 @@ int findVerticesWithCommonNeighbors(const Graph& graph, vector<int> &disable) {
     return n_syms;
 }
 
-int findVerticesWithCommonNeighborsRev(const Graph& graph, vector<int> &disable) {
+int common_neighbors_rev(const Graph& graph, vector<int> &disable) {
     std::unordered_map<size_t, std::vector<unsigned int>> neighborhoodGroups;
     neighborhoodGroups.reserve(graph.n);
     for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
-        size_t positive_hash = 1;
-        size_t negative_hash = 1;
-        vector<int> t;
+        std::size_t n_hash = 0, p_hash = 0;
         for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
-            if (graph.adjmat[v][u]) {
-                positive_hash *= PRIMES[u];
-                negative_hash *= PRIMES[u];;
+            if (v != u && graph.adjmat[v][u]) {
+                boost::hash_combine(n_hash, u);
+                boost::hash_combine(p_hash, u);
             }
             if (v == u) {
-                positive_hash *= PRIMES[u];;
+                boost::hash_combine(p_hash, v);
             }
         }
-        neighborhoodGroups[positive_hash].push_back(v);
-        neighborhoodGroups[negative_hash].push_back(v);
+        if (graph.label[v] == SELF_LOOP_VAL) {
+            boost::hash_combine(n_hash, SELF_LOOP_NUM);
+            boost::hash_combine(p_hash, SELF_LOOP_NUM);
+        }
+        neighborhoodGroups[p_hash].push_back(v);
+        neighborhoodGroups[n_hash].push_back(v);
     }
 
     int n_syms = 0;
+    int sym_identity = -1;
     for (const auto& batch : neighborhoodGroups) {
         if (batch.second.size() > 1) {
             size_t n = batch.second.size();
@@ -685,17 +691,36 @@ int findVerticesWithCommonNeighborsRev(const Graph& graph, vector<int> &disable)
                 n_syms++;
                 disable[batch.second[i]] = w;
             }
+            ++sym_identity;
+            for (size_t i=0; i < n; ++i) {
+                G1_Symmetry_Classes[batch.second[i]] = sym_identity;
+            }
         }
     }
 
     return n_syms;
 }
 
+bool break_g1_sym(const vector<int>& arr, int start_idx, int len, int w) {
+    int w_sym_identity = G1_Symmetry_Classes[w];
+    for (int i=0; i < len; i++) {
+        if (G1_Symmetry_Classes[arr[start_idx + i]] == w_sym_identity && arr[start_idx + i] < w) {
+            return true;
+        }
+    }
+    return false;
+}
+
+const int DISCARD = -1;
+const int ACTIVE = -2;
+const int MATCHED = -3;
+
+
 void sym_solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &lgrade,
            vector<gtype> &rgrade,vector<vector<gtype>> &Q, vector<VtxPair> & incumbent,
         vector<VtxPair> & current, vector<int> &g0_matched, vector<int> &g1_matched,
         vector<Bidomain> & domains, vector<int> & left, vector<int> & right, unsigned int matching_size_goal,
-               vector<MatchingState> &matched_g0, vector<MatchingState> &matched_g1,
+               vector<int> &matched_g0, vector<int> &matched_g1,
                vector<int> &disable_g0, vector<int> &disable_g1)
 {
 
@@ -806,7 +831,16 @@ void sym_solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtyp
                 g1_pruned++;
                 continue;
             }
+            if (G1_Symmetry_Classes[w] != -1 && break_g1_sym(right, bd.r, bd.right_len + 1, w)) {
+                g1_pruned++;
+                continue;
+            }
+            if (g0_has_syms && disable_g0[v] != -1 && matched_g0[disable_g0[v]] > w) {
+                g0_pruned++;
+                continue;
+            }
             matched_g1[w] = MATCHED;
+            matched_g0[v] = w;
 #ifdef DEBUG
             cout<<"v= "<<v<<" w= "<<w<<endl;
      unsigned int m;
@@ -1040,8 +1074,9 @@ vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
 
     vector<int> disable_g0 (g0.n, -1);
     vector<int> disable_g1 (g1.n, -1);
-    g0_n_syms = findVerticesWithCommonNeighbors(g0, disable_g0);
-    g1_n_syms = findVerticesWithCommonNeighborsRev(g1, disable_g1);
+    G1_Symmetry_Classes = std::vector(g1.n, -1);
+    g0_n_syms = common_neighbors(g0, disable_g0);
+    g1_n_syms = common_neighbors_rev(g1, disable_g1);
     if (g0_n_syms > 0) {
         g0_has_syms = true;
     }
@@ -1082,10 +1117,16 @@ vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
 
     } else {
         vector<VtxPair> current;
-        vector<MatchingState> matched_g0 (g0.n, ACTIVE);
-        vector<MatchingState> matched_g1 (g1.n, ACTIVE);
-        sym_solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched,
-                  domains, left, right, 1, matched_g0, matched_g1, disable_g0, disable_g1);
+        vector<int> matched_g0 (g0.n, ACTIVE);
+        vector<int> matched_g1 (g1.n, ACTIVE);
+        if (!g0_has_syms && !g1_has_syms) {
+            without_sym_solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched,
+                      domains, left, right, 1);
+        } else {
+            sym_solve(g0, g1, V, lgrade,rgrade, Q, incumbent, current, g0_matched, g1_matched,
+                      domains, left, right, 1, matched_g0, matched_g1, disable_g0, disable_g1);
+        }
+
     }
 
     return incumbent;
