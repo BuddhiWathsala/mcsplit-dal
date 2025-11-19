@@ -21,6 +21,7 @@
 #include <string.h>
 #include <math.h>
 #include <assert.h>
+#include <cstdint>
 #define VSCORE
 //#define DEBUG
 #define Best
@@ -180,6 +181,7 @@ int Maxnum = 0;
 int M = 1;
 int num = 0;
 clock_t start;
+uint64_t mcs_count = 0;
 
 /*******************************************************************************
                                  MCS functions
@@ -622,17 +624,22 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
     if (abort_due_to_timeout) {
         return;
     }
-    if (current.size() > incumbent.size()) {//incumbent 现任的
+    size_t current_size = current.size();
+    size_t incumbent_size = incumbent.size();
+    if (current_size > incumbent_size) {//incumbent 现任的
         num = 0;
         incumbent = current;
         calls_for_optimal = nodes;
         duration = std::chrono::steady_clock::now() - START;
+        mcs_count = 1;
 //        if (!arguments.quiet) cout << "Incumbent size: " << incumbent.size() << endl;
+    }  else if (current_size == incumbent_size) {
+        mcs_count++;
     }
     nodes++;
 
     unsigned int bound = current.size() + calc_bound(domains);//计算相连和不相连同构数的最大可能加上当前已经同构的点数
-    if (bound <=incumbent.size() || bound < matching_size_goal){//剪枝
+    if (bound < incumbent.size() || bound < matching_size_goal){//剪枝
         //num--;
         cut_branches++;
         return;
@@ -1014,7 +1021,7 @@ int main(int argc, char** argv) {
 
     cout << solution.size() << ", " << check_sol(g0, g1, solution) << ", " << duration.count() << ", "
          << time_elapsed.count() << ", " << nodes << ", " << calls_for_optimal << ", " << cut_branches << ", " <<
-         aborted << endl;
+         mcs_count << ", " << aborted << endl;
 
 }
 
