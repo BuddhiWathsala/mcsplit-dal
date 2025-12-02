@@ -46,7 +46,7 @@ void add_edge(Graph &g, int v, int w, bool directed = false, unsigned int val = 
     } else {
         // To indicate that a vertex has a loop, we set the most
         // significant bit of its label to 1
-        g.label[v] |= (1u << (BITS_PER_UNSIGNED_INT - 1));
+        //g.label[v] |= (1u << (BITS_PER_UNSIGNED_INT-1));
     }
 }
 
