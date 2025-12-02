@@ -180,6 +180,10 @@ int Maxnum = 0;
 int M = 1;
 int num = 0;
 clock_t start;
+bool g0_has_syms = false;
+bool g1_has_syms = false;
+unsigned int g0_pruned = 0;
+unsigned int g1_pruned = 0;
 
 /*******************************************************************************
                                  MCS functions
@@ -801,6 +805,84 @@ void remove_bidomain(vector<Bidomain>& domains, int idx) {
     domains.pop_back();
 }
 
+std::vector<int>  g0_eqn_classes;
+std::vector<int>  g1_eqn_classes;
+
+bool have_identical_neighborhoods(const Graph& graph, ui u, ui v) {
+    if (graph.degree[u] != graph.degree[v])
+        return false;
+
+    const auto& u_neighbors = graph.adjlist[u];
+    const auto& v_neighbors = graph.adjlist[v];
+
+    size_t u_neighbors_size = graph.degree[u];
+    size_t v_neighbors_size = graph.degree[v];
+    // Both neighbors should be sorted for efficient comparison
+    ui u_idx = 0, v_idx = 0;
+
+    while (u_idx < u_neighbors_size && v_idx < v_neighbors_size) {
+        ui u_nbr = u_neighbors[u_idx];
+        ui v_nbr = v_neighbors[v_idx];
+
+        // Skip self-references
+        if (u_nbr == v) { ++u_idx; continue; }
+        if (v_nbr == u) { ++v_idx; continue; }
+
+        if (u_nbr == v_nbr) {
+            ++u_idx; ++v_idx;
+        } else if (u_nbr < v_nbr) {
+            return false; // u has neighbor v_nbr doesn't have
+        } else {
+            return false; // v has neighbor u_nbr doesn't have
+        }
+    }
+
+    return true;
+}
+
+int find_vertices_with_common_neighbors(const Graph& graph, std::vector<int>& eqn_classes) {
+    const ui graph_size = graph.n;
+    eqn_classes.assign(graph_size, -1);
+
+    int label = 0;
+    int n_syms = 0;
+
+    for (ui i = 0; i < graph_size; ++i) {
+        if (eqn_classes[i] != -1) continue;
+
+        int n_syms_in_class = 0;
+
+        for (ui j = i + 1; j < graph_size; ++j) {
+            if (eqn_classes[j] != -1) continue;
+            if (graph.degree[i] != graph.degree[j] || graph.label[i] != graph.label[j]) continue;
+
+            // Use adjacency list intersection instead of matrix lookups
+            if (have_identical_neighborhoods(graph, i, j)) {
+                eqn_classes[j] = label;
+                n_syms++;
+                n_syms_in_class++;
+            }
+        }
+
+        if (n_syms_in_class > 0) {
+            eqn_classes[i] = label;
+        }
+        ++label;
+    }
+
+    return n_syms;
+}
+
+bool break_g1_sym(const vector<int>& arr, int start_idx, int len, int w) {
+    int w_sym_identity = g1_eqn_classes[w];
+    for (int i=0; i < len; i++) {
+        if (g1_eqn_classes[arr[start_idx + i]] == w_sym_identity && arr[start_idx + i] < w) {
+            return true;
+        }
+    }
+    return false;
+}
+
 void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &lgrade,
            vector<gtype> &rgrade,vector<vector<gtype>> &Q, vector<VtxPair> & incumbent,
         vector<VtxPair> & current, vector<int> &g0_matched, vector<int> &g1_matched,
@@ -881,6 +963,11 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
 
     v = left[bd.l + tmp_idx];
     remove_vtx_from_array(left, bd.l, bd.left_len, tmp_idx);
+    if (g0_eqn_classes[v] != -1) {
+        for (VtxPair & a:current){
+            if(g0_eqn_classes[a.v]==g0_eqn_classes[v]&&w<a.w) w=a.w;
+        }
+    }
 
     // Try assigning v to each vertex w in the colour class beginning at bd.r, in turn
     vector<int> wselected(g1.n, 0);
@@ -909,6 +996,10 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
         }
         w = right[bd.r + tmp_idx];
         wselected[w]=1;
+        if (g1_eqn_classes[w] != -1 && break_g1_sym(right, bd.r, bd.right_len + 1, w)) {
+            g1_pruned++;
+            continue;
+        }
         std::swap(right[bd.r + tmp_idx], right[bd.r + bd.right_len]);
 #ifdef DEBUG
      cout<<"v= "<<v<<" w= "<<w<<endl;
@@ -1000,6 +1091,14 @@ vector<VtxPair> mcs(const Graph & g0, const Graph & g1) {
 //    }
 
     vector<VtxPair> incumbent;
+    int g0_n_syms = find_vertices_with_common_neighbors(g0, g0_eqn_classes);
+    int g1_n_syms = find_vertices_with_common_neighbors(g1, g1_eqn_classes);
+    if (g0_n_syms > 0) {
+        g0_has_syms = true;
+    }
+    if (g1_n_syms > 0) {
+        g1_has_syms = true;
+    }
 
     if (arguments.big_first) {
         for (int k=0; k<g0.n; k++) {
@@ -1160,6 +1259,8 @@ int main(int argc, char** argv) {
 
     pack_leaves(g0_sorted);
     pack_leaves(g1_sorted);
+    set_adjlist(g0_sorted);
+    set_adjlist(g1_sorted);
     vector<VtxPair> solution = mcs(g0_sorted, g1_sorted);
 
     // Convert to indices from original, unsorted graphs

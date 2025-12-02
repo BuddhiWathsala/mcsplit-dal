@@ -6,10 +6,6 @@
 #include <iostream>
 #include <string>
 
-constexpr int BITS_PER_UNSIGNED_INT(CHAR_BIT *
-
-sizeof(unsigned int));
-
 static void fail(std::string msg) {
     std::cerr << msg << std::endl;
     exit(1);
@@ -181,4 +177,22 @@ struct Graph readGraph(char *filename, char format, bool directed, bool edge_lab
     else if (format == 'B') g = readBinaryGraph(filename, directed, edge_labelled, vertex_labelled);
     else fail("Unknown graph format\n");
     return g;
+}
+
+void set_adjlist(struct Graph & g){
+    g.degree = new unsigned int [g.n];
+    g.adjlist = new unsigned int *[g.n];
+    unsigned int count = 0;
+    for(int i=0;i<g.n;++i){
+        count = 0;
+        for(int j=0;j<g.n;++j) if(g.adjmat[i][j]==1) count++;
+        g.adjlist[i] = new unsigned int[count]; count = 0;
+
+        for(int j=0;j<g.n;++j)
+            if(g.adjmat[i][j]==1){
+                g.adjlist[i][count]=j;
+                ++count;
+            }
+        g.degree[i] = count;
+    }
 }
