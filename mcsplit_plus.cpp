@@ -21,6 +21,7 @@
 #include <string.h>
 #include <math.h>
 #include <assert.h>
+#include <boost/functional/hash.hpp>
 #define VSCORE
 //#define DEBUG
 #define Best
@@ -808,64 +809,34 @@ void remove_bidomain(vector<Bidomain>& domains, int idx) {
 std::vector<int>  g0_eqn_classes;
 std::vector<int>  g1_eqn_classes;
 
-bool have_identical_neighborhoods(const Graph& graph, ui u, ui v) {
-    if (graph.degree[u] != graph.degree[v])
-        return false;
+int find_vertices_with_common_neighbors(const Graph& graph, std::vector<int> &eqn_classes) {
+    std::unordered_map<size_t, std::vector<unsigned int>> n_groups;
+    n_groups.reserve(graph.n);
+    eqn_classes = vector<int>(graph.n, -1);
+    for (unsigned int v = 0; v < (unsigned int)graph.n; ++v) {
+        std::size_t n_hash = 0, p_hash=0;
 
-    const auto& u_neighbors = graph.adjlist[u];
-    const auto& v_neighbors = graph.adjlist[v];
-
-    size_t u_neighbors_size = graph.degree[u];
-    size_t v_neighbors_size = graph.degree[v];
-    // Both neighbors should be sorted for efficient comparison
-    ui u_idx = 0, v_idx = 0;
-
-    while (u_idx < u_neighbors_size && v_idx < v_neighbors_size) {
-        ui u_nbr = u_neighbors[u_idx];
-        ui v_nbr = v_neighbors[v_idx];
-
-        // Skip self-references
-        if (u_nbr == v) { ++u_idx; continue; }
-        if (v_nbr == u) { ++v_idx; continue; }
-
-        if (u_nbr == v_nbr) {
-            ++u_idx; ++v_idx;
-        } else if (u_nbr < v_nbr) {
-            return false; // u has neighbor v_nbr doesn't have
-        } else {
-            return false; // v has neighbor u_nbr doesn't have
-        }
-    }
-
-    return true;
-}
-
-int find_vertices_with_common_neighbors(const Graph& graph, std::vector<int>& eqn_classes) {
-    const ui graph_size = graph.n;
-    eqn_classes.assign(graph_size, -1);
-
-    int label = 0;
-    int n_syms = 0;
-
-    for (ui i = 0; i < graph_size; ++i) {
-        if (eqn_classes[i] != -1) continue;
-
-        int n_syms_in_class = 0;
-
-        for (ui j = i + 1; j < graph_size; ++j) {
-            if (eqn_classes[j] != -1) continue;
-            if (graph.degree[i] != graph.degree[j] || graph.label[i] != graph.label[j]) continue;
-
-            // Use adjacency list intersection instead of matrix lookups
-            if (have_identical_neighborhoods(graph, i, j)) {
-                eqn_classes[j] = label;
-                n_syms++;
-                n_syms_in_class++;
+        for (unsigned int u = 0; u < (unsigned int)graph.n; ++u) {
+            if (v != u && graph.adjmat[v][u]) {
+                boost::hash_combine(n_hash, u);
+                boost::hash_combine(p_hash, u);
+            }
+            if (v == u) {
+                boost::hash_combine(p_hash, v);
             }
         }
+        n_groups[p_hash].push_back(v);
+        n_groups[n_hash].push_back(v);
+    }
 
-        if (n_syms_in_class > 0) {
-            eqn_classes[i] = label;
+    int n_syms = 0;
+    int label = 0;
+    for (const auto& batch : n_groups) {
+        if (batch.second.size() > 1) {
+            for (size_t i = 0; i < batch.second.size(); i++) {
+                n_syms++;
+                eqn_classes[batch.second[i]] = label;
+            }
         }
         ++label;
     }
