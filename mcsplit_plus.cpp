@@ -1040,6 +1040,14 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
         }
     }
     bd.right_len++;
+    if (g0_eqn_classes[v] != -1) {
+        for(int i = 0; i<bd.left_len; ++i){
+            if(g0_eqn_classes[left[bd.l+i]] == g0_eqn_classes[v]){
+                std::swap(left[bd.l+i], left[bd.l+bd.left_len-1]);
+                --bd.left_len; --i;
+            }
+        }
+    }
     if (bd.left_len == 0)
         remove_bidomain(domains, bd_idx);
     solve(g0, g1, V, lgrade,rgrade,Q, incumbent, current, g0_matched, g1_matched, domains, left, right, matching_size_goal);
