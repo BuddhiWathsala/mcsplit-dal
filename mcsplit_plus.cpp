@@ -260,6 +260,14 @@ bool check_sol(const Graph &g0, const Graph &g1, const vector<VtxPair> &solution
 //    return true;
 }
 
+int calc_bound(const vector<Bidomain>& domains) {
+    int bound = 0;
+    for (const Bidomain &bd : domains) {
+        bound += std::min(bd.left_len, bd.right_len);
+    }
+    return bound;
+}
+
 const int THRESHOLD = 16;
 const int boxes = 2;
 const int index_partition_size = 2;
@@ -905,7 +913,8 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
     }
     nodes++;
 
-    unsigned int bound = calc_bound(g0, g1, domains, left, right, incumbent, current);//计算相连和不相连同构数的最大可能加上当前已经同构的点数
+//    unsigned int bound = calc_bound(g0, g1, domains, left, right, incumbent, current);
+    unsigned int bound = calc_bound(domains);
     if (bound <=incumbent.size() || bound < matching_size_goal){//剪枝
         //num--;
         cut_branches++;
