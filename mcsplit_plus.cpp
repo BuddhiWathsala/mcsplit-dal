@@ -944,7 +944,7 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
         return;}
     Bidomain &bd = domains[bd_idx];
 
-    int v, w;
+    int v, w = -1;
     int tmp_idx=-1;
     switch (M) {
     case 1:
@@ -963,14 +963,19 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
 
     v = left[bd.l + tmp_idx];
     remove_vtx_from_array(left, bd.l, bd.left_len, tmp_idx);
+    vector<int> wselected(g1.n, 0);
     if (g0_eqn_classes[v] != -1) {
         for (VtxPair & a:current){
-            if(g0_eqn_classes[a.v]==g0_eqn_classes[v]&&w<a.w) w=a.w;
+            if(g0_eqn_classes[a.v]==g0_eqn_classes[v]&&w<a.w) {
+                if (w != -1) {
+                    wselected[w] = 1;
+                }
+                w=a.w;
+            }
         }
     }
 
     // Try assigning v to each vertex w in the colour class beginning at bd.r, in turn
-    vector<int> wselected(g1.n, 0);
     bd.right_len--;//
     for (int i=0; i<=bd.right_len; i++) {
         if(i!=0){
