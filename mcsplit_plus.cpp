@@ -1197,6 +1197,12 @@ int main(int argc, char** argv) {
     struct Graph g1 = readGraph(arguments.filename2, format, arguments.directed,
             arguments.edge_labelled, arguments.vertex_labelled);
 
+    if(g0.n>g1.n){
+        struct Graph gg = g0;
+        g0 = g1;
+        g1 = gg;
+    }
+
     std::thread timeout_thread;
     std::mutex timeout_mutex;
     std::condition_variable timeout_cv;
