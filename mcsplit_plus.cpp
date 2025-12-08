@@ -913,9 +913,9 @@ void solve(const Graph & g0, const Graph & g1, vector<gtype> &V, vector<gtype> &
     }
     nodes++;
 
-//    unsigned int bound = calc_bound(g0, g1, domains, left, right, incumbent, current);
-    unsigned int bound = calc_bound(domains);
-    if (bound <=incumbent.size() || bound < matching_size_goal){//剪枝
+    unsigned int bound = calc_bound(g0, g1, domains, left, right, incumbent, current);
+//    unsigned int bound = current.size() + calc_bound(domains);
+    if (bound <= incumbent.size() || bound < matching_size_goal){//剪枝
         //num--;
         cut_branches++;
         return;
